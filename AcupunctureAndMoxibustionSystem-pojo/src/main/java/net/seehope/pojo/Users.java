@@ -56,7 +56,8 @@ public class Users implements Serializable {
      * @return password
      */
     public String getPassword() {
-        return password;
+
+        System.out.println("lalal");return password;
     }
 
     /**
