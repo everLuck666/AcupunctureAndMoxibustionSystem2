@@ -28,7 +28,7 @@ public class Users implements Serializable {
      */
     public String getId() {
 
-        System.out.println("la");return id;
+       return id;
     }
 
     /**
@@ -56,7 +56,8 @@ public class Users implements Serializable {
      * @return password
      */
     public String getPassword() {
-        return password;
+
+        System.out.println("lalal");return password;
     }
 
     /**
