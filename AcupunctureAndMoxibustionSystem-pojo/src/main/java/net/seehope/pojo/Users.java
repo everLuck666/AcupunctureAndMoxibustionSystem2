@@ -28,6 +28,8 @@ public class Users implements Serializable {
      */
     public String getId() {
 
+        System.out.println("nishigou");
+
        return id;
     }
 
@@ -35,6 +37,7 @@ public class Users implements Serializable {
      * @param id
      */
     public void setId(String id) {
+        System.out.println("la");
         this.id = id;
     }
 
