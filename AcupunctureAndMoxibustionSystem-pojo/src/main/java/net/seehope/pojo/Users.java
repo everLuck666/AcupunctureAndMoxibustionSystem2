@@ -26,18 +26,12 @@ public class Users implements Serializable {
     /**
      * @return id
      */
-    public String getId() {
-        System.out.println("adfsdf");
-        System.out.println("天天");
 
-       return id;
-    }
 
     /**
      * @param id
      */
     public void setId(String id) {
-        System.out.println("la");
         this.id = id;
     }
 
