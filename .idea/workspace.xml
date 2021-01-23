@@ -2,67 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3f90fe8-8d08-43d7-9752-f3a7c52e92a7" name="Default Changelist" comment="frtijioa">
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/target/classes/net/seehope/common/OrderType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/target/classes/net/seehope/common/RestfulJson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/target/classes/net/seehope/common/TicketsStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/target/classes/net/seehope/common/UserType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/target/classes/net/seehope/exception/PassPortException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/target/classes/net/seehope/jwt/JWTUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/4850789_sportsmonster.ltd.pfx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/net/seehope/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/net/seehope/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/net/seehope/filter/AllowOriginFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/net/seehope/interceptor/MyInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/carousel/2020-11-30-15-43-39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/carousel/2020-11-30-15-43-44.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/carousel/2020-12-01-17-54-56.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/carousel/2020-12-01-17-54-58.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/carousel/261de910cc240dc20d9afb048e8e4d84112bd1be.jpg@1320w_1846h.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/2020-11-30-15-28-51.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/2020-11-30-15-31-29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/2020-12-01-16-53-47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/261de910cc240dc20d9afb048e8e4d84112bd1be.jpg@1320w_1846h.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/261de910cc240dc20d9afb048e8e4d84112bd1be.jpg@1320w_1846h.jpg2020-12-05-10-42-54.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/QRCode.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/da471abdddd3ba289b5cc4b5a964e9e408034422.jpg@282w_176h.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/da471abdddd3ba289b5cc4b5a964e9e408034422.jpg@282w_176h.jpg2020-12-06-15-39-33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/da471abdddd3ba289b5cc4b5a964e9e408034422.jpg@282w_176h.jpg2020-12-06-15-42-27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/e68497c775feaac1c3b1a6cd63a50cfb11b767c4.png@100w_100h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/static/images/图标.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/test-classes/OrderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/test-classes/OrderThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-generator/target/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-generator/target/classes/mybatis-generator-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-generator/target/classes/net/seehope/MybatisGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/target/classes/net/seehope/pojo/Users.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/target/classes/net/seehope/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/target/classes/net/seehope/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/bo/UserOrderInformationBo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/constant/WechatConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/controller/WxpayController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/IWXPayDomain$DomainInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/IWXPayDomain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/MyWXPayConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/MyWXPayConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayConstants$SignType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayReport$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayReport$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayReport$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayReport$ReportInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/sdk/WXPayXmlUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/service/WxPayService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/service/impl/WxPayServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/target/classes/com/github/wxpay/vo/WxPayNotifyVO.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/AcupunctureAndMoxibustionSystem-controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/AcupunctureAndMoxibustionSystem-controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/AcupunctureAndMoxibustionSystem-pojo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/AcupunctureAndMoxibustionSystem-pojo.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,17 +53,22 @@
     </option>
   </component>
   <component name="ProjectId" id="1nQnsiBbN7v37o7PvwNrWZgkvJm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -214,13 +172,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="tiaaod" />
     <MESSAGE value="frtijioa" />
     <option name="LAST_COMMIT_MESSAGE" value="frtijioa" />
@@ -282,6 +243,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="140" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1611405443340" />
+    <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1611407693213">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="258" y="112" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1611407693213" />
     <state x="128" y="90" key="MergeDialog" timestamp="1611405324851">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
