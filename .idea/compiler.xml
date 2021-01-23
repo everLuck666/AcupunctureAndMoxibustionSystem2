@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AcupunctureAndMoxibustionSystem-mapper" />
+        <module name="AcupunctureAndMoxibustionSystem-common" />
+        <module name="AcupunctureAndMoxibustionSystem-controller" />
+        <module name="AcupunctureAndMoxibustionSystem-service" />
+        <module name="AcupunctureAndMoxibustionSystem-pojo" />
+        <module name="AcupunctureAndMoxibustionSystem-generator" />
+        <module name="wxpay-sdk" />
+        <module name="AcupunctureAndMoxibustionSystem-configuration" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AcupunctureAndMoxibustionSystem-common" target="1.8" />
+      <module name="AcupunctureAndMoxibustionSystem-configuration" target="1.8" />
+      <module name="AcupunctureAndMoxibustionSystem-controller" target="1.8" />
+      <module name="AcupunctureAndMoxibustionSystem-generator" target="1.8" />
+      <module name="AcupunctureAndMoxibustionSystem-mapper" target="1.8" />
+      <module name="AcupunctureAndMoxibustionSystem-pojo" target="1.8" />
+      <module name="AcupunctureAndMoxibustionSystem-service" target="1.8" />
+      <module name="AcupunctureAndMoxibustionSystem2" target="1.8" />
+      <module name="wxpay-sdk" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AcupunctureAndMoxibustionSystem-common" options="-parameters" />
+      <module name="AcupunctureAndMoxibustionSystem-configuration" options="-parameters" />
+      <module name="AcupunctureAndMoxibustionSystem-controller" options="-parameters" />
+      <module name="AcupunctureAndMoxibustionSystem-generator" options="-parameters" />
+      <module name="AcupunctureAndMoxibustionSystem-mapper" options="-parameters" />
+      <module name="AcupunctureAndMoxibustionSystem-pojo" options="-parameters" />
+      <module name="AcupunctureAndMoxibustionSystem-service" options="-parameters" />
+      <module name="wxpay-sdk" options="-parameters" />
+    </option>
+  </component>
+</project>
