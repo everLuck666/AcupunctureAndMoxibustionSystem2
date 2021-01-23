@@ -17,6 +17,7 @@ public class ShoppingController {
 
     @GetMapping("getAllGoods")
     public RestfulJson getAllGoods(){
+        System.out.println("巴拉巴拉");
         return RestfulJson.isOk(shoppingService.getAllGoods());
     }
 
