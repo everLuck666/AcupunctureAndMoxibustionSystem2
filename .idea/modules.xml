@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/AcupunctureAndMoxibustionSystem-common.iml" filepath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/AcupunctureAndMoxibustionSystem-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-configuration/AcupunctureAndMoxibustionSystem-configuration.iml" filepath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-configuration/AcupunctureAndMoxibustionSystem-configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/AcupunctureAndMoxibustionSystem-controller.iml" filepath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/AcupunctureAndMoxibustionSystem-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-generator/AcupunctureAndMoxibustionSystem-generator.iml" filepath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-generator/AcupunctureAndMoxibustionSystem-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/AcupunctureAndMoxibustionSystem-mapper.iml" filepath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/AcupunctureAndMoxibustionSystem-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/AcupunctureAndMoxibustionSystem-pojo.iml" filepath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/AcupunctureAndMoxibustionSystem-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/AcupunctureAndMoxibustionSystem-service.iml" filepath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/AcupunctureAndMoxibustionSystem-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AcupunctureAndMoxibustionSystem2.iml" filepath="$PROJECT_DIR$/.idea/AcupunctureAndMoxibustionSystem2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_sdk_v3.0.9/wxpay-sdk.iml" filepath="$PROJECT_DIR$/java_sdk_v3.0.9/wxpay-sdk.iml" />
+    </modules>
+  </component>
+</project>
