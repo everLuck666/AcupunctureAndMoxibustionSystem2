@@ -1,7 +1,6 @@
 package net.seehope.mapper;
 
 import net.seehope.pojo.Orders;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -10,7 +9,6 @@ import java.util.List;
 *
 * @author mapper-generator
 */
-@Repository
 public interface OrdersMapper extends tk.mybatis.mapper.common.Mapper<Orders> {
     //返回小程序用户订单信息
     List queryUserOrders(String userId);
