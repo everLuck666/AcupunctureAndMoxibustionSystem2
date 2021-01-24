@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/src/main/java/net/seehope/common/NonStaticResourceHttpRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/src/main/java/net/seehope/common/PlanStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/IlustrateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/VideoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/advice/ControllerExceptionHander.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/vo/IlustrateVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/vo/MyPlanVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/vo/SymptomInformationVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/IndexService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/VideoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IndexServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/VideoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/AcupunctureAndMoxibustionSystem-controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/AcupunctureAndMoxibustionSystem-controller.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-generator/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-generator/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-generator/src/main/resources/mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-generator/src/main/resources/mybatis-generator-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/GoodsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/SymptomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/SymptomMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/UserInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/MedicalRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/MedicalRecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/SymptomMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/SymptomMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/AcupunctureAndMoxibustionSystem-pojo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/AcupunctureAndMoxibustionSystem-pojo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/MedicalRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/MedicalRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Symptom.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Symptom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/TreatProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/TreatProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/ShoppingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/ShoppingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.annotation.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.ejb.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.jms.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.persistence.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.resource.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.transaction.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-configuration/AcupunctureAndMoxibustionSystem-configuration.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +42,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -133,6 +89,8 @@
       <list>
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.MybatisGenerator" />
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.MybatisGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -150,11 +108,15 @@
       <workItem from="1611465145721" duration="1095000" />
       <workItem from="1611466273860" duration="240000" />
       <workItem from="1611466547129" duration="6421000" />
+      <workItem from="1611493505960" duration="414000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1611484091059">
@@ -166,37 +128,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="28" y="52" key="CommitChangelistDialog2/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484302083" />
-    <state width="1396" height="141" key="GridCell.Tab.0.bottom" timestamp="1611484285228">
+    <state width="698" height="141" key="GridCell.Tab.0.bottom" timestamp="1611493924543">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.0.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285228" />
     <state width="1396" height="368" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959671" />
     <state width="1396" height="368" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
-    <state width="1396" height="156" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611464752398" />
+    <state width="698" height="141" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611493924543" />
     <state width="1396" height="148" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1611416935017" />
-    <state width="1396" height="141" key="GridCell.Tab.0.center" timestamp="1611484285226">
+    <state width="698" height="141" key="GridCell.Tab.0.center" timestamp="1611493924542">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.0.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285226" />
     <state width="1396" height="368" key="GridCell.Tab.0.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959660" />
     <state width="1396" height="368" key="GridCell.Tab.0.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416476" />
-    <state width="1396" height="156" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611464752397" />
+    <state width="698" height="141" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611493924542" />
     <state width="1396" height="148" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1611416935016" />
-    <state width="1396" height="141" key="GridCell.Tab.0.left" timestamp="1611484285226">
+    <state width="698" height="141" key="GridCell.Tab.0.left" timestamp="1611493924541">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.0.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285225" />
     <state width="1396" height="368" key="GridCell.Tab.0.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959644" />
     <state width="1396" height="368" key="GridCell.Tab.0.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416475" />
-    <state width="1396" height="156" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611464752396" />
+    <state width="698" height="141" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611493924541" />
     <state width="1396" height="148" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1611416935015" />
-    <state width="1396" height="141" key="GridCell.Tab.0.right" timestamp="1611484285227">
+    <state width="698" height="141" key="GridCell.Tab.0.right" timestamp="1611493924542">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.0.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285227" />
     <state width="1396" height="368" key="GridCell.Tab.0.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959665" />
     <state width="1396" height="368" key="GridCell.Tab.0.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
-    <state width="1396" height="156" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611464752397" />
+    <state width="698" height="141" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611493924542" />
     <state width="1396" height="148" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1611416935016" />
     <state width="1396" height="141" key="GridCell.Tab.1.bottom" timestamp="1611484285233">
       <screen x="0" y="0" width="1440" height="900" />
@@ -230,13 +192,25 @@
     <state width="1396" height="368" key="GridCell.Tab.1.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416480" />
     <state width="1396" height="156" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1611464752399" />
     <state width="1396" height="148" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1611416935019" />
-    <state x="202" y="168" key="RollbackChangesDialog" timestamp="1611417237191">
+    <state x="202" y="168" key="RollbackChangesDialog" timestamp="1611493961719">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="202" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1611417237191" />
+    <state x="202" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1611493961719" />
+    <state x="239" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611493682777">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="239" y="170" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900@0.0.1440.900" timestamp="1611493682777" />
     <state x="439" y="248" key="git4idea.merge.GitMergeDialog" timestamp="1611409294944">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="439" y="248" key="git4idea.merge.GitMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1611409294943" />
+    <state x="451" y="357" key="git4idea.ui.GitStashDialog" timestamp="1611493760930">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="451" y="357" key="git4idea.ui.GitStashDialog/0.0.1440.900@0.0.1440.900" timestamp="1611493760930" />
+    <state x="369" y="305" key="git4idea.ui.GitUnstashDialog" timestamp="1611494107620">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="369" y="305" key="git4idea.ui.GitUnstashDialog/0.0.1440.900@0.0.1440.900" timestamp="1611494107620" />
   </component>
 </project>
