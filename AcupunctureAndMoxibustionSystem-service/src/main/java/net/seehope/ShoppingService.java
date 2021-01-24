@@ -2,6 +2,7 @@ package net.seehope;
 
 import net.seehope.pojo.Goods;
 import net.seehope.pojo.UserInfo;
+import net.seehope.pojo.bo.ShoppingCarBo;
 
 import java.util.List;
 
@@ -13,10 +14,10 @@ public interface ShoppingService {
     List<Goods> getGoodsByKeyword(String keyword);
 
     //加入购物车
-    void addShoppingCar();
+    void addShoppingCar(ShoppingCarBo bo, String userId);
 
     //展示购物车
-    List getShoppingCar();
+    List getShoppingCar(String userId);
 
     //添加地址
     void addAddress(UserInfo userInfo);
@@ -25,5 +26,5 @@ public interface ShoppingService {
     List getUserAddress(String userId);
 
     //获取我的订单信息
-    List getMyorders();
+    List getMyorders(String userId);
 }
