@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_28.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/XueTreat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/XueWei.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/AcupunctureAndMoxibustionSystem-controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/AcupunctureAndMoxibustionSystem-controller.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/OrdersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/OrdersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/AcupunctureAndMoxibustionSystem-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/AcupunctureAndMoxibustionSystem-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/wxpay-sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_sdk_v3.0.9/wxpay-sdk.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611494142006</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="小程序版本1.0sz">
+      <created>1611495062404</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611495062404</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +136,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="取关紧要的东西" />
-    <option name="LAST_COMMIT_MESSAGE" value="取关紧要的东西" />
+    <MESSAGE value="小程序版本1.0sz" />
+    <option name="LAST_COMMIT_MESSAGE" value="小程序版本1.0sz" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1611484091059">
@@ -139,11 +145,11 @@
     </state>
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484091059" />
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1611463946538" />
-    <state x="28" y="52" key="CommitChangelistDialog2" timestamp="1611494141539">
+    <state x="28" y="52" key="CommitChangelistDialog2" timestamp="1611495062136">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="28" y="52" key="CommitChangelistDialog2/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484302083" />
-    <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1611494141539" />
+    <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1611495062136" />
     <state width="698" height="139" key="GridCell.Tab.0.bottom" timestamp="1611495003171">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -220,6 +226,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="202" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1611493961719" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1611495074706">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1611495074706" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611494504043">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
