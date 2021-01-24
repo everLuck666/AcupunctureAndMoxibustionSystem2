@@ -23,26 +23,8 @@ public class TreatProject implements Serializable {
     /**
      * 描述
      */
-    @Column(name = "`describe`")
-    private String describe;
-
-    /**
-     * 穴位名称
-     */
-    @Column(name = "`point_name`")
-    private String pointName;
-
-    /**
-     * 针灸温度
-     */
-    @Column(name = "`temperature`")
-    private String temperature;
-
-    /**
-     * 治疗时间
-     */
-    @Column(name = "`treat_time`")
-    private String treatTime;
+    @Column(name = "`treat_describe`")
+    private String treatDescribe;
 
     private static final long serialVersionUID = 1L;
 
@@ -99,72 +81,18 @@ public class TreatProject implements Serializable {
     /**
      * 获取描述
      *
-     * @return describe - 描述
+     * @return treat_describe - 描述
      */
-    public String getDescribe() {
-        return describe;
+    public String getTreatDescribe() {
+        return treatDescribe;
     }
 
     /**
      * 设置描述
      *
-     * @param describe 描述
+     * @param treatDescribe 描述
      */
-    public void setDescribe(String describe) {
-        this.describe = describe;
-    }
-
-    /**
-     * 获取穴位名称
-     *
-     * @return point_name - 穴位名称
-     */
-    public String getPointName() {
-        return pointName;
-    }
-
-    /**
-     * 设置穴位名称
-     *
-     * @param pointName 穴位名称
-     */
-    public void setPointName(String pointName) {
-        this.pointName = pointName;
-    }
-
-    /**
-     * 获取针灸温度
-     *
-     * @return temperature - 针灸温度
-     */
-    public String getTemperature() {
-        return temperature;
-    }
-
-    /**
-     * 设置针灸温度
-     *
-     * @param temperature 针灸温度
-     */
-    public void setTemperature(String temperature) {
-        this.temperature = temperature;
-    }
-
-    /**
-     * 获取治疗时间
-     *
-     * @return treat_time - 治疗时间
-     */
-    public String getTreatTime() {
-        return treatTime;
-    }
-
-    /**
-     * 设置治疗时间
-     *
-     * @param treatTime 治疗时间
-     */
-    public void setTreatTime(String treatTime) {
-        this.treatTime = treatTime;
+    public void setTreatDescribe(String treatDescribe) {
+        this.treatDescribe = treatDescribe;
     }
 }

@@ -1,6 +1,7 @@
 package net.seehope.pojo;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "`medical_record`")
@@ -16,6 +17,12 @@ public class MedicalRecord implements Serializable {
 
     @Column(name = "`progress`")
     private String progress;
+
+    @Column(name = "`symptom_name`")
+    private String symptomName;
+
+    @Column(name = "`create_time`")
+    private Date createTime;
 
     private static final long serialVersionUID = 1L;
 
@@ -73,5 +80,33 @@ public class MedicalRecord implements Serializable {
      */
     public void setProgress(String progress) {
         this.progress = progress;
+    }
+
+    /**
+     * @return symptom_name
+     */
+    public String getSymptomName() {
+        return symptomName;
+    }
+
+    /**
+     * @param symptomName
+     */
+    public void setSymptomName(String symptomName) {
+        this.symptomName = symptomName;
+    }
+
+    /**
+     * @return create_time
+     */
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    /**
+     * @param createTime
+     */
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 }

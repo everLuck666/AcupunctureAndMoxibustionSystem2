@@ -20,8 +20,8 @@ public class Symptom implements Serializable {
     /**
      * 症状名称
      */
-    @Column(name = "`sympton_name`")
-    private String symptonName;
+    @Column(name = "`symptom_name`")
+    private String symptomName;
 
     private static final long serialVersionUID = 1L;
 
@@ -64,18 +64,18 @@ public class Symptom implements Serializable {
     /**
      * 获取症状名称
      *
-     * @return sympton_name - 症状名称
+     * @return symptom_name - 症状名称
      */
-    public String getSymptonName() {
-        return symptonName;
+    public String getSymptomName() {
+        return symptomName;
     }
 
     /**
      * 设置症状名称
      *
-     * @param symptonName 症状名称
+     * @param symptomName 症状名称
      */
-    public void setSymptonName(String symptonName) {
-        this.symptonName = symptonName;
+    public void setSymptomName(String symptomName) {
+        this.symptomName = symptomName;
     }
 }
