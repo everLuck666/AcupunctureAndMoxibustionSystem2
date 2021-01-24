@@ -4,4 +4,18 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="net.seehope.mapper.SymptomMapper">
 
+    <select id="getIlustrateBySearch" resultMap="IlustrateVo">
+
+   select symptom_name,treat_describe,treat.treat_id,symptom.symptom_id from symptom,treat_project,treat
+    where treat.treat_id = treat_project.treat_id and treat.symptom_id = symptom.symptom_id and
+    symptom_name like "%"#{_parameter}"%"
+
+    </select>
+    <resultMap id="IlustrateVo" type="net.seehope.pojo.vo.IlustrateVo">
+        <result column="symptom_name" property="symptomName"></result>
+        <result column="treat_describe" property="describe"></result>
+        <result column="treat_id" property="treatId"></result>
+        <result column="symptom_id" property="symptomId"></result>
+    </resultMap>
+
 </mapper>

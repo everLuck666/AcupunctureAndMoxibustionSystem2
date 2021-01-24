@@ -12,9 +12,6 @@ public class UserInfo implements Serializable {
     @Column(name = "`user_id`")
     private String userId;
 
-    @Column(name = "`user_name`")
-    private String userName;
-
     @Column(name = "`phone`")
     private String phone;
 
@@ -49,20 +46,6 @@ public class UserInfo implements Serializable {
      */
     public void setUserId(String userId) {
         this.userId = userId;
-    }
-
-    /**
-     * @return user_name
-     */
-    public String getUserName() {
-        return userName;
-    }
-
-    /**
-     * @param userName
-     */
-    public void setUserName(String userName) {
-        this.userName = userName;
     }
 
     /**

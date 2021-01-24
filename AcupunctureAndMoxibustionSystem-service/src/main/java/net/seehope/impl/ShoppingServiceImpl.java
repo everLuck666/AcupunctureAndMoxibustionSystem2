@@ -108,7 +108,8 @@ public class ShoppingServiceImpl implements ShoppingService {
      */
     @Override
     public List getUserAddress(String userId) {
-        return userInfoMapper.queryUserAddress(userId);
+        return null;
+
     }
 
     @Override

@@ -6,11 +6,11 @@ import javax.persistence.*;
 @Table(name = "`users`")
 public class Users implements Serializable {
     @Id
-    @Column(name = "`id`")
-    private String id;
+    @Column(name = "`user_id`")
+    private String userId;
 
-    @Column(name = "`sno`")
-    private String sno;
+    @Column(name = "`user_name`")
+    private String userName;
 
     @Column(name = "`password`")
     private String password;
@@ -19,42 +19,43 @@ public class Users implements Serializable {
     private Integer identity;
 
     @Column(name = "`version`")
-    private Integer version;
+    private String version;
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * @return id
+     * @return user_id
      */
-
-
-    /**
-     * @param id
-     */
-    public void setId(String id) {
-        this.id = id;
+    public String getUserId() {
+        return userId;
     }
 
     /**
-     * @return sno
+     * @param userId
      */
-    public String getSno() {
-        return sno;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     /**
-     * @param sno
+     * @return user_name
      */
-    public void setSno(String sno) {
-        this.sno = sno;
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     * @param userName
+     */
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     /**
      * @return password
      */
     public String getPassword() {
-
-        System.out.println("lalal");return password;
+        return password;
     }
 
     /**
@@ -81,14 +82,14 @@ public class Users implements Serializable {
     /**
      * @return version
      */
-    public Integer getVersion() {
+    public String getVersion() {
         return version;
     }
 
     /**
      * @param version
      */
-    public void setVersion(Integer version) {
+    public void setVersion(String version) {
         this.version = version;
     }
 }
