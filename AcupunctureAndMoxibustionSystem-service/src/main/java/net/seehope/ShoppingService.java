@@ -1,6 +1,7 @@
 package net.seehope;
 
 import net.seehope.pojo.Goods;
+import net.seehope.pojo.Orders;
 import net.seehope.pojo.UserInfo;
 import net.seehope.pojo.bo.ShoppingCarBo;
 
@@ -27,4 +28,7 @@ public interface ShoppingService {
 
     //获取我的订单信息
     List getMyorders(String userId);
+
+    //下单
+    void addOrders(Orders orders);
 }

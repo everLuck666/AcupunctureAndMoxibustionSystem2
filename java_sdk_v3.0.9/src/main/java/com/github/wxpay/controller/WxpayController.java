@@ -6,22 +6,16 @@ import com.github.wxpay.bo.UserOrderInformationBo;
 import com.github.wxpay.sdk.WXPayUtil;
 import com.github.wxpay.service.WxPayService;
 import com.github.wxpay.vo.WxPayNotifyVO;
+import net.seehope.ShoppingService;
 import net.seehope.jwt.JWTUtils;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
+import net.seehope.pojo.Orders;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 @RestController
@@ -33,6 +27,9 @@ public class WxpayController {
 
     @Autowired
     WxPayService wxPayService;
+
+    @Autowired
+    ShoppingService shoppingService;
 
 
 
@@ -70,20 +67,26 @@ public class WxpayController {
         Map<String, String> result = new HashMap<String, String>();
         System.out.println("开始下单了");
         if ("SUCCESS".equals(param.getReturn_code())) {
+            result.put("return_code", "SUCCESS");
+            result.put("return_msg", "OK");
+            Orders bo = new Orders();
+            bo.setUserId(param.getOpenid());
+            bo.setOrderId(param.getTransaction_id());
+            System.out.println("attach:"+param.getAttach());
+            String[] attach = param.getAttach().split("#");
+            bo.setProductName(attach[0]);
+            bo.setProductNumber(attach[1]);
+            bo.setRemark(attach[2]);
+            bo.setUserName(attach[3]);
+            bo.setUserPhone(attach[4]);
+            bo.setUserAddress(attach[5]);
+            bo.setOrderTime(new Date());
+            bo.setStatus("0");
+            bo.setOrderAmout(Double.valueOf(param.getTotal_fee()));
+            shoppingService.addOrders(bo);
 
 
         }
         return WXPayUtil.mapToXml(result);
     }
-
-    @RequestMapping("xiao")
-    public void sss(){
-        System.out.println("lal");
-    }
-
-
-
-
-
-
 }

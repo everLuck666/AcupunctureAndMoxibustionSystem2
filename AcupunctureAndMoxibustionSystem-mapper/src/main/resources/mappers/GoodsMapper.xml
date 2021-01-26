@@ -7,4 +7,16 @@
 <!--    <select id="queryGoodsByKeyword" parameterType="String" resultType="net.seehope.pojo.Goods">-->
 <!--        select * from goods where product_name like #{keyword}-->
 <!--    </select>-->
+    <select id="queryAllGoodsInfo" resultMap="goods">
+        select * from goods_allinfo
+    </select>
+    
+    <resultMap id="goods" type="net.seehope.pojo.bo.GoodsBo">
+        <result column="product_name" property="productName"></result>
+        <result column="describe" property="describe"></result>
+        <result column="product_price" property="productPrice"></result>
+        <result column="sales" property="sales"></result>
+        <result column="image_url" property="imageUrl"></result>
+        <result column="status" property="status"></result>
+    </resultMap>
 </mapper>

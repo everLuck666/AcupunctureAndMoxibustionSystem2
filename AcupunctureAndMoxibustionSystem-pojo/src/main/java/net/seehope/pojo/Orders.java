@@ -10,6 +10,10 @@ public class Orders implements Serializable {
     @Column(name = "`order_id`")
     private String orderId;
 
+    @Id
+    @Column(name = "`user_id`")
+    private String userId;
+
     @Column(name = "`product_name`")
     private String productName;
 
@@ -51,6 +55,14 @@ public class Orders implements Serializable {
      */
     public void setOrderId(String orderId) {
         this.orderId = orderId;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     /**

@@ -21,14 +21,12 @@ public class WxPayServiceImpl implements WxPayService {
     @Transactional
     public Map<String, String> wxPay(String openId, String ipAddress, UserOrderInformationBo bo) throws Exception {
 
-
-
-
         Map<String, String> paraMap = new HashMap<String, String>();
-        paraMap.put("body", bo.getSpecies()+"*"+bo.getTicketNum()+"张"); // 商家名称-销售商品类⽬、String(128)
+//        paraMap.put("body", bo.getSpecies()+"*"+bo.getTicketNum()+"张"); // 商家名称-销售商品类⽬、String(128)
         paraMap.put("openid", openId); // openId，通过登录获取
         paraMap.put("out_trade_no", UUID.randomUUID().toString().replaceAll("-", ""));// 订单号,每次都不同 paraMap.put("spbill_create_ip", ipAddress);
-        paraMap.put("attach",bo.getSpecies()+"#"+bo.getTicketNum());
+        paraMap.put("attach",bo.getProductName()+"#"+bo.getProductNumber()+"#"+bo.getRemark()+
+                "#"+bo.getUserName()+"#"+bo.getUserPhone()+"#"+bo.getAddress());
 
         paraMap.put("total_fee", ""); // ⽀付⾦额，单位分，即0.01元
         paraMap.put("trade_type", "JSAPI");
