@@ -1,12 +1,13 @@
 package net.seehope.pojo;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "`video`")
 public class Video implements Serializable {
     @Column(name = "`id`")
-    private String id;
+    private int id;
 
     @Column(name = "`videoName`")
     private String videoname;
@@ -14,19 +15,30 @@ public class Video implements Serializable {
     @Column(name = "`path`")
     private String path;
 
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    @Column(name = "`createTime`")
+    private Date createTime;
+
     private static final long serialVersionUID = 1L;
 
     /**
      * @return id
      */
-    public String getId() {
+    public int getId() {
         return id;
     }
 
     /**
      * @param id
      */
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
