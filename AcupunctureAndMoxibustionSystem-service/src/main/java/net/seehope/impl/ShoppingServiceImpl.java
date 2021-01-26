@@ -6,6 +6,7 @@ import net.seehope.mapper.OrdersMapper;
 import net.seehope.mapper.UserInfoMapper;
 import net.seehope.pojo.Goods;
 
+import net.seehope.pojo.Orders;
 import net.seehope.pojo.UserInfo;
 import net.seehope.pojo.bo.ShoppingCarBo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -108,12 +109,21 @@ public class ShoppingServiceImpl implements ShoppingService {
      */
     @Override
     public List getUserAddress(String userId) {
-        return null;
+        return userInfoMapper.queryUserAddress(userId);
 
     }
 
     @Override
     public List getMyorders(String userId) {
         return ordersMapper.queryUserOrders(userId);
+    }
+
+    @Override
+    public synchronized void addOrders(Orders bo) {
+        try {
+            ordersMapper.insert(bo);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }

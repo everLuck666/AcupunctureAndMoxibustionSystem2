@@ -5,8 +5,16 @@
 <mapper namespace="net.seehope.mapper.OrdersMapper">
 
     <select id="queryUserOrders" parameterType="String" resultMap="userOrders">
-        select product_name,order_id,product_number,order_amout,status from orders,userInfo
-        where orders.user_name=userInfo.user_name and userInfo.user_id=#{userId};
+        select product_name,order_id,product_number,order_amout,status from orders
+        where user_id=#{userId};
+    </select>
+
+    <select id="queryWaitingOrders" resultType="Integer">
+        select * from waiting_orders
+    </select>
+
+    <select id="queryFinishedOrders" resultType="Integer">
+        select * from finished_orders
     </select>
 
     <resultMap id="userOrders" type="net.seehope.pojo.bo.UserOrdersBo">
