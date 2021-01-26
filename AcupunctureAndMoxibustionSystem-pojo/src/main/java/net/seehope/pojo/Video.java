@@ -6,54 +6,32 @@ import javax.persistence.*;
 
 @Table(name = "`video`")
 public class Video implements Serializable {
-    @Column(name = "`id`")
-    private int id;
+
 
     @Column(name = "`videoName`")
-    private String videoname;
+    private String videoName;
 
     @Column(name = "`path`")
     private String path;
 
-    public Date getCreateTime() {
-        return createTime;
-    }
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
 
     @Column(name = "`createTime`")
-    private Date createTime;
+    private String  createTime;
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * @return id
-     */
-    public int getId() {
-        return id;
-    }
 
-    /**
-     * @param id
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
 
     /**
      * @return videoName
      */
-    public String getVideoname() {
-        return videoname;
+    public String getVideoName() {
+        return videoName;
     }
 
-    /**
-     * @param videoname
-     */
-    public void setVideoname(String videoname) {
-        this.videoname = videoname;
+    public void setVideoName(String videoName) {
+        this.videoName = videoName;
     }
 
     /**
@@ -68,5 +46,13 @@ public class Video implements Serializable {
      */
     public void setPath(String path) {
         this.path = path;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
     }
 }

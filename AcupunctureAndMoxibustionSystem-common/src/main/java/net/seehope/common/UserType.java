@@ -1,7 +1,7 @@
 package net.seehope.common;
 
 public enum UserType {
-    STUDENT(0),TEACHER(1),SUPERMANAGER(2);
+    USER(0),SUPERMANAGER(1);
 
     UserType(Integer type){
         this.type = type;

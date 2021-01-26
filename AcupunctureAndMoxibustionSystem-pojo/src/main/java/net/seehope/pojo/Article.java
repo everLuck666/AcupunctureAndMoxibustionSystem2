@@ -17,6 +17,28 @@ public class Article implements Serializable {
     @Column(name = "`content`")
     private String content;
 
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
+
+    @Column(name = "`createTime`")
+    private String createTime;
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    @Column(name = "`path`")
+    private String path;
+
     private static final long serialVersionUID = 1L;
 
     /**

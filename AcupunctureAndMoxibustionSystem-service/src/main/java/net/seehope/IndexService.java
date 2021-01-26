@@ -3,7 +3,9 @@ package net.seehope;
 import net.seehope.pojo.vo.IlustrateVo;
 import net.seehope.pojo.vo.MyPlanVo;
 import net.seehope.pojo.vo.SymptomInformationVo;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 public interface IndexService {
@@ -28,6 +30,21 @@ public interface IndexService {
 
     //判断这个诊疗方案是否已经添加过了
     boolean isCanAddPlan(String treatId,String userId,String symptomName);
+    //上传服务
+    String update(List<MultipartFile> files, String path);
+
+    //读文档
+    String readDoc(String path) throws IOException;
+
+
+    //得到今日开始时间
+    Long getStartTime() ;
+
+
+    //得到今日结束时间
+    Long getEndTime();
+
+
 
 
 

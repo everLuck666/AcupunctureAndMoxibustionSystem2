@@ -16,4 +16,7 @@
         <result column="order_amout" property="orderAmout"></result>
         <result column="status" property="status"></result>
     </resultMap>
+    <select id="getTodayIncome" resultType="net.seehope.pojo.Orders">
+     select * from orders where order_time between #{todays} and {todayd}
+    </select>
 </mapper>
