@@ -1,6 +1,7 @@
 package net.seehope.impl;
 
 import net.seehope.ShoppingService;
+import net.seehope.common.GoodsStatus;
 import net.seehope.mapper.GoodsMapper;
 import net.seehope.mapper.OrdersMapper;
 import net.seehope.mapper.UserInfoMapper;
@@ -42,7 +43,10 @@ public class ShoppingServiceImpl implements ShoppingService {
      */
     @Override
     public List getAllGoods() {
-        return goodsMapper.selectAll();
+        Example example = new Example(Goods.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("status", GoodsStatus.ON.getStatus()+"");
+        return goodsMapper.selectByExample(example);
     }
 
     /**
@@ -58,6 +62,7 @@ public class ShoppingServiceImpl implements ShoppingService {
         if (keyword != null && keyword != ""){
             criteria.andLike("productName",key);
         }
+        criteria.andEqualTo("status", GoodsStatus.ON.getStatus()+"");
         return goodsMapper.selectByExample(example);
     }
 

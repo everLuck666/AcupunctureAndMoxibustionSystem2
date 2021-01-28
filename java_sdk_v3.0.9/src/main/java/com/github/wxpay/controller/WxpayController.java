@@ -1,12 +1,14 @@
 package com.github.wxpay.controller;
 
 
+import com.alibaba.fastjson.JSONObject;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.github.wxpay.bo.UserOrderInformationBo;
 import com.github.wxpay.sdk.WXPayUtil;
 import com.github.wxpay.service.WxPayService;
 import com.github.wxpay.vo.WxPayNotifyVO;
 import net.seehope.ShoppingService;
+import net.seehope.common.OrderType;
 import net.seehope.jwt.JWTUtils;
 
 import net.seehope.pojo.Orders;
@@ -35,7 +37,7 @@ public class WxpayController {
 
     @PostMapping(value = "/pay",produces="application/json;charset=UTF-8")
     @ResponseBody
-    public Map<String, String> pay(HttpServletRequest request, @RequestBody UserOrderInformationBo userOrderInformationBo,@RequestHeader("token") String token) throws Exception {
+    public Map<String, String> pay(HttpServletRequest request, @RequestBody JSONObject jsonObject, @RequestHeader("token") String token) throws Exception {
         System.out.println("我进来了");
         System.out.println("token是"+token);
 
@@ -58,7 +60,7 @@ public class WxpayController {
             String[] ips = ip.split(",");
             ip = ips[0].trim();
         }
-        return wxPayService.wxPay(userId,ip,userOrderInformationBo);
+        return wxPayService.wxPay(userId,ip,jsonObject);
     }
 
     @RequestMapping(value = "/success", produces = MediaType.TEXT_PLAIN_VALUE)
@@ -73,17 +75,23 @@ public class WxpayController {
             bo.setUserId(param.getOpenid());
             bo.setOrderId(param.getTransaction_id());
             System.out.println("attach:"+param.getAttach());
-            String[] attach = param.getAttach().split("#");
-            bo.setProductName(attach[0]);
-            bo.setProductNumber(attach[1]);
-            bo.setRemark(attach[2]);
-            bo.setUserName(attach[3]);
-            bo.setUserPhone(attach[4]);
-            bo.setUserAddress(attach[5]);
-            bo.setOrderTime(new Date());
-            bo.setStatus("0");
-            bo.setOrderAmout(Double.valueOf(param.getTotal_fee()));
-            shoppingService.addOrders(bo);
+            String[] attach = param.getAttach().split(":");
+            String[] address = attach[0].split("#");
+            String[] orderInfos = attach[1].split(".");
+            for (String orderInfo:orderInfos) {
+                String[] info = orderInfo.split("#");
+                bo.setProductName(info[0]);
+                bo.setProductNumber(attach[1]);
+                bo.setRemark(attach[2]);
+                bo.setUserName(address[0]);
+                bo.setUserPhone(address[1]);
+                bo.setUserAddress(address[2]);
+                bo.setOrderTime(new Date());
+                bo.setStatus(OrderType.Waiting.getType()+"");
+                bo.setOrderAmout(Double.valueOf(param.getTotal_fee()));
+                shoppingService.addOrders(bo);
+            }
+
 
 
         }

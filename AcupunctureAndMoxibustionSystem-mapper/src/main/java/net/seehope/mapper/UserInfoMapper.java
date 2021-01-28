@@ -1,6 +1,7 @@
 package net.seehope.mapper;
 
 import net.seehope.pojo.UserInfo;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
 *
 * @author mapper-generator
 */
+@Repository
 public interface UserInfoMapper extends tk.mybatis.mapper.common.Mapper<UserInfo> {
     List queryUserAddress(String userId);
 

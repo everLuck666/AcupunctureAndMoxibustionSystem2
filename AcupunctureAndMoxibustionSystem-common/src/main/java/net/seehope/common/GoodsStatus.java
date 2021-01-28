@@ -1,10 +1,8 @@
 package net.seehope.common;
 
-import io.swagger.models.auth.In;
-
-public enum TicketsStatus {
-    ON(1),OFF(0);
-    TicketsStatus(Integer status){
+public enum GoodsStatus {
+    ON(1),OFF(0);  //ON表示商品上架状态，OFF表示商品已下架
+    GoodsStatus(Integer status){
         this.status = status;
     }
    private Integer status;

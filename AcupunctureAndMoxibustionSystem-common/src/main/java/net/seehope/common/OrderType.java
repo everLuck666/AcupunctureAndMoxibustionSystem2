@@ -1,7 +1,7 @@
 package net.seehope.common;
 
 public enum OrderType {
-    NOUSED(0),USED(1);//NOUSED是表示这个订单没有用过，或者没有用完，USED表示用完了
+    Waiting(0),Finished(1);//NOUSED是表示这个订单没有发货，USED表示已发货
 
     public Integer getType() {
         return type;

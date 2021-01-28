@@ -12,6 +12,9 @@ public class UserInfo implements Serializable {
     @Column(name = "`user_id`")
     private String userId;
 
+    @Column(name = "`user_name`")
+    private String userName;
+
     @Column(name = "`phone`")
     private String phone;
 
