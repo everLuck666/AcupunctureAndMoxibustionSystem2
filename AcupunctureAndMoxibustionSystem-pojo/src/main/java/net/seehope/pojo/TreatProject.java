@@ -6,13 +6,24 @@ import javax.persistence.*;
 @Table(name = "`treat_project`")
 public class TreatProject implements Serializable {
     @Column(name = "`treat_id`")
-    private String treatId;
 
+    private String treatId;
     /**
      * 诊疗效果
      */
     @Column(name = "`effect`")
     private String effect;
+
+    public String getTreatName() {
+        return treatName;
+    }
+
+    public void setTreatName(String treatName) {
+        this.treatName = treatName;
+    }
+
+    @Column(name = "`treat_name`")
+    private String treatName;
 
     /**
      * 总时间
@@ -31,16 +42,7 @@ public class TreatProject implements Serializable {
     /**
      * @return treat_id
      */
-    public String getTreatId() {
-        return treatId;
-    }
 
-    /**
-     * @param treatId
-     */
-    public void setTreatId(String treatId) {
-        this.treatId = treatId;
-    }
 
     /**
      * 获取诊疗效果
@@ -94,5 +96,13 @@ public class TreatProject implements Serializable {
      */
     public void setTreatDescribe(String treatDescribe) {
         this.treatDescribe = treatDescribe;
+    }
+
+    public String getTreatId() {
+        return treatId;
+    }
+
+    public void setTreatId(String treatId) {
+        this.treatId = treatId;
     }
 }

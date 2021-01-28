@@ -43,4 +43,31 @@ public class OrdersController {
         String excelName = "订单记录表";
         return ordersService.exportExcel(request,response,excelName);
     }
+
+    //得到今天收入
+    @GetMapping("income")
+    public RestfulJson getTodayIncome(){
+
+       return RestfulJson.isOk(ordersService.getTodayIncome());
+
+    }
+
+    //得到本月收入
+    @GetMapping("incomeMonth")
+    public RestfulJson getMonthIncome(){
+
+        return RestfulJson.isOk(ordersService.getMonthIncome());
+
+    }
+    //累计收入
+    @GetMapping("totalIncome")
+    public RestfulJson getTotalIncome(){
+        return RestfulJson.isOk(ordersService.getTodayIncome());
+    }
+    //得到多天的每天数据
+    @GetMapping("all")
+    public RestfulJson getAllOrderIncome(){
+        return RestfulJson.isOk(ordersService.getAllIncome());
+    }
+
 }

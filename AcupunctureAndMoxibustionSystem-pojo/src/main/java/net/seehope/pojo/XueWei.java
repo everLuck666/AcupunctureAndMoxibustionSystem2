@@ -17,6 +17,17 @@ public class XueWei implements Serializable {
     @Column(name = "`id`")
     private Integer id;
 
+    @Column(name = "`path`")
+    private String path;
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
     private static final long serialVersionUID = 1L;
 
     /**

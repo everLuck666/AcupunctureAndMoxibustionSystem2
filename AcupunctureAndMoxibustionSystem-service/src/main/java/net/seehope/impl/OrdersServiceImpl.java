@@ -2,10 +2,13 @@ package net.seehope.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.sun.tools.corba.se.idl.constExpr.Or;
+import net.seehope.IndexService;
 import net.seehope.OrdersService;
 import net.seehope.mapper.OrdersMapper;
 import net.seehope.pojo.Orders;
 import net.seehope.pojo.bo.GetOrdersBo;
+import net.seehope.pojo.vo.OrderVo;
 import net.seehope.util.ExcelFormatUtil;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.xssf.streaming.SXSSFCell;
@@ -26,9 +29,8 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @Service
 public class OrdersServiceImpl implements OrdersService {
@@ -174,5 +176,146 @@ public class OrdersServiceImpl implements OrdersService {
             }
         }
         return inputStream1;
+    }
+
+
+
+    @Autowired
+    IndexService indexService;
+    @Override
+    public String getTodayIncome() {
+        long todays = indexService.getStartTime();
+        long todaye = indexService.getEndTime();
+
+        List<Orders> ordersList =  ordersMapper.getIncome(new Date(todays),new Date(todaye));
+        int sum = 0;
+        for(Orders orders:ordersList){
+            System.out.println(orders.getOrderAmout());
+
+            sum += orders.getOrderAmout();
+        }
+
+        return sum+"";
+    }
+
+    @Override
+    public String getMonthIncome() {
+
+        Calendar c = Calendar.getInstance(TimeZone.getTimeZone("GMT+08:00"));//东八区时间
+
+        //获取本月最小天数
+        int day = c.getActualMinimum(Calendar.DAY_OF_MONTH);
+        System.out.println(day);
+        //获取本月最大天数
+        int days = c.getActualMaximum(Calendar.DAY_OF_MONTH);
+        System.out.println(days);
+        c.set(Calendar.DAY_OF_MONTH,day);
+        c.set(Calendar.MINUTE,0);
+        c.set(Calendar.SECOND,0);
+        c.set(Calendar.MILLISECOND,0);
+
+        Date dates = c.getTime();
+
+        c.set(Calendar.DAY_OF_MONTH,days);
+        c.set(Calendar.HOUR_OF_DAY,23);
+        c.set(Calendar.MINUTE,59);
+        c.set(Calendar.SECOND,59);
+        c.set(Calendar.MILLISECOND,999);
+
+        Date datee = c.getTime();
+
+        List<Orders> ordersList =  ordersMapper.getIncome(dates,datee);
+        int sum = 0;
+        for(Orders orders:ordersList){
+            System.out.println(orders.getOrderAmout());
+
+            sum += orders.getOrderAmout();
+        }
+        return sum +"";
+    }
+
+    @Override
+    public String totalIncome() {
+        List<Orders> ordersList = ordersMapper.selectAll();
+        int sum = 0;
+        for(Orders orders:ordersList){
+            System.out.println(orders.getOrderAmout());
+
+            sum += orders.getOrderAmout();
+        }
+        return sum + "";
+    }
+
+    @Override
+    public List<OrderVo> getAllIncome() {
+        Date minDate =ordersMapper.orderMinDate();
+        List list = new ArrayList();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(minDate);
+
+        Calendar calendar2 = Calendar.getInstance();
+        Date maxDate = ordersMapper.orderMaxDate();
+        calendar2.setTime(maxDate);
+
+//        System.out.println(calendar.get(Calendar.YEAR));
+//
+//        System.out.println(calendar2.get(Calendar.YEAR));
+//
+//        System.out.println(calendar.get(Calendar.MONTH));
+//
+//        System.out.println(calendar2.get(Calendar.MONTH));
+//
+
+
+        while (true){
+            Date date = calendar.getTime();
+            OrderVo orderVo = new OrderVo();
+            orderVo.setDate(simpleDateFormat.format(date));
+            orderVo.setIncome(getTodayIncome(date));
+            list.add(orderVo);
+
+            if((calendar.get(Calendar.YEAR) == calendar2.get(Calendar.YEAR)) &&  (calendar.get(Calendar.MONTH) == calendar2.get(Calendar.MONTH))
+            && (calendar.get(Calendar.DAY_OF_MONTH) == calendar2.get(Calendar.DAY_OF_MONTH))){
+                break;
+            }
+
+            calendar.add(Calendar.DAY_OF_MONTH,1);
+
+        }
+
+
+        return list;
+    }
+
+    @Override
+    public String getTodayIncome(Date date) {
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.set(Calendar.HOUR_OF_DAY,0);
+        calendar.set(Calendar.MINUTE,0);
+        calendar.set(Calendar.SECOND,0);
+        calendar.set(Calendar.MILLISECOND,0);
+
+        Date todays = calendar.getTime();
+
+        calendar.set(Calendar.HOUR_OF_DAY,23);
+        calendar.set(Calendar.MINUTE,59);
+        calendar.set(Calendar.SECOND,59);
+        calendar.set(Calendar.MILLISECOND,999);
+        Date todaye = calendar.getTime();
+
+        List<Orders> ordersList =  ordersMapper.getIncome(todays,todaye);
+        int sum = 0;
+        for(Orders orders:ordersList){
+            System.out.println(orders.getOrderAmout());
+
+            sum += orders.getOrderAmout();
+        }
+
+        return sum+"";
+
+
     }
 }

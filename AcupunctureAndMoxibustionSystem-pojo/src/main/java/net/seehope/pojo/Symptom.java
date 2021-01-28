@@ -9,7 +9,14 @@ public class Symptom implements Serializable {
      * 症状id
      */
     @Column(name = "`symptom_id`")
+
     private String symptomId;
+
+    @Column(name = "`path`")
+
+    private String path;
+
+
 
     /**
      * 病因
@@ -30,18 +37,7 @@ public class Symptom implements Serializable {
      *
      * @return symptom_id - 症状id
      */
-    public String getSymptomId() {
-        return symptomId;
-    }
 
-    /**
-     * 设置症状id
-     *
-     * @param symptomId 症状id
-     */
-    public void setSymptomId(String symptomId) {
-        this.symptomId = symptomId;
-    }
 
     /**
      * 获取病因
@@ -77,5 +73,21 @@ public class Symptom implements Serializable {
      */
     public void setSymptomName(String symptomName) {
         this.symptomName = symptomName;
+    }
+
+    public String getSymptomId() {
+        return symptomId;
+    }
+
+    public void setSymptomId(String symptomId) {
+        this.symptomId = symptomId;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
     }
 }

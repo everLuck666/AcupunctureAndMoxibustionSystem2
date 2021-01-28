@@ -8,6 +8,7 @@ import net.seehope.pojo.XueWei;
 * @author mapper-generator
 */
 public interface XueWeiMapper extends tk.mybatis.mapper.common.Mapper<XueWei> {
+    int countId();
 
 }
 
