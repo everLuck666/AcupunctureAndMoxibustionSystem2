@@ -16,6 +16,7 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Override
     public void addGoods(Goods goods) {
+
         goodsMapper.insert(goods);
     }
 
@@ -28,6 +29,7 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Override
     public List getAllGoods() {
+
         return goodsMapper.queryAllGoodsInfo();
     }
 

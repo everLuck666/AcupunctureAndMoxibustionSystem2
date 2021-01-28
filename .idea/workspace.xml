@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/OrdersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/bo/GetOrdersBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/bo/GoodsBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/OrdersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/BaseFrontServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/OrdersServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/util/ExcelFormatUtil.java" afterDir="false" />
+    <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="默认更改列表">
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/bo/ManagerBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/service/OrderPriceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/service/impl/OrderPriceServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/src/main/java/net/seehope/common/OrderType.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/src/main/java/net/seehope/common/OrderType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/src/main/java/net/seehope/common/TicketsStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/src/main/java/net/seehope/common/GoodsStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/OrdersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/OrdersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/OrdersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/OrdersMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Goods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/UserInfoMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/ShoppingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/ShoppingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/GoodsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/ShoppingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/ShoppingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/target/classes/net/seehope/ShoppingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/target/classes/net/seehope/ShoppingService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/target/classes/net/seehope/impl/ShoppingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/target/classes/net/seehope/impl/ShoppingServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/bo/UserOrderInformationBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/bo/UserOrderInformationBo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/controller/WxpayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/controller/WxpayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/service/WxPayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/service/WxPayService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/service/impl/WxPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/service/impl/WxPayServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fr02" />
+        <entry key="$PROJECT_DIR$" value="dfr" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -105,6 +103,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WxPayServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.wxpay.service.impl.WxPayServiceImpl" />
+      <module name="wxpay-sdk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.wxpay.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="AcupunctureAndMoxibustionSystem-generator" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="AcupunctureAndMoxibustionSystem-generator" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="AcupunctureAndMoxibustionSystem-controller" />
       <extension name="coverage">
@@ -123,8 +181,8 @@
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.MybatisGenerator" />
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.WxPayServiceImpl" />
         <item itemvalue="Application.MybatisGenerator" />
-        <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -171,127 +229,135 @@
     <option name="LAST_COMMIT_MESSAGE" value="小程序版本1.0sz" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="474" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1611648871016">
+    <state x="474" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1611752495927">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484091059" />
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1611463946538" />
-    <state x="474" y="145" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1611648871016" />
+    <state x="474" y="145" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1611752495927" />
     <state x="378" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611546400406">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1611546400406" />
-    <state x="378" y="165" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1611648840782">
+    <state x="378" y="165" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1611671909187">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="378" y="165" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1280.777@0.23.1280.777" timestamp="1611648840782" />
-    <state x="25" y="23" key="CommitChangelistDialog2" timestamp="1611666935097">
+    <state x="378" y="165" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1280.777@0.23.1280.777" timestamp="1611671909187" />
+    <state x="25" y="23" key="CommitChangelistDialog2" timestamp="1611667423428">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="28" y="52" key="CommitChangelistDialog2/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484302083" />
     <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1611495062136" />
-    <state x="25" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1611666935097" />
-    <state width="1238" height="97" key="GridCell.Tab.0.bottom" timestamp="1611647543512">
+    <state x="25" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1611667423428" />
+    <state x="105" y="90" key="DiffContextDialog" timestamp="1611667421112">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="105" y="90" key="DiffContextDialog/0.23.1280.777@0.23.1280.777" timestamp="1611667421112" />
+    <state width="1238" height="178" key="GridCell.Tab.0.bottom" timestamp="1611837776354">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.0.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285228" />
     <state width="1396" height="368" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959671" />
     <state width="1396" height="368" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
     <state width="698" height="139" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611495003171" />
-    <state width="1238" height="97" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1611647543512" />
+    <state width="1238" height="178" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1611837776354" />
     <state width="1396" height="148" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1611416935017" />
-    <state width="1238" height="97" key="GridCell.Tab.0.center" timestamp="1611647543511">
+    <state width="1238" height="178" key="GridCell.Tab.0.center" timestamp="1611837776352">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.0.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285226" />
     <state width="1396" height="368" key="GridCell.Tab.0.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959660" />
     <state width="1396" height="368" key="GridCell.Tab.0.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416476" />
     <state width="698" height="139" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611495003169" />
-    <state width="1238" height="97" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1611647543511" />
+    <state width="1238" height="178" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1611837776352" />
     <state width="1396" height="148" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1611416935016" />
-    <state width="1238" height="97" key="GridCell.Tab.0.left" timestamp="1611647543510">
+    <state width="1238" height="178" key="GridCell.Tab.0.left" timestamp="1611837776352">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.0.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285225" />
     <state width="1396" height="368" key="GridCell.Tab.0.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959644" />
     <state width="1396" height="368" key="GridCell.Tab.0.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416475" />
     <state width="698" height="139" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611495003168" />
-    <state width="1238" height="97" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1611647543510" />
+    <state width="1238" height="178" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1611837776352" />
     <state width="1396" height="148" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1611416935015" />
-    <state width="1238" height="97" key="GridCell.Tab.0.right" timestamp="1611647543512">
+    <state width="1238" height="178" key="GridCell.Tab.0.right" timestamp="1611837776353">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.0.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285227" />
     <state width="1396" height="368" key="GridCell.Tab.0.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959665" />
     <state width="1396" height="368" key="GridCell.Tab.0.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
     <state width="698" height="139" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611495003170" />
-    <state width="1238" height="97" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1611647543512" />
+    <state width="1238" height="178" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1611837776353" />
     <state width="1396" height="148" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1611416935016" />
-    <state width="1238" height="97" key="GridCell.Tab.1.bottom" timestamp="1611647543514">
+    <state width="1238" height="178" key="GridCell.Tab.1.bottom" timestamp="1611837776356">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.1.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285233" />
     <state width="1396" height="368" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959705" />
     <state width="1396" height="368" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416481" />
     <state width="698" height="140" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611494814036" />
-    <state width="1238" height="97" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1611647543514" />
+    <state width="1238" height="178" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1611837776356" />
     <state width="1396" height="148" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1611416935020" />
-    <state width="1238" height="97" key="GridCell.Tab.1.center" timestamp="1611647543513">
+    <state width="1238" height="178" key="GridCell.Tab.1.center" timestamp="1611837776355">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.1.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285231" />
     <state width="1396" height="368" key="GridCell.Tab.1.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959689" />
     <state width="1396" height="368" key="GridCell.Tab.1.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416479" />
     <state width="698" height="140" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1611494814035" />
-    <state width="1238" height="97" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1611647543513" />
+    <state width="1238" height="178" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1611837776355" />
     <state width="1396" height="148" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1611416935018" />
-    <state width="1238" height="97" key="GridCell.Tab.1.left" timestamp="1611647543513">
+    <state width="1238" height="178" key="GridCell.Tab.1.left" timestamp="1611837776354">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.1.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285229" />
     <state width="1396" height="368" key="GridCell.Tab.1.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959674" />
     <state width="1396" height="368" key="GridCell.Tab.1.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416478" />
     <state width="698" height="140" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1611494814034" />
-    <state width="1238" height="97" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1611647543513" />
+    <state width="1238" height="178" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1611837776354" />
     <state width="1396" height="148" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1611416935018" />
-    <state width="1238" height="97" key="GridCell.Tab.1.right" timestamp="1611647543514">
+    <state width="1238" height="178" key="GridCell.Tab.1.right" timestamp="1611837776355">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1396" height="141" key="GridCell.Tab.1.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484285232" />
     <state width="1396" height="368" key="GridCell.Tab.1.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611482959694" />
     <state width="1396" height="368" key="GridCell.Tab.1.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416480" />
     <state width="698" height="140" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1611494814035" />
-    <state width="1238" height="97" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1611647543514" />
+    <state width="1238" height="178" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1611837776355" />
     <state width="1396" height="148" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1611416935019" />
-    <state x="144" y="79" key="MergeDialog" timestamp="1611494292699">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="4" y="98" key="MergeDialog" timestamp="1611838428384">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1611494292699" />
-    <state x="434" y="173" key="MultipleFileMergeDialog" timestamp="1611494292786">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="4" y="98" key="MergeDialog/0.23.1280.777@0.23.1280.777" timestamp="1611838428384" />
+    <state x="386" y="172" key="MultipleFileMergeDialog" timestamp="1611838428479">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="434" y="173" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1611494292786" />
+    <state x="386" y="172" key="MultipleFileMergeDialog/0.23.1280.777@0.23.1280.777" timestamp="1611838428479" />
     <state x="202" y="168" key="RollbackChangesDialog" timestamp="1611493961719">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="202" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1611493961719" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1611495074706">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="284" y="187" key="Vcs.Push.Dialog.v2" timestamp="1611667448770">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1611495074706" />
+    <state x="284" y="187" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1611667448770" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611494504043">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.877@0.23.1440.877" timestamp="1611494504043" />
-    <state x="212" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611665790545">
+    <state x="212" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611838340747">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="239" y="170" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900@0.0.1440.900" timestamp="1611493682777" />
-    <state x="212" y="170" key="git4idea.branch.GitSmartOperationDialog/0.23.1280.777@0.23.1280.777" timestamp="1611665790545" />
-    <state x="439" y="248" key="git4idea.merge.GitMergeDialog" timestamp="1611409294944">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="212" y="170" key="git4idea.branch.GitSmartOperationDialog/0.23.1280.777@0.23.1280.777" timestamp="1611838340747" />
+    <state x="390" y="237" key="git4idea.merge.GitMergeDialog" timestamp="1611838292439">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="439" y="248" key="git4idea.merge.GitMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1611409294943" />
+    <state x="390" y="237" key="git4idea.merge.GitMergeDialog/0.23.1280.777@0.23.1280.777" timestamp="1611838292439" />
     <state x="451" y="357" key="git4idea.ui.GitStashDialog" timestamp="1611493760930">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

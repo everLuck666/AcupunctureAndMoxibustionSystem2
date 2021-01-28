@@ -1,8 +1,11 @@
 package com.github.wxpay.service.impl;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.github.wxpay.bo.UserOrderInformationBo;
 import com.github.wxpay.constant.WechatConstant;
 import com.github.wxpay.sdk.*;
+import com.github.wxpay.service.OrderPriceService;
 import com.github.wxpay.service.WxPayService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -17,18 +20,38 @@ import java.util.UUID;
 @Slf4j
 public class WxPayServiceImpl implements WxPayService {
 
+    @Autowired
+    OrderPriceService orderPriceService;
+
     @Override
     @Transactional
-    public Map<String, String> wxPay(String openId, String ipAddress, UserOrderInformationBo bo) throws Exception {
+    public Map<String, String> wxPay(String openId, String ipAddress, JSONObject bo) throws Exception {
 
         Map<String, String> paraMap = new HashMap<String, String>();
 //        paraMap.put("body", bo.getSpecies()+"*"+bo.getTicketNum()+"张"); // 商家名称-销售商品类⽬、String(128)
         paraMap.put("openid", openId); // openId，通过登录获取
         paraMap.put("out_trade_no", UUID.randomUUID().toString().replaceAll("-", ""));// 订单号,每次都不同 paraMap.put("spbill_create_ip", ipAddress);
-        paraMap.put("attach",bo.getProductName()+"#"+bo.getProductNumber()+"#"+bo.getRemark()+
-                "#"+bo.getUserName()+"#"+bo.getUserPhone()+"#"+bo.getAddress());
 
-        paraMap.put("total_fee", ""); // ⽀付⾦额，单位分，即0.01元
+        String attach = "";
+        double totalFee = 0;
+        JSONArray jsonArray = bo.getJSONArray("orders");
+        JSONObject jsonObject = bo.getJSONObject("address");
+        String userName = jsonObject.getString("userName");
+        String userPhone = jsonObject.getString("userPhone");
+        String address = jsonObject.getString("address");
+        attach = userName + "#" + userPhone + "#" + address + ":";
+        for(int i =0;i<jsonArray.size();i++){
+            JSONObject object = jsonArray.getJSONObject(i);
+            String productName  = object.getString("productName");
+            String productNumber = object.getString("productNumber");
+            String remark = object.getString("remark");
+            attach = attach + productName + "#" + productNumber + "#" + remark + ".";
+            totalFee += orderPriceService.getOrderPrice(productName,Integer.valueOf(productNumber));
+        }
+
+        paraMap.put("attach",attach);
+
+        paraMap.put("total_fee", String.valueOf(totalFee)); // ⽀付⾦额，单位分，即0.01元
         paraMap.put("trade_type", "JSAPI");
         paraMap.put("spbill_create_ip",ipAddress);
 
@@ -67,4 +90,5 @@ public class WxPayServiceImpl implements WxPayService {
         payMap.put("paySign", paySign);
         return payMap;
     }
+
 }
