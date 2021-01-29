@@ -1,5 +1,9 @@
 package net.seehope.controller;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import net.seehope.IndexService;
 import net.seehope.VideoService;
 import net.seehope.common.NonStaticResourceHttpRequestHandler;
@@ -27,6 +31,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/file")
+@Api(tags = "视频管理",value = "VideoController")
 
 public class VideoController {
     @Autowired
@@ -42,37 +47,39 @@ public class VideoController {
 
 
 
-    @GetMapping("/video")
-    public void videoPreview(HttpServletRequest request, HttpServletResponse response) throws Exception {
-
-        //假如我把视频1.mp4放在了static下的video文件夹里面
-        //sourcePath 是获取resources文件夹的绝对地址
-        //realPath 即是视频所在的磁盘地址
-        //String sourcePath = ClassUtils.getDefaultClassLoader().getResource("").getPath().substring(1);
-        String realPath = "/Users/everyluck/Downloads/2.mp4";
-
-
-        Path filePath = Paths.get(realPath);
-        if (Files.exists(filePath)) {
-            System.out.println("视频播放");
-            String mimeType = Files.probeContentType(filePath);
-            if (!StringUtils.isEmpty(mimeType)) {
-                response.setContentType(mimeType);
-                System.out.println("快要播放了");
-            }
-            request.setAttribute(NonStaticResourceHttpRequestHandler.ATTR_FILE, filePath);
-            nonStaticResourceHttpRequestHandler.handleRequest(request, response);
-        } else {
-            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
-            response.setCharacterEncoding(StandardCharsets.UTF_8.toString());
-        }
-    }
+//    @GetMapping("/video")
+//    public void videoPreview(HttpServletRequest request, HttpServletResponse response) throws Exception {
+//
+//        //假如我把视频1.mp4放在了static下的video文件夹里面
+//        //sourcePath 是获取resources文件夹的绝对地址
+//        //realPath 即是视频所在的磁盘地址
+//        //String sourcePath = ClassUtils.getDefaultClassLoader().getResource("").getPath().substring(1);
+//        String realPath = "/Users/everyluck/Downloads/2.mp4";
+//
+//
+//        Path filePath = Paths.get(realPath);
+//        if (Files.exists(filePath)) {
+//            System.out.println("视频播放");
+//            String mimeType = Files.probeContentType(filePath);
+//            if (!StringUtils.isEmpty(mimeType)) {
+//                response.setContentType(mimeType);
+//                System.out.println("快要播放了");
+//            }
+//            request.setAttribute(NonStaticResourceHttpRequestHandler.ATTR_FILE, filePath);
+//            nonStaticResourceHttpRequestHandler.handleRequest(request, response);
+//        } else {
+//            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+//            response.setCharacterEncoding(StandardCharsets.UTF_8.toString());
+//        }
+//    }
     @GetMapping("video2")
+    @ApiOperation("得到所有的视频信息")
     public RestfulJson videoShow(){
         return RestfulJson.isOk(videoService.getAllVideos());
     }
     //上传视频
     @PutMapping("video")
+    @ApiOperation(value = "上传视频",notes = "file字段对应的是视频")
     public RestfulJson updateVideo(HttpServletRequest request){
 
 
@@ -92,6 +99,10 @@ public class VideoController {
 
     }
     @DeleteMapping("video")
+    @ApiOperation("删除视频")
+
+    @ApiImplicitParams({@ApiImplicitParam(name ="videoName",value = "视频的名字",dataType = "String")
+    })
     public RestfulJson deleteVideo(@RequestBody Map map){
         String videoName = map.get("videoName").toString();
         videoService.deleteVideo(videoName);

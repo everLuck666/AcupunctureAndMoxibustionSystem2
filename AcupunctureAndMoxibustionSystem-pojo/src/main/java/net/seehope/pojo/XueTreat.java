@@ -6,55 +6,35 @@ import javax.persistence.*;
 @Table(name = "`xue_treat`")
 public class XueTreat implements Serializable {
     @Column(name = "`xue_id`")
-    private Integer xueId;
+    private String xueId;
 
     @Column(name = "`day`")
-    private Integer day;
+    private String  day;
 
     @Column(name = "`treat_id`")
-    private Integer treatId;
+    private String treatId;
 
-    private static final long serialVersionUID = 1L;
-
-    /**
-     * @return xue_id
-     */
-    public Integer getXueId() {
+    public String getXueId() {
         return xueId;
     }
 
-    /**
-     * @param xueId
-     */
-    public void setXueId(Integer xueId) {
+    public void setXueId(String xueId) {
         this.xueId = xueId;
     }
 
-    /**
-     * @return day
-     */
-    public Integer getDay() {
+    public String getDay() {
         return day;
     }
 
-    /**
-     * @param day
-     */
-    public void setDay(Integer day) {
+    public void setDay(String day) {
         this.day = day;
     }
 
-    /**
-     * @return treat_id
-     */
-    public Integer getTreatId() {
+    public String getTreatId() {
         return treatId;
     }
 
-    /**
-     * @param treatId
-     */
-    public void setTreatId(Integer treatId) {
+    public void setTreatId(String treatId) {
         this.treatId = treatId;
     }
 }

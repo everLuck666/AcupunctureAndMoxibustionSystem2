@@ -1,13 +1,28 @@
 package net.seehope.pojo.bo;
 
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiParam;
+
 public class IlustrateBo {
+    @ApiModelProperty("症状的名字")
     private String symptomName;
-
+    @ApiModelProperty("诊疗的名字")
     private String treatName;
-
+    @ApiModelProperty("症状的原因")
     private String reason;
-
+    @ApiModelProperty("诊疗的影响")
     private String effect;
+
+    @ApiModelProperty("诊疗方案的描述")
+    private String describe;
+
+    public String getDescribe() {
+        return describe;
+    }
+
+    public void setDescribe(String describe) {
+        this.describe = describe;
+    }
 
     private String path;
 

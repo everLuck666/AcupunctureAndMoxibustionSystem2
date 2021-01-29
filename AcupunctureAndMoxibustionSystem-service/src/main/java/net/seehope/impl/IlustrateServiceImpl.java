@@ -1,6 +1,7 @@
 package net.seehope.impl;
 
 import net.seehope.IlustrateService;
+import net.seehope.IndexService;
 import net.seehope.mapper.*;
 import net.seehope.pojo.*;
 import net.seehope.pojo.bo.IlustrateBo;
@@ -12,7 +13,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -31,6 +36,8 @@ public class IlustrateServiceImpl implements IlustrateService {
     XueWeiMapper xueWeiMapper;
     @Autowired
     XueTreatMapper xueTreatMapper;
+    @Autowired
+    IndexService indexService;
     @Override
     @Transactional
     public void addIlustrate(IlustrateBo ilustrateBo) {
@@ -57,7 +64,7 @@ public class IlustrateServiceImpl implements IlustrateService {
             treatProject.setTreatId((treatProjectMapper.countId()+1)+"");
             treatProject.setEffect(ilustrateBo.getEffect());
             treatProject.setTotalTime(0+"");
-            //  treatProject.setTreatDescribe(ilustrateBo);
+             treatProject.setTreatDescribe(ilustrateBo.getDescribe());
             treatProjectMapper.insert(treatProject);
         }
 
@@ -81,19 +88,67 @@ public class IlustrateServiceImpl implements IlustrateService {
 
     @Override
     @Transactional
-    public void addXueWei(XueWeiBo weiBo) {
+    public void addXueWei(XueWeiBo weiBo, HttpServletRequest request) {
         int id = -1;
+
+        boolean flag = true;
+        boolean flag2 = false;//用来判断是否发生了穴位修改
+
+        List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
+
+
         XueWei xueWei = new XueWei();
         xueWei.setPointname(weiBo.getPointName());
         XueWei xueWeiTemp = xueWeiMapper.selectOne(xueWei);
         if(xueWeiTemp != null){
             logger.warn("出现相同穴位名称，执行不插入");
+            id = Integer.parseInt(xueWeiTemp.getId());
+            String fileName = null;
+            logger.info("开始检测这个穴位的信息和数据库的存储是否有区别");
 
-        }else {
+            for (int i = 0; i < files.size(); i++) {
+                MultipartFile file = files.get(i);
+                if (file.isEmpty()) {
+                    throw new RuntimeException("上传的文件是空的");
+                }
+                fileName = file.getOriginalFilename();
+
+            }
+            if(fileName != null){
+                xueWei.setPath(fileName);
+            }
+            xueWei.setTemperature(weiBo.getTemperature());
+            xueWei.setTreattime(Integer.parseInt(weiBo.getTreatTime()));
+
+            XueWei xueWei1 = xueWeiMapper.selectOne(xueWei);
+
+            if(xueWei1 == null){
+                logger.info("开始更改穴位信息");
+                xueWeiMapper.delete(xueWeiTemp);
+                flag2 = true;
+
+            }else{
+                flag = false;
+                logger.info("检测完毕，穴位没有变化");
+            }
+        }
+
+        if(flag) {
+            //上传图片
+
+            File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
+            String path = "/src/main/resources/static/images/";
+            String fileName = indexService.update(files, path);
+            weiBo.setPath(fileName);
+
             xueWei.setTemperature(weiBo.getTemperature());
             xueWei.setTreattime(Integer.parseInt(weiBo.getTreatTime()));
             id = xueWeiMapper.countId()+1;
-            xueWei.setId(id);
+            if(flag2){
+                xueWei.setId(xueWeiTemp.getId());
+            }else {
+                xueWei.setId(id+"");
+            }
             xueWei.setPath(weiBo.getPath());
             xueWeiMapper.insert(xueWei);
         }
@@ -108,10 +163,21 @@ public class IlustrateServiceImpl implements IlustrateService {
         }
 
             XueTreat xueTreat = new XueTreat();
-            xueTreat.setTreatId(treatProjectTemp);
-            xueTreat.setDay(Integer.parseInt(weiBo.getDay()));
-            xueTreat.setXueId(id);
-            xueTreatMapper.insert(xueTreat);
+            xueTreat.setTreatId(treatProjectTemp+"");
+            xueTreat.setDay(weiBo.getDay());
+            xueTreat.setXueId(id+"");
+            XueTreat xueTreat1 = xueTreatMapper.selectOne(xueTreat);
+            if(xueTreat1 != null && !flag2){
+                throw new RuntimeException("请不要重复提交请求");
+            }
+
+            if(!flag2){
+                xueTreatMapper.insert(xueTreat);
+            }else{
+                logger.info("改变了穴位信息，但是不改变穴位和治疗方案的映射");
+            }
+
+
 
             TreatProject treatProject = new TreatProject();
             treatProject.setTreatId(treatProjectTemp+"");
@@ -125,9 +191,6 @@ public class IlustrateServiceImpl implements IlustrateService {
             }else{
                 throw new RuntimeException("不能跨着增加天数");
             }
-
-
-
     }
 
     @Override
@@ -176,6 +239,14 @@ public class IlustrateServiceImpl implements IlustrateService {
             treatProject.setTreatId(treatId);
             treatProjectMapper.delete(treatProject);
             treatMapper.delete(treat);
+
+            XueTreat xueTreat = new XueTreat();
+            xueTreat.setTreatId(treatId);
+            List<XueTreat> xueTreatList = xueTreatMapper.select(xueTreat);
+            for (XueTreat xueTreat1:xueTreatList){
+
+                xueTreatMapper.delete(xueTreat1);
+            }
 
         }else{
             throw new RuntimeException("不存在这条说明");

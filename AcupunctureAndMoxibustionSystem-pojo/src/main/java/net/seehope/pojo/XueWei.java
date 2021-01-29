@@ -15,7 +15,7 @@ public class XueWei implements Serializable {
     private Integer treattime;
 
     @Column(name = "`id`")
-    private Integer id;
+    private String id;
 
     @Column(name = "`path`")
     private String path;
@@ -72,17 +72,11 @@ public class XueWei implements Serializable {
         this.treattime = treattime;
     }
 
-    /**
-     * @return id
-     */
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    /**
-     * @param id
-     */
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 }

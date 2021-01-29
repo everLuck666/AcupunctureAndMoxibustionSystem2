@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="默认更改列表">
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/vo/GoodsInfoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/vo/UserInfoVo.java" afterDir="false" />
+    <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/src/main/java/net/seehope/config/Swagger2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/article/2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/001.png2021-01-29-19-14-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/001.png2021-01-29-19-49-23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/001.png2021-01-29-19-54-43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/001.png2021-01-29-19-55-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/001.png2021-01-29-19-55-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/001.png2021-01-29-20-02-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/001.png2021-01-29-20-02-38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/001.png2021-01-29-20-04-27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/3B171549E0CD942E70F0D8A6DFD95ED9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23.png@100w_100h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-43-15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-43-25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-43-28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-43-29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-43-34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-55-32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-55-38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-55-42.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-55-43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-56-39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-56-40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-56-41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-56-55.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-56-57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-18-58-23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-19-01-49.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-19-07-20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-19-07-25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-19-07-27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-19-08-09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-19-08-38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/QRCode.jpg2021-01-29-19-08-42.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.jpg2021-01-29-18-26-56.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.jpg2021-01-29-18-28-32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.jpg2021-01-29-18-28-52.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.jpg2021-01-29-18-55-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.jpg2021-01-29-19-01-24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.jpg2021-01-29-19-01-41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.jpg2021-01-29-19-01-43.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/IlustrateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/IlustrateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/OrderController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/OrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/ShoppingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/ShoppingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/UserManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/UserManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/VideoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/XueTreat.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/XueTreat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/XueWei.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/XueWei.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/bo/IlustrateBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/bo/IlustrateBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/bo/XueWeiBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/bo/XueWeiBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/IlustrateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/IlustrateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/IndexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/IndexService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IlustrateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IlustrateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IndexServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IndexServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +79,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fr02" />
+        <entry key="$PROJECT_DIR$" value="sz" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,7 +93,7 @@
   </component>
   <component name="ProjectId" id="1nV6FhHU5R8pue0odzXOtrbRv65" />
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -89,66 +140,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WxPayServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.wxpay.service.impl.WxPayServiceImpl" />
-      <module name="wxpay-sdk" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.wxpay.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="AcupunctureAndMoxibustionSystem-generator" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="AcupunctureAndMoxibustionSystem-generator" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="AcupunctureAndMoxibustionSystem-controller" />
       <extension name="coverage">
@@ -167,8 +158,8 @@
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.MybatisGenerator" />
         <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="Application.WxPayServiceImpl" />
         <item itemvalue="Application.MybatisGenerator" />
+        <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -214,17 +205,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="取关紧要的东西" />
     <MESSAGE value="小程序版本1.0sz" />
-    <MESSAGE value="login" />
-    <option name="LAST_COMMIT_MESSAGE" value="login" />
+    <option name="LAST_COMMIT_MESSAGE" value="小程序版本1.0sz" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="474" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1611845907876">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1611916865424">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611837178887" />
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611916865424" />
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611827628160" />
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1611815587724" />
-    <state x="474" y="145" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1611845907876" />
+    <state x="474" y="145" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1611648871016" />
     <state x="378" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611546400406">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -233,130 +223,130 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="165" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1280.777@0.23.1280.777" timestamp="1611648840782" />
-    <state x="25" y="23" key="CommitChangelistDialog2" timestamp="1611838669509">
+    <state x="25" y="23" key="CommitChangelistDialog2" timestamp="1611666935097">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="28" y="52" key="CommitChangelistDialog2/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484302083" />
     <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1611495062136" />
-    <state x="25" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1611838669509" />
-    <state width="1238" height="61" key="GridCell.Tab.0.bottom" timestamp="1611924248151">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="25" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1611666935097" />
+    <state width="1396" height="215" key="GridCell.Tab.0.bottom" timestamp="1611922539742">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="250" key="GridCell.Tab.0.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611837572561" />
-    <state width="1396" height="250" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611836981501" />
+    <state width="1396" height="215" key="GridCell.Tab.0.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539742" />
+    <state width="1396" height="172" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819782" />
     <state width="1396" height="368" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
-    <state width="698" height="255" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611819232842" />
-    <state width="1238" height="61" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1611924248151" />
+    <state width="1396" height="215" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611920877168" />
+    <state width="1238" height="97" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1611647543512" />
     <state width="1396" height="148" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1611416935017" />
-    <state width="1238" height="61" key="GridCell.Tab.0.center" timestamp="1611924248150">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1396" height="215" key="GridCell.Tab.0.center" timestamp="1611922539741">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="250" key="GridCell.Tab.0.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611837572559" />
-    <state width="1396" height="250" key="GridCell.Tab.0.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611836981499" />
+    <state width="1396" height="215" key="GridCell.Tab.0.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539741" />
+    <state width="1396" height="172" key="GridCell.Tab.0.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819780" />
     <state width="1396" height="368" key="GridCell.Tab.0.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416476" />
-    <state width="698" height="255" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611819232841" />
-    <state width="1238" height="61" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1611924248150" />
+    <state width="1396" height="215" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611920877167" />
+    <state width="1238" height="97" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1611647543511" />
     <state width="1396" height="148" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1611416935016" />
-    <state width="1238" height="61" key="GridCell.Tab.0.left" timestamp="1611924248149">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1396" height="215" key="GridCell.Tab.0.left" timestamp="1611922539740">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="250" key="GridCell.Tab.0.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611837572558" />
-    <state width="1396" height="250" key="GridCell.Tab.0.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611836981498" />
+    <state width="1396" height="215" key="GridCell.Tab.0.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539740" />
+    <state width="1396" height="172" key="GridCell.Tab.0.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819779" />
     <state width="1396" height="368" key="GridCell.Tab.0.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416475" />
-    <state width="698" height="255" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611819232840" />
-    <state width="1238" height="61" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1611924248149" />
+    <state width="1396" height="215" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611920877166" />
+    <state width="1238" height="97" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1611647543510" />
     <state width="1396" height="148" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1611416935015" />
-    <state width="1238" height="61" key="GridCell.Tab.0.right" timestamp="1611924248151">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1396" height="215" key="GridCell.Tab.0.right" timestamp="1611922539741">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="250" key="GridCell.Tab.0.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611837572560" />
-    <state width="1396" height="250" key="GridCell.Tab.0.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611836981500" />
+    <state width="1396" height="215" key="GridCell.Tab.0.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539741" />
+    <state width="1396" height="172" key="GridCell.Tab.0.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819781" />
     <state width="1396" height="368" key="GridCell.Tab.0.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
-    <state width="698" height="255" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611819232842" />
-    <state width="1238" height="61" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1611924248151" />
+    <state width="1396" height="215" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611920877168" />
+    <state width="1238" height="97" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1611647543512" />
     <state width="1396" height="148" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1611416935016" />
-    <state width="1238" height="61" key="GridCell.Tab.1.bottom" timestamp="1611924248153">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1396" height="215" key="GridCell.Tab.1.bottom" timestamp="1611922539747">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="250" key="GridCell.Tab.1.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611837572565" />
-    <state width="1396" height="250" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611836981508" />
+    <state width="1396" height="215" key="GridCell.Tab.1.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539747" />
+    <state width="1396" height="172" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819786" />
     <state width="1396" height="368" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416481" />
-    <state width="698" height="255" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611819232844" />
-    <state width="1238" height="61" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1611924248153" />
+    <state width="1396" height="215" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611920877171" />
+    <state width="1238" height="97" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1611647543514" />
     <state width="1396" height="148" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1611416935020" />
-    <state width="1238" height="61" key="GridCell.Tab.1.center" timestamp="1611924248153">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1396" height="215" key="GridCell.Tab.1.center" timestamp="1611922539745">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="250" key="GridCell.Tab.1.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611837572563" />
-    <state width="1396" height="250" key="GridCell.Tab.1.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611836981506" />
+    <state width="1396" height="215" key="GridCell.Tab.1.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539745" />
+    <state width="1396" height="172" key="GridCell.Tab.1.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819784" />
     <state width="1396" height="368" key="GridCell.Tab.1.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416479" />
-    <state width="698" height="255" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1611819232843" />
-    <state width="1238" height="61" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1611924248153" />
+    <state width="1396" height="215" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1611920877169" />
+    <state width="1238" height="97" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1611647543513" />
     <state width="1396" height="148" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1611416935018" />
-    <state width="1238" height="61" key="GridCell.Tab.1.left" timestamp="1611924248152">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1396" height="215" key="GridCell.Tab.1.left" timestamp="1611922539743">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="250" key="GridCell.Tab.1.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611837572562" />
-    <state width="1396" height="250" key="GridCell.Tab.1.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611836981505" />
+    <state width="1396" height="215" key="GridCell.Tab.1.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539743" />
+    <state width="1396" height="172" key="GridCell.Tab.1.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819783" />
     <state width="1396" height="368" key="GridCell.Tab.1.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416478" />
-    <state width="698" height="255" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1611819232842" />
-    <state width="1238" height="61" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1611924248152" />
+    <state width="1396" height="215" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1611920877169" />
+    <state width="1238" height="97" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1611647543513" />
     <state width="1396" height="148" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1611416935018" />
-    <state width="1238" height="61" key="GridCell.Tab.1.right" timestamp="1611924248153">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1396" height="215" key="GridCell.Tab.1.right" timestamp="1611922539746">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="250" key="GridCell.Tab.1.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611837572564" />
-    <state width="1396" height="250" key="GridCell.Tab.1.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611836981507" />
+    <state width="1396" height="215" key="GridCell.Tab.1.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539746" />
+    <state width="1396" height="172" key="GridCell.Tab.1.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819785" />
     <state width="1396" height="368" key="GridCell.Tab.1.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416480" />
-    <state width="698" height="255" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1611819232843" />
-    <state width="1238" height="61" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1611924248153" />
+    <state width="1396" height="215" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1611920877170" />
+    <state width="1238" height="97" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1611647543514" />
     <state width="1396" height="148" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1611416935019" />
-    <state x="128" y="91" key="MergeDialog" timestamp="1611924329847">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="144" y="79" key="MergeDialog" timestamp="1611494292699">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1611494292699" />
-    <state x="128" y="91" key="MergeDialog/0.23.1280.777@0.23.1280.777" timestamp="1611924329847" />
-    <state x="386" y="172" key="MultipleFileMergeDialog" timestamp="1611924329945">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="434" y="173" key="MultipleFileMergeDialog" timestamp="1611494292786">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="434" y="173" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1611494292786" />
-    <state x="386" y="172" key="MultipleFileMergeDialog/0.23.1280.777@0.23.1280.777" timestamp="1611924329945" />
     <state x="202" y="168" key="RollbackChangesDialog" timestamp="1611493961719">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="202" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1611493961719" />
-    <state x="284" y="187" key="Vcs.Push.Dialog.v2" timestamp="1611838680002">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="500" height="467" key="SwitcherDM" timestamp="1611915176712">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="500" height="467" key="SwitcherDM/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611915176712" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1611495074706">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1611495074706" />
-    <state x="284" y="187" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1611838680002" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611494504043">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.877@0.23.1440.877" timestamp="1611494504043" />
-    <state x="212" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611924289126">
+    <state x="212" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611665790545">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="239" y="170" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900@0.0.1440.900" timestamp="1611493682777" />
-    <state x="212" y="170" key="git4idea.branch.GitSmartOperationDialog/0.23.1280.777@0.23.1280.777" timestamp="1611924289126" />
-    <state x="390" y="237" key="git4idea.merge.GitMergeDialog" timestamp="1611924258407">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="212" y="170" key="git4idea.branch.GitSmartOperationDialog/0.23.1280.777@0.23.1280.777" timestamp="1611665790545" />
+    <state x="439" y="248" key="git4idea.merge.GitMergeDialog" timestamp="1611903480916">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="439" y="248" key="git4idea.merge.GitMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1611409294943" />
-    <state x="390" y="237" key="git4idea.merge.GitMergeDialog/0.23.1280.777@0.23.1280.777" timestamp="1611924258407" />
-    <state x="401" y="331" key="git4idea.ui.GitStashDialog" timestamp="1611838586344">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="439" y="248" key="git4idea.merge.GitMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1611903480916" />
+    <state x="451" y="357" key="git4idea.ui.GitStashDialog" timestamp="1611493760930">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="357" key="git4idea.ui.GitStashDialog/0.0.1440.900@0.0.1440.900" timestamp="1611493760930" />
-    <state x="401" y="331" key="git4idea.ui.GitStashDialog/0.23.1280.777@0.23.1280.777" timestamp="1611838586344" />
     <state x="369" y="305" key="git4idea.ui.GitUnstashDialog" timestamp="1611494292946">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="369" y="305" key="git4idea.ui.GitUnstashDialog/0.0.1440.900@0.0.1440.900" timestamp="1611494292946" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1611834804673">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1611914474851">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611834804673" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611914474851" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913736680" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
