@@ -6,6 +6,7 @@ import net.seehope.pojo.vo.SymptomInformationVo;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.List;
 
 public interface IndexService {
@@ -26,7 +27,7 @@ public interface IndexService {
     SymptomInformationVo getSymptomInformation(String symptomId,String treatId,String day);
 
     //增加我的诊疗方案
-    void addMyPlay(String treatId,String userId,String symptomId);
+    void addMyPlay(String treatId,String userId,String symptomId) throws ParseException;
 
     //判断这个诊疗方案是否已经添加过了
     boolean isCanAddPlan(String treatId,String userId,String symptomName);

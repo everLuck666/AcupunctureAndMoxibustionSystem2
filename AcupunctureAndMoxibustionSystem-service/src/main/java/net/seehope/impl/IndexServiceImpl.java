@@ -18,6 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 
 import java.io.*;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -60,7 +61,7 @@ public class IndexServiceImpl implements IndexService {
             //得到针灸的总时间
             XueTreat xueTreat = new XueTreat();
 
-            xueTreat.setTreatId(Integer.parseInt(medicalRecordTemp.getProjectId()));
+            xueTreat.setTreatId(medicalRecordTemp.getProjectId());
 
             List<XueTreat> xueTreatList = xueTreatMapper.select(xueTreat);
             int xueTotalTime =  0 ;
@@ -161,8 +162,8 @@ public class IndexServiceImpl implements IndexService {
 
 
         XueTreat xueTreat = new XueTreat();
-        xueTreat.setDay(Integer.parseInt(day));
-        xueTreat.setTreatId(Integer.parseInt(treatId));
+        xueTreat.setDay(day);
+        xueTreat.setTreatId(treatId);
 
         List<XueTreat> xueTreatList = xueTreatMapper.select(xueTreat);
         List<XueWei> xueWeis = new ArrayList<>();
@@ -180,19 +181,29 @@ public class IndexServiceImpl implements IndexService {
     }
     @Transactional
     @Override
-    public void addMyPlay(String treatId, String userId, String symptomId) {
+    public void addMyPlay(String treatId, String userId, String symptomId) throws ParseException {
 
         Symptom symptom = new Symptom();
         symptom.setSymptomId(symptomId);
         Symptom symptom1 = symptomMapper.selectOne(symptom);
 
+        if(symptom1 == null){
+            throw new RuntimeException("这个症状不存在");
+        }
+
         TreatProject treatProject = new TreatProject();
         treatProject.setTreatId(treatId);
         TreatProject treatProject1 = treatProjectMapper.selectOne(treatProject);
 
+        if(treatProject1 == null){
+            throw new RuntimeException("诊疗方案不存在");
+        }
+
         MedicalRecord medicalRecord = new MedicalRecord();
         medicalRecord.setUserId(userId);
-        medicalRecord.setCreateTime(new Date());
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String createTime = simpleDateFormat.format(new Date());
+        medicalRecord.setCreateTime(simpleDateFormat.parse(createTime));
         medicalRecord.setProgress(0+"");
         medicalRecord.setProjectId(treatId);
         medicalRecord.setSymptomName(symptom1.getSymptomName());
@@ -219,8 +230,6 @@ public class IndexServiceImpl implements IndexService {
 
         MedicalRecord medicalRecord1 = medicalRecordMapper.selectOne(medicalRecord);
         if(medicalRecord1 == null){
-
-
             return true;
         }
 

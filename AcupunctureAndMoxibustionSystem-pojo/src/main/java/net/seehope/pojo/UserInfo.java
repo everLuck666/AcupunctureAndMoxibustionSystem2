@@ -21,8 +21,7 @@ public class UserInfo implements Serializable {
     @Column(name = "`address`")
     private String address;
 
-    @Column(name = "`user_name`")
-    private String userName;
+
 
     private static final long serialVersionUID = 1L;
 

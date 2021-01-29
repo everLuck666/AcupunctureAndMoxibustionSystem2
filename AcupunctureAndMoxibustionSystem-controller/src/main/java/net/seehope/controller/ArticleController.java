@@ -1,5 +1,6 @@
 package net.seehope.controller;
 
+import io.swagger.annotations.*;
 import net.seehope.ArticleService;
 import net.seehope.IndexService;
 import net.seehope.common.RestfulJson;
@@ -20,6 +21,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("article")
+@Api(tags = "文章管理",value = "ArticleController")
 public class ArticleController {
     @Autowired
     ArticleService articleService;
@@ -27,14 +29,18 @@ public class ArticleController {
     IndexService indexService;
 
     @GetMapping("article")
+    @ApiOperation("得到所有的文章信息")
     public RestfulJson getAllArticle() throws IOException {
 
         return RestfulJson.isOk(articleService.getAllArticle());
 
     }
-
     //上传文章
     @PutMapping("article")
+    @ApiOperation(value = "上传文章",notes = "file字段是必要,代表图片的名字")
+    @ApiImplicitParams({@ApiImplicitParam(name ="content",value = "简介",dataType = "String"),
+    @ApiImplicitParam(name = "title",value = "标题",dataType = "String")})
+
     public RestfulJson updateVideo(HttpServletRequest request,String content,String title){
 
 
@@ -65,7 +71,9 @@ public class ArticleController {
 
     //删除文章
     @DeleteMapping("article")
-    public RestfulJson deleteArticle(@RequestBody Map map){
+    @ApiOperation("删除文章")
+
+    public RestfulJson deleteArticle(@ApiParam(name = "id",value = "文章id")@RequestBody Map map){
         String id = map.get("id").toString();
         articleService.deleteArticle(id);
         return RestfulJson.isOk("文章删除成功");
