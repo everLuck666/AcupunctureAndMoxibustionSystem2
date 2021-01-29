@@ -1,5 +1,8 @@
 package net.seehope.controller;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import net.seehope.OrdersService;
 import net.seehope.common.RestfulJson;
@@ -15,22 +18,32 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @RestController
+@Api(tags="后台订单管理接口",value = "OrdersController")
 @RequestMapping("orders")
 public class OrdersController {
 
     @Autowired
     OrdersService ordersService;
 
+    @ApiOperation("获取待处理订单数量")
     @GetMapping("waiting")
     public RestfulJson getWaitingOrders(){
         return RestfulJson.isOk(ordersService.getWaitingOrders());
     }
 
+    @ApiOperation("获取已完成订单数量")
     @GetMapping("finished")
     public RestfulJson getFinishedOrders(){
         return RestfulJson.isOk(ordersService.getFinishedOrders());
     }
 
+    @ApiOperation("根据条件获取订单")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "page", value = "页数", dataType = "String"),
+            @ApiImplicitParam(name = "pageSize", value = "每页的数量大小", dataType = "String"),
+            @ApiImplicitParam(name = "status",value = "订单状态", dataType = "Double"),
+            @ApiImplicitParam(name = "orderId", value = "订单号", dataType = "String")
+    })
     @GetMapping("orders")
     public RestfulJson getAllOrders(@RequestBody GetOrdersBo ordersBo){
         return RestfulJson.isOk(ordersService.getAllOrders(ordersBo));
@@ -45,6 +58,7 @@ public class OrdersController {
     }
 
     //得到今天收入
+    @ApiOperation("得到今天收入")
     @GetMapping("income")
     public RestfulJson getTodayIncome(){
 
@@ -53,6 +67,7 @@ public class OrdersController {
     }
 
     //得到本月收入
+    @ApiOperation("得到本月收入")
     @GetMapping("incomeMonth")
     public RestfulJson getMonthIncome(){
 
@@ -60,11 +75,13 @@ public class OrdersController {
 
     }
     //累计收入
+    @ApiOperation("得到累计收入")
     @GetMapping("totalIncome")
     public RestfulJson getTotalIncome(){
         return RestfulJson.isOk(ordersService.getTodayIncome());
     }
     //得到多天的每天数据
+    @ApiOperation("得到多天的每天数据")
     @GetMapping("all")
     public RestfulJson getAllOrderIncome(){
         return RestfulJson.isOk(ordersService.getAllIncome());

@@ -1,9 +1,14 @@
 package net.seehope.controller;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import net.seehope.GoodsService;
 import net.seehope.IndexService;
 import net.seehope.common.RestfulJson;
 import net.seehope.pojo.Goods;
+import net.seehope.pojo.vo.GoodsInfoVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -14,6 +19,7 @@ import java.io.File;
 import java.util.List;
 
 @RestController
+@Api(tags="后台商品管理接口",value = "GoodsController")
 @RequestMapping("goods")
 public class GoodsController {
 
@@ -23,28 +29,45 @@ public class GoodsController {
     @Autowired
     IndexService indexService;
 
+    @ApiOperation("添加商品")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "productName", value = "商品名称", dataType = "String"),
+            @ApiImplicitParam(name = "describe", value = "商品描述", dataType = "String"),
+            @ApiImplicitParam(name = "productPrice",value = "商品价格", dataType = "Double"),
+            @ApiImplicitParam(name = "status", value = "商品状态", dataType = "String")
+    })
     @PutMapping("goods")
-    public RestfulJson addGoods(@RequestBody Goods goods, HttpServletRequest request){
-//        List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
-//        File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
-//        String path = "/src/main/resources/static/images/";
-//        String fileName = indexService.update(files, path);
-//        goods.setImageUrl(fileName);
+    public RestfulJson addGoods(@RequestBody GoodsInfoVo goodsInfoVo, HttpServletRequest request){
+        List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
+        File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
+        String path = "/src/main/resources/static/images/";
+        String fileName = indexService.update(files, path);
+        Goods goods = new Goods();
+        goods.setProductName(goodsInfoVo.getProductName());
+        goods.setDescribe(goodsInfoVo.getDescribe());
+        goods.setProductPrice(goodsInfoVo.getProductPrice());
+        goods.setImageUrl(fileName);
+        goods.setStatus(goodsInfoVo.getStatus());
         goodsService.addGoods(goods);
         return RestfulJson.isOk("添加商品成功！");
     }
 
+    @ApiOperation("删除商品")
+    @ApiImplicitParam(name = "goodsName", value = "商品名称", dataType = "String")
     @DeleteMapping("goods")
     public RestfulJson deleteGoods(String goodsName){
         goodsService.deleteGoods(goodsName);
         return RestfulJson.isOk("删除商品成功！");
     }
 
+    @ApiOperation("获取所有商品")
     @GetMapping("goods")
     public RestfulJson getGoods(){
         return RestfulJson.isOk(goodsService.getAllGoods());
     }
 
+    @ApiOperation("上/下架商品")
+    @ApiImplicitParam(name = "goodsName", value = "商品名称", dataType = "String")
     @PostMapping("goods")
     public RestfulJson updateGoods(String goodsName){
         goodsService.updateGoods(goodsName);
