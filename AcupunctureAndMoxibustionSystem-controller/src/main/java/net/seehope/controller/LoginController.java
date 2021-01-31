@@ -37,8 +37,8 @@ public class LoginController  {
     LoginService loginService;
     private static final long  serialVersionUID=1L;
 
-    private static final String APPID = "wx22b4e8dc67f0ea0c";
-    private static final String SECRET = "7c1355ff038ca93c0d49106ff367636e";
+    private static final String APPID = "wxd5dc9647089cd5bf";
+    private static final String SECRET = "c4f4acaa0a2015ae3083fd8dda3b34b6";
     private String code;
     public String getCode() {
         return code;
@@ -101,6 +101,7 @@ public class LoginController  {
                 String time = simpleDateFormat.format(cd);
                 log.info("用户的token过期时间是"+time);
                 map.put("expired",time);
+                map.put("openId",user.getUserId());
                 if(!loginService.isExist(user.getUserId())){
                     loginService.insertUser(user);
                 }
@@ -125,7 +126,7 @@ public class LoginController  {
             Map<String,String> payload = new HashMap<>();
             payload.put("username",bo.getUsername());
 
-            payload.put("openId",users.getUserId());
+            payload.put("userId",users.getUserId());
             log.info("下发管理员token"+users.getUserId());
             payload.put("identity",users.getIdentity()+"");
             String token = JWTUtils.getToken(payload);
@@ -139,6 +140,7 @@ public class LoginController  {
             String time = simpleDateFormat.format(cd);
             log.info("管理员的token过期时间是"+time);
             map.put("expired",time);
+            map.put("openId",users.getUserId());
         } catch (PassPortException e){
             return RestfulJson.errorMsg("密码错误");
         } catch (Exception e){

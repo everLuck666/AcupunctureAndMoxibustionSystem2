@@ -19,6 +19,9 @@ public class IndexController {
 
     @GetMapping("plan")
     @ApiOperation(value = "得到我的诊疗计划",notes = "token是必须的，放在header中")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "openId",value = "就是token,但是字段是openId")
+    })
 
     public RestfulJson getMyPlan(HttpServletRequest request){
         String userId = request.getHeader("openId").toString();
@@ -50,10 +53,12 @@ public class IndexController {
 
     //加入诊疗方案
     @PutMapping("appendPlan")
-    @ApiOperation(value = "加入诊疗方案",notes = "token放在header中")
+    @ApiOperation(value = "加入诊疗方案",notes = "token放在header中,这个token字段先用openId来代替")
     @ApiImplicitParams({
             @ApiImplicitParam(name ="treatId",value = "治疗方案的id",dataType = "String"),
-            @ApiImplicitParam(name ="symptomId",value = "症状的id",dataType = "String")
+            @ApiImplicitParam(name ="symptomId",value = "症状的id",dataType = "String"),
+            @ApiImplicitParam(name ="openId",value = "登录得到的openId放到请求头里面",dataType = "String")
+
     })
     public RestfulJson addMyPlay(HttpServletRequest request, @RequestBody  Map map) throws ParseException {
         String userId = request.getHeader("openId").toString();

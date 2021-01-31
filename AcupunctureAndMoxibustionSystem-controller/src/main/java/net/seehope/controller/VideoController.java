@@ -24,6 +24,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -74,7 +75,7 @@ public class VideoController {
 //    }
     @GetMapping("video2")
     @ApiOperation("得到所有的视频信息")
-    public RestfulJson videoShow(){
+    public RestfulJson videoShow() throws ParseException {
         return RestfulJson.isOk(videoService.getAllVideos());
     }
     //上传视频

@@ -39,10 +39,11 @@ public class ShoppingController {
             @ApiImplicitParam(name = "userName", value = "收货人姓名", dataType = "String"),
             @ApiImplicitParam(name = "phone", value = "手机号", dataType = "String"),
             @ApiImplicitParam(name = "address",value = "收货地址", dataType = "String"),
+            @ApiImplicitParam(name = "openId",value = "就是token,但是字段是userId放在header中")
     })
     @PutMapping("addAddress")
     public RestfulJson addAddress(@RequestBody UserInfoVo userInfoVo, HttpServletRequest request){
-        String userId = request.getAttribute("openId").toString();
+        String userId = request.getHeader("openId").toString();
         UserInfo userInfo = new UserInfo();
         userInfo.setUserId(userId);
         userInfo.setUserName(userInfoVo.getUserName());
@@ -57,10 +58,14 @@ public class ShoppingController {
 
     }
 
+
     @ApiOperation("获取用户收货地址")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "openId",value = "就是token,但是字段是userId放在header中")
+    })
     @GetMapping("getUserAddress")
     public RestfulJson getUserAddress(HttpServletRequest request){
-        String userId = request.getAttribute("openId").toString();
+        String userId = request.getHeader("openId").toString();
         return RestfulJson.isOk(shoppingService.getUserAddress(userId));
 
     }
@@ -72,8 +77,11 @@ public class ShoppingController {
      */
     @ApiOperation("获取用户订单")
     @GetMapping("getUserOrders")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "openId",value = "就是token,但是字段是userId放在header中")
+    })
     public RestfulJson getUserOrders(HttpServletRequest request){
-        String userId = request.getAttribute("openId").toString();
+        String userId = request.getHeader("openId").toString();
         return RestfulJson.isOk(shoppingService.getMyorders(userId));
 
     }
@@ -89,11 +97,12 @@ public class ShoppingController {
             @ApiImplicitParam(name = "productName", value = "商品名称", dataType = "String"),
             @ApiImplicitParam(name = "productNumber", value = "商品数量", dataType = "String"),
             @ApiImplicitParam(name = "productPrice",value = "商品价格", dataType = "String"),
-            @ApiImplicitParam(name = "order_amout", value = "订单总额", dataType = "String")
+            @ApiImplicitParam(name = "order_amout", value = "订单总额", dataType = "String"),
+            @ApiImplicitParam(name = "openId",value = "就是token,但是字段是userId放在header中")
     })
     @PutMapping("addShopping")
     public RestfulJson addShoppingCar(@RequestBody ShoppingCarBo bo, HttpServletRequest request){
-        String userId = request.getAttribute("openId").toString();
+        String userId = request.getHeader("openId").toString();
 //        String userId = "123";
         try {
             shoppingService.addShoppingCar(bo,userId);
@@ -105,9 +114,13 @@ public class ShoppingController {
     }
 
     @ApiOperation("获取用户购物车信息")
+
     @GetMapping("getShopping")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "openId",value = "就是token,但是字段是userId放在header中")
+    })
     public RestfulJson getShoppingCar(HttpServletRequest request){
-        String userId = request.getAttribute("openId").toString();
+        String userId = request.getHeader("openId").toString();
         return RestfulJson.isOk(shoppingService.getShoppingCar(userId));
     }
 

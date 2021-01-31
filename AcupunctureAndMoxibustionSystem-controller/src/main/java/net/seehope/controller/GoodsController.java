@@ -37,7 +37,7 @@ public class GoodsController {
             @ApiImplicitParam(name = "status", value = "商品状态", dataType = "String")
     })
     @PutMapping("goods")
-    public RestfulJson addGoods(@RequestBody GoodsInfoVo goodsInfoVo, HttpServletRequest request){
+    public RestfulJson addGoods( GoodsInfoVo goodsInfoVo, HttpServletRequest request){
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
         File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
         String path = "/src/main/resources/static/images/";

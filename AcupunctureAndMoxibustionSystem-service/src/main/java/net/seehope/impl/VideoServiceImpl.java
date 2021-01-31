@@ -12,6 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -24,7 +25,7 @@ public class VideoServiceImpl implements VideoService {
     @Autowired
     VideoMapper videoMapper;
     @Override
-    public List<VideoVo> getAllVideos() {
+    public List<VideoVo> getAllVideos() throws ParseException {
 
 
         List<Video> videoList =  videoMapper.selectAll();
@@ -33,7 +34,8 @@ public class VideoServiceImpl implements VideoService {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         for(Video video:videoList){
             VideoVo videoVo = new VideoVo();
-            String createTime = simpleDateFormat.format(video.getCreateTime()).toString();
+            Date date = simpleDateFormat.parse(video.getCreateTime());
+            String createTime = simpleDateFormat.format(date).toString();
            videoVo.setCreateTime(createTime);
            videoVo.setPath(video.getPath());
            videoVo.setVideoName(video.getVideoName());
