@@ -15,6 +15,16 @@ public class IlustrateTwoVo {
     private String symptomId;
     private String treateId;
 
+    private String describe;
+
+    public String getDescribe() {
+        return describe;
+    }
+
+    public void setDescribe(String describe) {
+        this.describe = describe;
+    }
+
     public String getSymptomName() {
         return symptomName;
     }
