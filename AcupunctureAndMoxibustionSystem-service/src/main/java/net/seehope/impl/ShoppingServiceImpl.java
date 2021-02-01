@@ -90,6 +90,11 @@ public class ShoppingServiceImpl implements ShoppingService {
     }
 
     @Override
+    public void deleteShoppingCar(String key) {
+        redisTemplate.delete(key);
+    }
+
+    @Override
     public List getShoppingCar(String userId) {
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         Set keys = redisTemplate.keys(userId + "*");

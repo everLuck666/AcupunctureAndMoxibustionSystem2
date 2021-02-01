@@ -113,8 +113,21 @@ public class ShoppingController {
 
     }
 
-    @ApiOperation("获取用户购物车信息")
+    @ApiOperation("删除购物车商品")
+    @ApiImplicitParam(name = "productName", value = "商品名称",dataType = "String")
+    @DeleteMapping("deleteShopping")
+    public RestfulJson deleteShoppingCar(String productName,HttpServletRequest request){
+        String userId = request.getHeader("openId").toString();
+        String key = userId + productName;
+        try {
+            shoppingService.deleteShoppingCar(key);
+            return RestfulJson.isOk("删除成功！");
+        }catch (Exception e){
+            return RestfulJson.errorMsg(e.getMessage());
+        }
+    }
 
+    @ApiOperation("获取用户购物车信息")
     @GetMapping("getShopping")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "openId",value = "就是token,但是字段是userId放在header中")

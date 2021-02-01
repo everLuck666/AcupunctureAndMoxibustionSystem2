@@ -17,6 +17,9 @@ public interface ShoppingService {
     //加入购物车
     void addShoppingCar(ShoppingCarBo bo, String userId);
 
+    //删除购物车里的商品
+    void deleteShoppingCar(String key);
+
     //展示购物车
     List getShoppingCar(String userId);
 

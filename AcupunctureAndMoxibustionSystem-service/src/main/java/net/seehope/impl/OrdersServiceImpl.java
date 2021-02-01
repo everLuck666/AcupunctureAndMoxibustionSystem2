@@ -61,6 +61,7 @@ public class OrdersServiceImpl implements OrdersService {
         if(ordersBo.getOrderId() != null && ordersBo.getOrderId() != ""){
             criteria.andEqualTo("order_id",ordersBo.getOrderId());
         }
+        example.setOrderByClause("order_time DESC");
         List<Orders> orders = ordersMapper.selectByExample(example);
         PageInfo pageInfo = new PageInfo(orders);
         return pageInfo;
