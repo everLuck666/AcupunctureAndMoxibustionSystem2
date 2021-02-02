@@ -9,10 +9,7 @@ import net.seehope.common.RestfulJson;
 import net.seehope.pojo.bo.GetOrdersBo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -45,8 +42,16 @@ public class OrdersController {
             @ApiImplicitParam(name = "orderId", value = "订单号", dataType = "String")
     })
     @GetMapping("orders")
-    public RestfulJson getAllOrders(@RequestBody GetOrdersBo ordersBo){
+    public RestfulJson getAllOrders(GetOrdersBo ordersBo){
         return RestfulJson.isOk(ordersService.getAllOrders(ordersBo));
+    }
+
+    @ApiOperation("修改订单状态")
+    @ApiImplicitParam(name = "orderId",value = "订单号",dataType = "String")
+    @PostMapping("updateOrder")
+    public RestfulJson updateOrder(String orderId){
+        ordersService.updateOrder(orderId);
+        return RestfulJson.isOk("发货成功");
     }
 
     // 导出excel

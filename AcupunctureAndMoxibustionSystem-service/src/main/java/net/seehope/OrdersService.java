@@ -20,6 +20,8 @@ public interface OrdersService {
     //根据筛选条件获取所有订单信息，分页返回
     PageInfo getAllOrders(GetOrdersBo ordersBo);
 
+    void updateOrder(String orderId);
+
     //导出订单信息到Excel
     ResponseEntity<byte[]> exportExcel(HttpServletRequest request, HttpServletResponse response, String excelName);
 

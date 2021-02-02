@@ -91,7 +91,10 @@ public class ShoppingServiceImpl implements ShoppingService {
 
     @Override
     public void deleteShoppingCar(String key) {
-        redisTemplate.delete(key);
+        ShoppingCarBo shoppingCarBo = (ShoppingCarBo) redisTemplate.opsForValue().get(key);
+        if (null != shoppingCarBo){
+            redisTemplate.delete(key);
+        }
     }
 
     @Override
