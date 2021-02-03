@@ -6,6 +6,8 @@ import net.seehope.IndexService;
 import net.seehope.common.RestfulJson;
 import net.seehope.pojo.Article;
 import net.seehope.pojo.Video;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -23,6 +25,7 @@ import java.util.Map;
 @RequestMapping("article")
 @Api(tags = "文章管理",value = "ArticleController")
 public class ArticleController {
+    Logger logger = LoggerFactory.getLogger("ArticleController");
     @Autowired
     ArticleService articleService;
     @Autowired
@@ -31,6 +34,7 @@ public class ArticleController {
     @GetMapping("article")
     @ApiOperation("得到所有的文章信息")
     public RestfulJson getAllArticle() throws IOException {
+
 
         return RestfulJson.isOk(articleService.getAllArticle());
 
@@ -49,6 +53,9 @@ public class ArticleController {
         String fileName = indexService.update(files, path);
 
 
+        String text = articleService.readRDF(fileName);
+        logger.warn("这篇文章的内容是"+text);
+
         List<MultipartFile> photosFiles = ((MultipartHttpServletRequest) request).getFiles("photos");
         String photoPath = "/src/main/resources/static/images/";
         String photoFileName = indexService.update(photosFiles, photoPath);
@@ -58,12 +65,14 @@ public class ArticleController {
         article.setImage(fileName);
         article.setTitle(title);
         article.setImage(photoFileName);
-        article.setPath(fileName);//文档路径
+        article.setText(text);
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String createTime = simpleDateFormat.format(new Date());
         article.setCreateTime(createTime);
         articleService.addArticle(article);
+
+        articleService.deleteArticleDoc(fileName);
 
         return RestfulJson.isOk("上传成功");
 

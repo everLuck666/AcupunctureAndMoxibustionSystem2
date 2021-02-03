@@ -3,6 +3,7 @@ package net.seehope.impl;
 
 import net.seehope.IndexService;
 import net.seehope.common.PlanStatus;
+import net.seehope.common.RecordStatus;
 import net.seehope.mapper.*;
 import net.seehope.pojo.*;
 import net.seehope.pojo.vo.IlustrateVo;
@@ -204,7 +205,7 @@ public class IndexServiceImpl implements IndexService {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String createTime = simpleDateFormat.format(new Date());
         medicalRecord.setCreateTime(simpleDateFormat.parse(createTime));
-        medicalRecord.setProgress(0+"");
+        medicalRecord.setProgress(RecordStatus.OFF.getStatus() +"");
         medicalRecord.setProjectId(treatId);
         medicalRecord.setSymptomName(symptom1.getSymptomName());
         medicalRecord.setTotalTime(treatProject1.getTotalTime());

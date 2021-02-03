@@ -2,6 +2,7 @@ package net.seehope.mapper;
 
 import net.seehope.pojo.Symptom;
 import net.seehope.pojo.vo.IlustrateVo;
+import org.apache.ibatis.annotations.CacheNamespace;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
 *
 * @author mapper-generator
 */
+@CacheNamespace
 public interface SymptomMapper extends tk.mybatis.mapper.common.Mapper<Symptom> {
     List<IlustrateVo> getIlustrateBySearch(String text);
 

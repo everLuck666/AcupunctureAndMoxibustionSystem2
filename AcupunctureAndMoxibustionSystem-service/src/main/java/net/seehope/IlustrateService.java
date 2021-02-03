@@ -14,4 +14,8 @@ public interface IlustrateService {
 
     List<IlustrateTwoVo> getAllIlustrate();
     void deleteIlustrate(String treatId,String symptomId);
+
+    //记录诊疗方案
+    void updateRecord(String userId,String treatId);
+
 }
