@@ -1,6 +1,7 @@
 package net.seehope.mapper;
 
 import net.seehope.pojo.TreatProject;
+import org.apache.ibatis.annotations.CacheNamespace;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -8,6 +9,7 @@ import org.apache.ibatis.annotations.Param;
 *
 * @author mapper-generator
 */
+@CacheNamespace
 public interface TreatProjectMapper extends tk.mybatis.mapper.common.Mapper<TreatProject> {
     int countId();
     int exists(@Param("treatName") String treatName);

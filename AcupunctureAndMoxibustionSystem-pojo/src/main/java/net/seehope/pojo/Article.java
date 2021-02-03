@@ -17,6 +17,15 @@ public class Article implements Serializable {
     @Column(name = "`content`")
     private String content;
 
+
+    @Column(name = "`createTime`")
+    private String createTime;
+
+    @Column(name = "`text`")
+    private String text;
+
+
+
     public String getCreateTime() {
         return createTime;
     }
@@ -25,21 +34,19 @@ public class Article implements Serializable {
         this.createTime = createTime;
     }
 
-    @Column(name = "`createTime`")
-    private String createTime;
 
-    public String getPath() {
-        return path;
-    }
 
-    public void setPath(String path) {
-        this.path = path;
-    }
 
-    @Column(name = "`path`")
-    private String path;
 
     private static final long serialVersionUID = 1L;
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
 
     /**
      * @return id

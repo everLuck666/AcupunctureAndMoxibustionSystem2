@@ -8,8 +8,12 @@ import java.util.List;
 
 public interface ArticleService {
 
-    List<ArticleVo>  getAllArticle() throws IOException;
+    List<Article>  getAllArticle() throws IOException;
     void addArticle(Article article);
 
     void deleteArticle(String id);
+
+    String readRDF(String path);
+
+    void deleteArticleDoc(String id);
 }
