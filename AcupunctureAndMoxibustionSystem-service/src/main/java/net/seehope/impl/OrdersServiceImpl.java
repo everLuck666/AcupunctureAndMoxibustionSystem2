@@ -6,6 +6,7 @@ import com.sun.tools.corba.se.idl.constExpr.Or;
 import net.seehope.IndexService;
 import net.seehope.OrdersService;
 import net.seehope.mapper.OrdersMapper;
+import net.seehope.pojo.Goods;
 import net.seehope.pojo.Orders;
 import net.seehope.pojo.bo.GetOrdersBo;
 import net.seehope.pojo.vo.OrderVo;
@@ -50,6 +51,8 @@ public class OrdersServiceImpl implements OrdersService {
         return ordersMapper.queryFinishedOrders();
     }
 
+
+
     @Override
     public PageInfo getAllOrders(GetOrdersBo ordersBo) {
         PageHelper.startPage(ordersBo.getPage(),ordersBo.getPageSize());
@@ -59,12 +62,23 @@ public class OrdersServiceImpl implements OrdersService {
             criteria.andEqualTo("status",ordersBo.getStatus());
         }
         if(ordersBo.getOrderId() != null && ordersBo.getOrderId() != ""){
-            criteria.andEqualTo("order_id",ordersBo.getOrderId());
+            criteria.andEqualTo("orderId",ordersBo.getOrderId());
         }
         example.setOrderByClause("order_time DESC");
         List<Orders> orders = ordersMapper.selectByExample(example);
         PageInfo pageInfo = new PageInfo(orders);
         return pageInfo;
+    }
+
+    @Override
+    public void updateOrder(String orderId) {
+        Orders orders = new Orders();
+        orders.setOrderId(orderId);
+        Orders orders1 = ordersMapper.selectOne(orders);
+        String status = Integer.valueOf(orders1.getStatus())== 1 ? "0" : "1";
+        ordersMapper.delete(orders1);
+        orders1.setStatus(status);
+        ordersMapper.insert(orders1);
     }
 
     @Override

@@ -38,7 +38,7 @@ public class LoginServiceImpl implements LoginService {
 
         if (!StringUtils.isEmpty(bo.getUsername())) {
             Users temp = new Users();
-            temp.setUserName(bo.getUsername());
+            temp.setUserId(bo.getUsername());
             user = usersMapper.selectOne(temp);
             if (user == null) {
                 throw new RuntimeException("用户不存在");
