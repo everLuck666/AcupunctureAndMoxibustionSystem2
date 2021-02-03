@@ -76,6 +76,25 @@ public class IlustrateController {
 
     }
 
+    @PutMapping("record")
+    @ApiOperation("记录诊疗数据")
+    @ApiImplicitParams({@ApiImplicitParam(name ="openId",value = "用户的id放在header里面",dataType = "String"),
+            @ApiImplicitParam(name = "treatId",value = "诊疗方案的id",dataType = "String")})
+    public RestfulJson updateRecord(@RequestBody Map map,HttpServletRequest request){
+
+        String userId = request.getHeader("openId");
+        String treatId = map.get("treatId").toString();
+        ilustrateService.updateRecord(userId,treatId);
+        return RestfulJson.isOk("");
+
+
+
+
+
+
+    }
+
+
 
 
 

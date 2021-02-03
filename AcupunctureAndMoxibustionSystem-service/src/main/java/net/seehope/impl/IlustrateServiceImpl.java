@@ -2,12 +2,14 @@ package net.seehope.impl;
 
 import net.seehope.IlustrateService;
 import net.seehope.IndexService;
+import net.seehope.common.RecordStatus;
 import net.seehope.mapper.*;
 import net.seehope.pojo.*;
 import net.seehope.pojo.bo.IlustrateBo;
 import net.seehope.pojo.bo.XueWeiBo;
 import net.seehope.pojo.vo.IlustrateTwoVo;
 import net.seehope.pojo.vo.IlustrateVo;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +40,8 @@ public class IlustrateServiceImpl implements IlustrateService {
     XueTreatMapper xueTreatMapper;
     @Autowired
     IndexService indexService;
+    @Autowired
+    MedicalRecordMapper medicalRecordMapper;
     @Override
     @Transactional
     public void addIlustrate(IlustrateBo ilustrateBo) {
@@ -252,6 +256,46 @@ public class IlustrateServiceImpl implements IlustrateService {
         }else{
             throw new RuntimeException("不存在这条说明");
         }
+
+    }
+
+    @Override
+    @Transactional
+    public void updateRecord(String userId, String treatId) {
+        MedicalRecord medicalRecord = new MedicalRecord();
+        medicalRecord.setUserId(userId);
+        medicalRecord.setProjectId(treatId);
+
+        MedicalRecord medicalRecordTemp = medicalRecordMapper.selectOne(medicalRecord);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        if(medicalRecordTemp != null){
+            Date date = medicalRecordTemp.getCreateTime();
+            String time = simpleDateFormat.format(date);
+            String now = simpleDateFormat.format(new Date());
+            if(StringUtils.equals(time,now)){
+                if(Integer.parseInt(medicalRecordTemp.getProgress())== RecordStatus.OFF.getStatus()){
+                    medicalRecordTemp.setCreateTime(new Date());
+                        medicalRecordMapper.delete(medicalRecord);
+                        medicalRecordTemp.setProgress(RecordStatus.UP.getStatus()+"");
+                        medicalRecordMapper.insert(medicalRecordTemp);
+                }
+
+                logger.info("诊疗记录已经记录过了");
+            }else{
+
+                medicalRecordTemp.setCreateTime(new Date());
+                if(Integer.parseInt(medicalRecordTemp.getTotalTime()) >= Integer.parseInt(medicalRecordTemp.getProgress())){
+                    medicalRecordMapper.delete(medicalRecord);
+                    medicalRecordTemp.setProgress((Integer.parseInt(medicalRecordTemp.getProgress())+1)+"");
+                    medicalRecordMapper.insert(medicalRecordTemp);
+                }else{
+                    logger.info("您已经完成了诊疗计划");
+                }
+
+            }
+
+        }
+
 
     }
 }
