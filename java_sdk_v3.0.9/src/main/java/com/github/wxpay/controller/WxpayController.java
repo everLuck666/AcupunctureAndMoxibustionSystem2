@@ -7,6 +7,7 @@ import com.github.wxpay.bo.UserOrderInformationBo;
 import com.github.wxpay.sdk.WXPayUtil;
 import com.github.wxpay.service.WxPayService;
 import com.github.wxpay.vo.WxPayNotifyVO;
+import io.swagger.annotations.Api;
 import net.seehope.ShoppingService;
 import net.seehope.common.OrderType;
 import net.seehope.jwt.JWTUtils;

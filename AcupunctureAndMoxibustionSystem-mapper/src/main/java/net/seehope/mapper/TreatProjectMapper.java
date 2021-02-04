@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Param;
 */
 @CacheNamespace
 public interface TreatProjectMapper extends tk.mybatis.mapper.common.Mapper<TreatProject> {
-    int countId();
+
     int exists(@Param("treatName") String treatName);
 
 }

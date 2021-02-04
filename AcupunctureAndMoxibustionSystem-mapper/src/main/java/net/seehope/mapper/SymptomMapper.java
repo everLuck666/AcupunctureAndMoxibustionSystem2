@@ -15,7 +15,7 @@ import java.util.List;
 public interface SymptomMapper extends tk.mybatis.mapper.common.Mapper<Symptom> {
     List<IlustrateVo> getIlustrateBySearch(String text);
 
-    int countId();
+
 }
 
 

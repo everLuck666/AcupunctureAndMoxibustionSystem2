@@ -2,6 +2,7 @@ package net.seehope.impl;
 
 
 import net.seehope.IndexService;
+import net.seehope.common.FilePath;
 import net.seehope.common.PlanStatus;
 import net.seehope.common.RecordStatus;
 import net.seehope.mapper.*;
@@ -241,7 +242,7 @@ public class IndexServiceImpl implements IndexService {
 
     @Override
     public String update(List<MultipartFile> files, String path) {
-        File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
+        File tempFile = new File(FilePath.path);
         String fileName = null;
         for (int i = 0; i < files.size(); i++) {
             MultipartFile file = files.get(i);
@@ -338,6 +339,19 @@ public class IndexServiceImpl implements IndexService {
 
         }else{
             throw new RuntimeException("Error");
+        }
+    }
+
+    @Override
+    public void deleteFile(String fileName, String path) {
+        File tempFile = new File(FilePath.path);
+        File dest = new File(tempFile.getAbsolutePath() + path + fileName);
+
+        if (dest != null) {
+            logger.info("开始删除"+fileName);
+            dest.delete();
+        } else {
+            logger.warn("请注意要删除的文件不存在");
         }
     }
 

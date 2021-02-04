@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.CacheNamespace;
 */
 @CacheNamespace
 public interface XueWeiMapper extends tk.mybatis.mapper.common.Mapper<XueWei> {
-    int countId();
+
 
 }
 

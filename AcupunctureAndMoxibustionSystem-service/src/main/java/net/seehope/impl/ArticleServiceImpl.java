@@ -2,6 +2,7 @@ package net.seehope.impl;
 
 import net.seehope.ArticleService;
 import net.seehope.IndexService;
+import net.seehope.common.FilePath;
 import net.seehope.mapper.ArticleMapper;
 import net.seehope.pojo.Article;
 import net.seehope.pojo.Video;
@@ -49,8 +50,8 @@ public class ArticleServiceImpl implements ArticleService {
         if (tempItem != null) {
             articleMapper.delete(article);
 
-            File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
-            File dest = new File(tempFile.getAbsolutePath() + "/src/main/resources/static/images/" +tempItem.getImage() );
+            File tempFile = new File(FilePath.path);
+            File dest = new File(tempFile.getAbsolutePath() + FilePath.images +tempItem.getImage() );
 
             if (dest != null) {
                 dest.delete();
@@ -69,9 +70,9 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public String readRDF(String path) {
-        File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
+        File tempFile = new File(FilePath.path);
         String text = "";
-        try (PDDocument document = PDDocument.load(new File(tempFile.getAbsolutePath()+"/src/main/resources/static/article/"+path))) {
+        try (PDDocument document = PDDocument.load(new File(tempFile.getAbsolutePath()+FilePath.article+path))) {
 
             document.getClass();
 
@@ -104,8 +105,8 @@ public class ArticleServiceImpl implements ArticleService {
     public void deleteArticleDoc(String fileName) {
 
 
-            File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
-            File dest = new File(tempFile.getAbsolutePath() + "/src/main/resources/static/article/" + fileName);
+            File tempFile = new File(FilePath.path);
+            File dest = new File(tempFile.getAbsolutePath() + FilePath.article + fileName);
 
             if (dest != null) {
                 logger.info("开始删除文章"+fileName);
@@ -117,9 +118,5 @@ public class ArticleServiceImpl implements ArticleService {
 
     }
 
-    public static void main(String[] args) {
-        String text = null;
-        text += "123";
-        System.out.println(text);
-    }
+
 }

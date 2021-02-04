@@ -48,6 +48,9 @@ public interface IndexService {
     //文件重命名
     void renameTo(String oldName,String newName,String path) throws IOException;
 
+    //删除文件
+    void deleteFile(String fileName,String path);
+
 
 
 

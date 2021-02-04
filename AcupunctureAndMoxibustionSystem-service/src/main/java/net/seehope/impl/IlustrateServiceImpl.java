@@ -2,6 +2,7 @@ package net.seehope.impl;
 
 import net.seehope.IlustrateService;
 import net.seehope.IndexService;
+import net.seehope.common.FilePath;
 import net.seehope.common.RecordStatus;
 import net.seehope.mapper.*;
 import net.seehope.pojo.*;
@@ -24,10 +25,14 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
+import net.seehope.common.FilePath;
 
 @Service
 public class IlustrateServiceImpl implements IlustrateService {
     Logger logger = LoggerFactory.getLogger(IlustrateServiceImpl.class);
+    @Autowired
+    IndexService indexService;
     @Autowired
     SymptomMapper symptomMapper;
     @Autowired
@@ -38,21 +43,22 @@ public class IlustrateServiceImpl implements IlustrateService {
     XueWeiMapper xueWeiMapper;
     @Autowired
     XueTreatMapper xueTreatMapper;
-    @Autowired
-    IndexService indexService;
+
     @Autowired
     MedicalRecordMapper medicalRecordMapper;
     @Override
     @Transactional
     public void addIlustrate(IlustrateBo ilustrateBo) {
+
         Symptom symptom = new Symptom();
         symptom.setSymptomName(ilustrateBo.getSymptomName());
         Symptom symptomTemp = symptomMapper.selectOne(symptom);
 
         if(symptomTemp != null){
+            indexService.deleteFile(ilustrateBo.getPath(),FilePath.images);
             throw new RuntimeException("这个症状已经存在，无法添加");
         }else{
-            symptom.setSymptomId((symptomMapper.countId()+1)+"");
+            symptom.setSymptomId(UUID.randomUUID().toString());
             symptom.setReason(ilustrateBo.getReason());
             symptom.setPath(ilustrateBo.getPath());
             symptomMapper.insert(symptom);
@@ -63,9 +69,10 @@ public class IlustrateServiceImpl implements IlustrateService {
         treatProject.setTreatName(ilustrateBo.getTreatName());
         TreatProject treatProjectTemp = treatProjectMapper.selectOne(treatProject);
         if(treatProjectTemp != null){
+            indexService.deleteFile(ilustrateBo.getPath(),FilePath.images);
             throw  new RuntimeException("这个诊疗方案已经存在,无法添加");
         }else {
-            treatProject.setTreatId((treatProjectMapper.countId()+1)+"");
+            treatProject.setTreatId(UUID.randomUUID().toString());
             treatProject.setEffect(ilustrateBo.getEffect());
             treatProject.setTotalTime(0+"");
              treatProject.setTreatDescribe(ilustrateBo.getDescribe());
@@ -82,7 +89,9 @@ public class IlustrateServiceImpl implements IlustrateService {
         Treat treatTemp = treatMapper.selectOne(treat);
 
         if(treatTemp != null){
+            indexService.deleteFile(ilustrateBo.getPath(),FilePath.images);
             throw new RuntimeException("这个症状和诊疗方案的对应已经存在");
+
         }else{
             treat.setCreateTime(new Date());
             treatMapper.insert(treat);
@@ -93,7 +102,7 @@ public class IlustrateServiceImpl implements IlustrateService {
     @Override
     @Transactional
     public void addXueWei(XueWeiBo weiBo, HttpServletRequest request) {
-        int id = -1;
+        String id = "-1";
 
         boolean flag = true;
         boolean flag2 = false;//用来判断是否发生了穴位修改
@@ -106,7 +115,7 @@ public class IlustrateServiceImpl implements IlustrateService {
         XueWei xueWeiTemp = xueWeiMapper.selectOne(xueWei);
         if(xueWeiTemp != null){
             logger.warn("出现相同穴位名称，执行不插入");
-            id = Integer.parseInt(xueWeiTemp.getId());
+            id = xueWeiTemp.getId();
             String fileName = null;
             logger.info("开始检测这个穴位的信息和数据库的存储是否有区别");
 
@@ -137,17 +146,19 @@ public class IlustrateServiceImpl implements IlustrateService {
             }
         }
 
+        String fileName = "";
+
         if(flag) {
             //上传图片
 
-            File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
-            String path = "/src/main/resources/static/images/";
-            String fileName = indexService.update(files, path);
+            File tempFile = new File(FilePath.path);
+            String path = FilePath.images;
+            fileName = indexService.update(files, path);
             weiBo.setPath(fileName);
 
             xueWei.setTemperature(weiBo.getTemperature());
             xueWei.setTreattime(Integer.parseInt(weiBo.getTreatTime()));
-            id = xueWeiMapper.countId()+1;
+            id = UUID.randomUUID().toString();
             if(flag2){
                 xueWei.setId(xueWeiTemp.getId());
             }else {
@@ -163,6 +174,7 @@ public class IlustrateServiceImpl implements IlustrateService {
         try {
             treatProjectTemp = treatProjectMapper.exists(weiBo.getTreatProjectName());
         }catch (Exception e){
+            indexService.deleteFile(fileName,FilePath.images);
             throw new RuntimeException("诊疗方案不存在");
         }
 
@@ -172,6 +184,7 @@ public class IlustrateServiceImpl implements IlustrateService {
             xueTreat.setXueId(id+"");
             XueTreat xueTreat1 = xueTreatMapper.selectOne(xueTreat);
             if(xueTreat1 != null && !flag2){
+                indexService.deleteFile(fileName,FilePath.images);
                 throw new RuntimeException("请不要重复提交请求");
             }
 
@@ -193,6 +206,7 @@ public class IlustrateServiceImpl implements IlustrateService {
             }else if(Integer.parseInt(treatProject1.getTotalTime())>=Integer.parseInt(weiBo.getDay())){
                 logger.info("添加的诊疗方案不需要增加新的一天");
             }else{
+                indexService.deleteFile(fileName,FilePath.images);
                 throw new RuntimeException("不能跨着增加天数");
             }
     }
@@ -214,7 +228,7 @@ public class IlustrateServiceImpl implements IlustrateService {
             IlustrateTwoVo ilustrateTwoVo = new IlustrateTwoVo();
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             ilustrateTwoVo.setCreate_Time(simpleDateFormat.format(treat.getCreateTime()));
-            ilustrateTwoVo.setEffect(treatProject.getEffect());
+            ilustrateTwoVo.setEffect(treatProject1.getEffect());
             ilustrateTwoVo.setPath(symptom1.getPath());
             ilustrateTwoVo.setReason(symptom1.getReason());
             ilustrateTwoVo.setSymptomId(symptom1.getSymptomId());

@@ -3,6 +3,7 @@ package net.seehope.controller;
 import io.swagger.annotations.*;
 import net.seehope.IlustrateService;
 import net.seehope.IndexService;
+import net.seehope.common.FilePath;
 import net.seehope.common.RestfulJson;
 import net.seehope.pojo.Symptom;
 import net.seehope.pojo.Video;
@@ -35,8 +36,8 @@ public class IlustrateController {
 
 
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
-        File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
-        String path = "/src/main/resources/static/images/";
+        File tempFile = new File(FilePath.path);
+        String path = FilePath.images;
         String fileName = indexService.update(files, path);
         ilustrateBo.setPath(fileName);
         ilustrateService.addIlustrate(ilustrateBo);

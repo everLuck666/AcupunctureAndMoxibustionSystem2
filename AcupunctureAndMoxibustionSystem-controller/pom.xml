@@ -14,12 +14,10 @@
     <dependencies>
 
 
-
-
         <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>AcupunctureAndMoxibustionSystem-configuration</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.github.wxpay</groupId>
+            <artifactId>wxpay-sdk</artifactId>
+            <version>3.0.9</version>
         </dependency>
 
 

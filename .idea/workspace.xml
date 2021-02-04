@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="小程序版本1.0sz" />
+    <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_xml_provider_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/src/main/java/net/seehope/common/FilePath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-12-15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-14-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-17-08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-25-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-26-58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-27-09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-35-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-39-09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-39-43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-40-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-40-36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-41-13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-49-55.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-50-39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian2021-02-04-15-20-07.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/src/main/java/net/seehope/config/Swagger2.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-common/src/main/java/net/seehope/config/Swagger2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/AcupunctureAndMoxibustionSystem-controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/AcupunctureAndMoxibustionSystem-controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/IlustrateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/IlustrateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/SymptomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/SymptomMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/TreatProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/TreatProjectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/XueWeiMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/java/net/seehope/mapper/XueWeiMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/IndexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/IndexService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IlustrateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IlustrateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IndexServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IndexServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/controller/WxpayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_sdk_v3.0.9/src/main/java/com/github/wxpay/controller/WxpayController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612345301788</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修复视频上传问题">
+      <created>1612419018155</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612419018155</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,19 +280,20 @@
     <MESSAGE value="小程序版本1.1sz" />
     <MESSAGE value="新增pdf文件上传和缓存机制" />
     <MESSAGE value="新增记录诊疗方案，并且支持pdf文件的上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增记录诊疗方案，并且支持pdf文件的上传" />
+    <MESSAGE value="修复视频上传问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复视频上传问题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612354061456">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="552" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1612354061456" />
-    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1612354659142">
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1612426326216">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611916865424" />
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611827628160" />
-    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1612354659142" />
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1612426326216" />
     <state x="474" y="145" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1612183956919" />
     <state x="378" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611546400406">
       <screen x="0" y="23" width="1280" height="777" />
@@ -262,101 +303,109 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="165" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1280.777@0.23.1280.777" timestamp="1611648840782" />
-    <state x="28" y="52" key="CommitChangelistDialog2" timestamp="1612345301667">
+    <state x="28" y="52" key="CommitChangelistDialog2" timestamp="1612419017974">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="28" y="52" key="CommitChangelistDialog2/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484302083" />
-    <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1612345301667" />
+    <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1612419017974" />
     <state x="25" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1611666935097" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1612102900314">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog/0.23.1280.777@0.23.1280.777" timestamp="1612102900314" />
-    <state width="1396" height="209" key="GridCell.Tab.0.bottom" timestamp="1612362757378">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state width="1396" height="207" key="GridCell.Tab.0.bottom" timestamp="1612427827590">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539742" />
     <state width="1396" height="172" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819782" />
     <state width="1396" height="368" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
-    <state width="1396" height="209" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612362016538" />
+    <state width="1396" height="207" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612427827590" />
     <state width="1238" height="371" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
+    <state width="1396" height="209" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1612423791547" />
     <state width="1396" height="209" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1612357130196" />
     <state width="1396" height="209" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1612362757378" />
     <state width="1396" height="212" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1612102663869" />
-    <state width="1396" height="209" key="GridCell.Tab.0.center" timestamp="1612362757377">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state width="1396" height="207" key="GridCell.Tab.0.center" timestamp="1612427827589">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539741" />
     <state width="1396" height="172" key="GridCell.Tab.0.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819780" />
     <state width="1396" height="368" key="GridCell.Tab.0.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416476" />
-    <state width="1396" height="209" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1612362016537" />
+    <state width="1396" height="207" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1612427827589" />
     <state width="1238" height="371" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1612185153388" />
+    <state width="1396" height="209" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1612423791546" />
     <state width="1396" height="209" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1612357130195" />
     <state width="1396" height="209" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1612362757377" />
     <state width="1396" height="212" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1612102663868" />
-    <state width="1396" height="209" key="GridCell.Tab.0.left" timestamp="1612362757376">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state width="1396" height="207" key="GridCell.Tab.0.left" timestamp="1612427827588">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539740" />
     <state width="1396" height="172" key="GridCell.Tab.0.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819779" />
     <state width="1396" height="368" key="GridCell.Tab.0.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416475" />
-    <state width="1396" height="209" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1612362016537" />
+    <state width="1396" height="207" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1612427827588" />
     <state width="1238" height="371" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1612185153388" />
+    <state width="1396" height="209" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1612423791541" />
     <state width="1396" height="209" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1612357130192" />
     <state width="1396" height="209" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1612362757376" />
     <state width="1396" height="212" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1612102663867" />
-    <state width="1396" height="209" key="GridCell.Tab.0.right" timestamp="1612362757377">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state width="1396" height="207" key="GridCell.Tab.0.right" timestamp="1612427827589">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539741" />
     <state width="1396" height="172" key="GridCell.Tab.0.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819781" />
     <state width="1396" height="368" key="GridCell.Tab.0.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
-    <state width="1396" height="209" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1612362016538" />
+    <state width="1396" height="207" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1612427827589" />
     <state width="1238" height="371" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1612185153388" />
+    <state width="1396" height="209" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1612423791546" />
     <state width="1396" height="209" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1612357130196" />
     <state width="1396" height="209" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1612362757377" />
     <state width="1396" height="212" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1612102663868" />
-    <state width="1396" height="209" key="GridCell.Tab.1.bottom" timestamp="1612362757380">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state width="1396" height="207" key="GridCell.Tab.1.bottom" timestamp="1612427827592">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539747" />
     <state width="1396" height="172" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819786" />
     <state width="1396" height="368" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416481" />
-    <state width="1396" height="209" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612362016540" />
+    <state width="1396" height="207" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612427827592" />
     <state width="1238" height="371" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1612185153390" />
+    <state width="1396" height="209" key="GridCell.Tab.1.bottom/0.23.1440.812@0.23.1440.812" timestamp="1612423791549" />
     <state width="1396" height="209" key="GridCell.Tab.1.bottom/0.23.1440.816@0.23.1440.816" timestamp="1612357130200" />
     <state width="1396" height="209" key="GridCell.Tab.1.bottom/0.23.1440.822@0.23.1440.822" timestamp="1612362757380" />
     <state width="1396" height="212" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1612102663871" />
-    <state width="1396" height="209" key="GridCell.Tab.1.center" timestamp="1612362757379">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state width="1396" height="207" key="GridCell.Tab.1.center" timestamp="1612427827591">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539745" />
     <state width="1396" height="172" key="GridCell.Tab.1.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819784" />
     <state width="1396" height="368" key="GridCell.Tab.1.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416479" />
-    <state width="1396" height="209" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1612362016539" />
+    <state width="1396" height="207" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1612427827591" />
     <state width="1238" height="371" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
+    <state width="1396" height="209" key="GridCell.Tab.1.center/0.23.1440.812@0.23.1440.812" timestamp="1612423791548" />
     <state width="1396" height="209" key="GridCell.Tab.1.center/0.23.1440.816@0.23.1440.816" timestamp="1612357130198" />
     <state width="1396" height="209" key="GridCell.Tab.1.center/0.23.1440.822@0.23.1440.822" timestamp="1612362757379" />
     <state width="1396" height="212" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1612102663870" />
-    <state width="1396" height="209" key="GridCell.Tab.1.left" timestamp="1612362757379">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state width="1396" height="207" key="GridCell.Tab.1.left" timestamp="1612427827590">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539743" />
     <state width="1396" height="172" key="GridCell.Tab.1.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819783" />
     <state width="1396" height="368" key="GridCell.Tab.1.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416478" />
-    <state width="1396" height="209" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1612362016539" />
+    <state width="1396" height="207" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1612427827590" />
     <state width="1238" height="371" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
+    <state width="1396" height="209" key="GridCell.Tab.1.left/0.23.1440.812@0.23.1440.812" timestamp="1612423791548" />
     <state width="1396" height="209" key="GridCell.Tab.1.left/0.23.1440.816@0.23.1440.816" timestamp="1612357130197" />
     <state width="1396" height="209" key="GridCell.Tab.1.left/0.23.1440.822@0.23.1440.822" timestamp="1612362757379" />
     <state width="1396" height="212" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1612102663870" />
-    <state width="1396" height="209" key="GridCell.Tab.1.right" timestamp="1612362757380">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state width="1396" height="207" key="GridCell.Tab.1.right" timestamp="1612427827591">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539746" />
     <state width="1396" height="172" key="GridCell.Tab.1.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819785" />
     <state width="1396" height="368" key="GridCell.Tab.1.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416480" />
-    <state width="1396" height="209" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1612362016540" />
+    <state width="1396" height="207" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1612427827591" />
     <state width="1238" height="371" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
+    <state width="1396" height="209" key="GridCell.Tab.1.right/0.23.1440.812@0.23.1440.812" timestamp="1612423791549" />
     <state width="1396" height="209" key="GridCell.Tab.1.right/0.23.1440.816@0.23.1440.816" timestamp="1612357130198" />
     <state width="1396" height="209" key="GridCell.Tab.1.right/0.23.1440.822@0.23.1440.822" timestamp="1612362757380" />
     <state width="1396" height="212" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1612102663870" />
@@ -376,10 +425,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="500" height="467" key="SwitcherDM/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611915176712" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1612345412808">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1612430748625">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1612345412808" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1612430748625" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611494504043">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
