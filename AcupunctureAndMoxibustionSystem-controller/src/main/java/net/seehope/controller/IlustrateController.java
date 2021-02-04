@@ -1,5 +1,6 @@
 package net.seehope.controller;
 
+import io.lettuce.core.dynamic.annotation.Param;
 import io.swagger.annotations.*;
 import net.seehope.IlustrateService;
 import net.seehope.IndexService;
@@ -90,10 +91,17 @@ public class IlustrateController {
 
 
 
-
-
-
     }
+
+    @GetMapping("ilustrateInfomation")
+    @ApiOperation("得到这个诊疗方案的所有穴位信息")
+
+    public RestfulJson getIlustrateInfomation(@ApiParam(name = "treatId",value = "诊疗方案的id") String treatId){
+        return RestfulJson.isOk(ilustrateService.getIlustrateInfomation(treatId));
+    }
+
+
+
 
 
 

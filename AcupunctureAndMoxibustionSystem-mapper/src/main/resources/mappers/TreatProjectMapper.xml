@@ -6,7 +6,7 @@
 <select id="countId" resultType="int">
     select count(*) from treat_project
 </select>
-    <select id="exists" resultType="int">
+    <select id="exists" resultType="String">
          select treat_id from treat_project where treat_name = #{treatName}
     </select>
 </mapper>

@@ -9,7 +9,8 @@ import net.seehope.pojo.*;
 import net.seehope.pojo.bo.IlustrateBo;
 import net.seehope.pojo.bo.XueWeiBo;
 import net.seehope.pojo.vo.IlustrateTwoVo;
-import net.seehope.pojo.vo.IlustrateVo;
+import net.seehope.pojo.vo.SymptomInformationVo;
+import net.seehope.pojo.vo.XueWeiAndDayVo;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +27,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
-import net.seehope.common.FilePath;
 
 @Service
 public class IlustrateServiceImpl implements IlustrateService {
@@ -43,6 +43,7 @@ public class IlustrateServiceImpl implements IlustrateService {
     XueWeiMapper xueWeiMapper;
     @Autowired
     XueTreatMapper xueTreatMapper;
+
 
     @Autowired
     MedicalRecordMapper medicalRecordMapper;
@@ -170,13 +171,13 @@ public class IlustrateServiceImpl implements IlustrateService {
 
 
 
-        int treatProjectTemp = 0;
-        try {
+         String treatProjectTemp = null;
+
             treatProjectTemp = treatProjectMapper.exists(weiBo.getTreatProjectName());
-        }catch (Exception e){
-            indexService.deleteFile(fileName,FilePath.images);
-            throw new RuntimeException("诊疗方案不存在");
-        }
+            if(treatProjectTemp == null){
+                indexService.deleteFile(fileName,FilePath.images);
+                throw new RuntimeException("诊疗方案不存在");
+            }
 
             XueTreat xueTreat = new XueTreat();
             xueTreat.setTreatId(treatProjectTemp+"");
@@ -312,4 +313,52 @@ public class IlustrateServiceImpl implements IlustrateService {
 
 
     }
+
+    @Override
+    public List<XueWeiAndDayVo> getIlustrateInfomation(String treatId) {
+        List<XueWeiAndDayVo> XueWeiAndDayVoList = new ArrayList<>();
+
+        TreatProject treatProject = new TreatProject();
+        treatProject.setTreatId(treatId);
+
+        TreatProject treatProjectValue = treatProjectMapper.selectOne(treatProject);
+
+        if(treatProjectValue != null){
+            int i = Integer.parseInt(treatProjectValue.getTotalTime());
+
+            for(int j = 1;j<=i;j++){//第一天，第二天
+                XueTreat xueTreat = new XueTreat();
+                xueTreat.setTreatId(treatId);
+                xueTreat.setDay(j+"");//设置这个天数
+                List<XueTreat> xueTreatValueList = xueTreatMapper.select(xueTreat);
+                List<XueWei> xueWeiList = new ArrayList<>();
+                XueWeiAndDayVo xueWeiBo = new XueWeiAndDayVo();
+                xueWeiBo.setDay(j+"");//先设置一下这个的时间
+                for(XueTreat xueTreat1:xueTreatValueList){//添加这一天的穴位
+                    XueWei xueWei = new XueWei();
+                    xueWei.setId(xueTreat1.getXueId());
+                    XueWei xueWeiValue = xueWeiMapper.selectOne(xueWei);
+                    if(xueWeiValue != null){
+                        xueWeiList.add(xueWeiValue);//设置一下这一天的穴位
+                    }
+
+                }
+                xueWeiBo.setXueWeiList(xueWeiList);
+                XueWeiAndDayVoList.add(xueWeiBo);
+            }
+
+        }else{
+            throw new RuntimeException("不存在这个诊疗方案");
+        }
+        return XueWeiAndDayVoList ;
+    }
+
+    @Override
+    public Symptom getSymptomInfomation(String symptomId) {
+        Symptom symptom = new Symptom();
+        symptom.setSymptomId(symptomId);
+        return symptomMapper.selectOne(symptom);
+    }
+
+
 }

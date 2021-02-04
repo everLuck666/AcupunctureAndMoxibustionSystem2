@@ -12,7 +12,7 @@ import org.apache.ibatis.annotations.Param;
 @CacheNamespace
 public interface TreatProjectMapper extends tk.mybatis.mapper.common.Mapper<TreatProject> {
 
-    int exists(@Param("treatName") String treatName);
+    String exists(@Param("treatName") String treatName);
 
 }
 

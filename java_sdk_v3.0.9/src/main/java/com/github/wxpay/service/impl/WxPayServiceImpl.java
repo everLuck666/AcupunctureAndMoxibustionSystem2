@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,10 +26,11 @@ public class WxPayServiceImpl implements WxPayService {
 
     @Override
     @Transactional
-    public Map<String, String> wxPay(String openId, String ipAddress, JSONObject bo) throws Exception {
+    public Map<String, String> wxPay(String openId, String ipAddress, @RequestBody JSONObject bo) throws Exception {
 
         Map<String, String> paraMap = new HashMap<String, String>();
-//        paraMap.put("body", bo.getSpecies()+"*"+bo.getTicketNum()+"张"); // 商家名称-销售商品类⽬、String(128)
+        System.out.println("");
+      paraMap.put("body", "124"); // 商家名称-销售商品类⽬、String(128)
         paraMap.put("openid", openId); // openId，通过登录获取
         paraMap.put("out_trade_no", UUID.randomUUID().toString().replaceAll("-", ""));// 订单号,每次都不同 paraMap.put("spbill_create_ip", ipAddress);
 
@@ -51,12 +53,12 @@ public class WxPayServiceImpl implements WxPayService {
 
         paraMap.put("attach",attach);
 
-        paraMap.put("total_fee", String.valueOf(totalFee)); // ⽀付⾦额，单位分，即0.01元
+        paraMap.put("total_fee", String.valueOf((int)totalFee)); // ⽀付⾦额，单位分，即0.01元
         paraMap.put("trade_type", "JSAPI");
         paraMap.put("spbill_create_ip",ipAddress);
 
         // 2. 通过MyWXPayConfig创建WXPay对象，⽤于⽀付请求
-        final String SUCCESS_NOTIFY = "http://xundian2.hk1.utools.club/wxPay/success";
+        final String SUCCESS_NOTIFY = "http://xundian5.hk1.utools.club/wxPay/success";
         boolean useSandbox = false; // 是否使⽤沙盒环境⽀付API，是的话不会真正扣钱 WXPayConfig config = new MyWXPayConfig();
         WXPayConfig config = new MyWXPayConfig();
         WXPay wxPay = new WXPay(config, SUCCESS_NOTIFY, false, useSandbox);
