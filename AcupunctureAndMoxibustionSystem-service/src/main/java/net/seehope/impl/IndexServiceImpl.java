@@ -256,7 +256,7 @@ public class IndexServiceImpl implements IndexService {
                 Date d = new Date();
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
                 String time = dateFormat.format(new Date());
-                fileName = file.getOriginalFilename()+ time + "." + photo[photo.length-1];
+                fileName = file.getOriginalFilename().replace("."+photo[photo.length-1],"")+ time + "." + photo[photo.length-1];
                 dest = new File(tempFile.getAbsolutePath() + path + fileName);
             }
             try {
@@ -315,6 +315,30 @@ public class IndexServiceImpl implements IndexService {
         calendar.set(Calendar.SECOND,59);
         calendar.set(Calendar.MILLISECOND,999);
         return calendar.getTime().getTime();
+    }
+
+    @Override
+    public void renameTo(String oldName, String newName,String path) throws IOException {
+
+        File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
+
+
+        File oldFile = new File(tempFile.getAbsolutePath()+path+"/"+oldName);
+
+        File newFile = new File(tempFile.getAbsolutePath()+path+"/"+newName);
+
+        if(newFile.exists()){
+            oldFile.delete();
+            logger.info("开始删除刚刚上传的文件");
+            throw new java.io.IOException("文件已经存在");
+        }
+
+        if(oldFile.renameTo(newFile)){
+            logger.warn("已经重新命名");
+
+        }else{
+            throw new RuntimeException("Error");
+        }
     }
 
 

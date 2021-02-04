@@ -45,6 +45,9 @@ public interface IndexService {
     //得到今日结束时间
     Long getEndTime();
 
+    //文件重命名
+    void renameTo(String oldName,String newName,String path) throws IOException;
+
 
 
 

@@ -1,9 +1,6 @@
 package net.seehope.controller;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.*;
 import net.seehope.IndexService;
 import net.seehope.VideoService;
 import net.seehope.common.NonStaticResourceHttpRequestHandler;
@@ -20,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.swing.*;
 import java.io.File;
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -81,20 +79,31 @@ public class VideoController {
     //上传视频
     @PutMapping("video")
     @ApiOperation(value = "上传视频",notes = "file字段对应的是视频")
-    public RestfulJson updateVideo(HttpServletRequest request){
+    public RestfulJson updateVideo(HttpServletRequest request,@ApiParam(name = "videoName",value = "视频的名字") String videoName) throws IOException {
 
-
+        if(videoName == null){
+            throw new RuntimeException("请填写视频的名字");
+        }
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
         File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
         String path = "/src/main/resources/static/video/";
         String fileName = indexService.update(files, path);
+        String[] suffix = fileName.split("\\.");
+
+        if(fileName == null){
+            throw new RuntimeException("文件并没有上传成功");
+        }
+        String titleName = videoName;
+        videoName +=".";
+        videoName += suffix[suffix.length-1];
+        indexService.renameTo(fileName,videoName,path);
 
         Video video = new Video();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String createTime = simpleDateFormat.format(new Date());
         video.setCreateTime(createTime);
-        video.setPath("static/video/"+fileName);
-        video.setVideoName(fileName);
+        video.setPath("static/video/"+videoName);
+        video.setVideoName(titleName);
         videoService.addVideo(video);
         return RestfulJson.isOk("上传成功");
 
