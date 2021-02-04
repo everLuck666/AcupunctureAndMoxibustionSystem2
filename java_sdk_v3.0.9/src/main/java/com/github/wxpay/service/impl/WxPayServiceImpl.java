@@ -56,7 +56,7 @@ public class WxPayServiceImpl implements WxPayService {
         paraMap.put("spbill_create_ip",ipAddress);
 
         // 2. 通过MyWXPayConfig创建WXPay对象，⽤于⽀付请求
-        final String SUCCESS_NOTIFY = "http://localhost:8080/wxPay/success";
+        final String SUCCESS_NOTIFY = "http://xundian2.hk1.utools.club/wxPay/success";
         boolean useSandbox = false; // 是否使⽤沙盒环境⽀付API，是的话不会真正扣钱 WXPayConfig config = new MyWXPayConfig();
         WXPayConfig config = new MyWXPayConfig();
         WXPay wxPay = new WXPay(config, SUCCESS_NOTIFY, false, useSandbox);

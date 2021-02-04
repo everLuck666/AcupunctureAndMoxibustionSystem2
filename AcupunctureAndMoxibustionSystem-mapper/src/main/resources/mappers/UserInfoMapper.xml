@@ -5,7 +5,7 @@
 <mapper namespace="net.seehope.mapper.UserInfoMapper">
 
     <select id="queryUserAddress" parameterType="String" resultMap="userAddress">
-        select user_name,phone,address from userInfo where user_id=#{userId};
+        select user_name,phone,address from user_info where user_id=#{userId};
     </select>
     
     <resultMap id="userAddress" type="net.seehope.pojo.bo.UserAddressBo">
