@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/article/数字逻辑与EDA设计(2018).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/article/数字逻辑与EDA设计(2018)2021-02-04-11-30-11.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/article/数字逻辑与EDA设计(2018)2021-02-04-11-33-08.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-11-34-59.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-11-38-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-11-40-28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-11-43-49.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-11-45-49.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/261de910cc240dc20d9afb048e8e4d84112bd1be.jpg@1320w_1846h.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/261de910cc240dc20d9afb048e8e4d84112bd1be@1320w_1846h2021-02-04-11-31-09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/261de910cc240dc20d9afb048e8e4d84112bd1be@1320w_1846h2021-02-04-11-37-35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.2021-02-03-20-52-15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.2021-02-03-20-52-26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian2021-02-03-20-53-22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/123456.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/undefined.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/军训.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/新视频.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/时永华-中国著名油画大师作品.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/VideoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/1.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/时永华－中国著名油画大师作品.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/时永华－中国著名油画大师作品.mp42021-01-26-15-59-19.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/IndexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/IndexService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IndexServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IndexServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="小程序版本1.0sz" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -388,14 +360,14 @@
     <state width="1396" height="209" key="GridCell.Tab.1.right/0.23.1440.816@0.23.1440.816" timestamp="1612357130198" />
     <state width="1396" height="209" key="GridCell.Tab.1.right/0.23.1440.822@0.23.1440.822" timestamp="1612362757380" />
     <state width="1396" height="212" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1612102663870" />
-    <state x="144" y="79" key="MergeDialog" timestamp="1612345362946">
+    <state x="144" y="79" key="MergeDialog" timestamp="1612418942688">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1612345362946" />
-    <state x="434" y="173" key="MultipleFileMergeDialog" timestamp="1612345363021">
+    <state x="144" y="79" key="MergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1612418942688" />
+    <state x="434" y="173" key="MultipleFileMergeDialog" timestamp="1612418942735">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="434" y="173" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1612345363021" />
+    <state x="434" y="173" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1612418942735" />
     <state x="202" y="168" key="RollbackChangesDialog" timestamp="1611493961719">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -421,10 +393,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="439" y="248" key="git4idea.merge.GitMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1612418715207" />
-    <state x="311" y="248" key="git4idea.merge.GitPullDialog" timestamp="1612345352967">
+    <state x="311" y="248" key="git4idea.merge.GitPullDialog" timestamp="1612418934849">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="311" y="248" key="git4idea.merge.GitPullDialog/0.0.1440.900@0.0.1440.900" timestamp="1612345352967" />
+    <state x="311" y="248" key="git4idea.merge.GitPullDialog/0.0.1440.900@0.0.1440.900" timestamp="1612418934849" />
     <state x="451" y="357" key="git4idea.ui.GitStashDialog" timestamp="1611493760930">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
