@@ -36,7 +36,7 @@ public class GoodsController {
             @ApiImplicitParam(name = "productPrice",value = "商品价格", dataType = "Double"),
             @ApiImplicitParam(name = "status", value = "商品状态", dataType = "String")
     })
-    @PutMapping("goods")
+    @PutMapping(value = "goods",produces="application/json;charset=UTF-8")
     public RestfulJson addGoods( GoodsInfoVo goodsInfoVo, HttpServletRequest request){
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
         File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
@@ -54,21 +54,21 @@ public class GoodsController {
 
     @ApiOperation("删除商品")
     @ApiImplicitParam(name = "goodsName", value = "商品名称", dataType = "String")
-    @DeleteMapping("goods")
+    @DeleteMapping(value = "goods",produces="application/json;charset=UTF-8")
     public RestfulJson deleteGoods(String goodsName){
         goodsService.deleteGoods(goodsName);
         return RestfulJson.isOk("删除商品成功！");
     }
 
     @ApiOperation("获取所有商品")
-    @GetMapping("goods")
+    @GetMapping(value = "goods",produces="application/json;charset=UTF-8")
     public RestfulJson getGoods(){
         return RestfulJson.isOk(goodsService.getAllGoods());
     }
 
     @ApiOperation("上/下架商品")
     @ApiImplicitParam(name = "goodsName", value = "商品名称", dataType = "String")
-    @PostMapping("goods")
+    @PostMapping(value = "goods",produces="application/json;charset=UTF-8")
     public RestfulJson updateGoods(String goodsName){
         goodsService.updateGoods(goodsName);
         return RestfulJson.isOk("修改成功！");

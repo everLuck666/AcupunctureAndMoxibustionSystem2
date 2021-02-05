@@ -71,13 +71,13 @@ public class VideoController {
 //            response.setCharacterEncoding(StandardCharsets.UTF_8.toString());
 //        }
 //    }
-    @GetMapping("video2")
+    @GetMapping(value = "video2",produces="application/json;charset=UTF-8")
     @ApiOperation("得到所有的视频信息")
     public RestfulJson videoShow() throws ParseException {
         return RestfulJson.isOk(videoService.getAllVideos());
     }
     //上传视频
-    @PutMapping("video")
+    @PutMapping(value = "video",produces="application/json;charset=UTF-8")
     @ApiOperation(value = "上传视频",notes = "file字段对应的是视频")
     public RestfulJson updateVideo(HttpServletRequest request,@ApiParam(name = "videoName",value = "视频的名字") String videoName) throws IOException {
 
@@ -108,7 +108,7 @@ public class VideoController {
         return RestfulJson.isOk("上传成功");
 
     }
-    @DeleteMapping("video")
+    @DeleteMapping(value = "video",produces="application/json;charset=UTF-8")
     @ApiOperation("删除视频")
 
     @ApiImplicitParams({@ApiImplicitParam(name ="videoName",value = "视频的名字",dataType = "String")

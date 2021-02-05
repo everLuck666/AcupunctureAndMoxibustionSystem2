@@ -25,8 +25,6 @@ import java.util.Map;
 @RequestMapping("wxPay")
 public class WxpayController {
 
-    private static final String APPID = "wx22b4e8dc67f0ea0c";
-    private static final String SECRET = "7c1355ff038ca93c0d49106ff367636e";
 
     @Autowired
     WxPayService wxPayService;

@@ -20,7 +20,7 @@ public class UserManagerController {
     @Autowired
     UserService userService;
 
-    @PutMapping("user")
+    @PutMapping(value = "user",produces="application/json;charset=UTF-8")
     @ApiOperation("添加管理员")
     @ApiImplicitParams({@ApiImplicitParam(name ="userName",value = "姓名",dataType = "String"),
             @ApiImplicitParam(name ="userId",value = "账号",dataType = "String"),
@@ -31,7 +31,7 @@ public class UserManagerController {
         return RestfulJson.isOk("添加管理员成功");
     }
 
-    @DeleteMapping("user")
+    @DeleteMapping(value = "user",produces="application/json;charset=UTF-8")
     @ApiOperation("删除管理员")
     @ApiImplicitParams({@ApiImplicitParam(name ="userId",value = "账号",dataType = "String"),
     })
@@ -40,7 +40,7 @@ public class UserManagerController {
         return RestfulJson.isOk("删除管理员成功");
     }
     //得到所有管理员
-    @GetMapping("user")
+    @GetMapping(value = "user",produces="application/json;charset=UTF-8")
     @ApiOperation("得到所有的管理员信息")
     public RestfulJson getAllManagers(){
      return RestfulJson.isOk(userService.getAllManagers());

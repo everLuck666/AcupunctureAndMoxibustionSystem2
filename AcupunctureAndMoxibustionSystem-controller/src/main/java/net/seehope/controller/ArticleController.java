@@ -31,7 +31,7 @@ public class ArticleController {
     @Autowired
     IndexService indexService;
 
-    @GetMapping("article")
+    @GetMapping(value = "article",produces="application/json;charset=UTF-8")
     @ApiOperation("得到所有的文章信息")
     public RestfulJson getAllArticle() throws IOException {
 
@@ -40,7 +40,7 @@ public class ArticleController {
 
     }
     //上传文章
-    @PutMapping("article")
+    @PutMapping(value = "article",produces="application/json;charset=UTF-8")
     @ApiOperation(value = "上传文章",notes = "file字段是必要,代表图片的名字")
     @ApiImplicitParams({@ApiImplicitParam(name ="content",value = "简介",dataType = "String"),
     @ApiImplicitParam(name = "title",value = "标题",dataType = "String")})
@@ -79,7 +79,7 @@ public class ArticleController {
     }
 
     //删除文章
-    @DeleteMapping("article")
+    @DeleteMapping(value = "article",produces="application/json;charset=UTF-8")
     @ApiOperation("删除文章")
 
     public RestfulJson deleteArticle(@ApiParam(name = "id",value = "文章id")@RequestBody Map map){

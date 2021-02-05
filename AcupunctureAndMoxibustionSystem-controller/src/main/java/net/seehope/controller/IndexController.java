@@ -17,7 +17,7 @@ public class IndexController {
     @Autowired
     IndexService indexService;
 
-    @GetMapping("plan")
+    @GetMapping(value = "plan",produces="application/json;charset=UTF-8")
     @ApiOperation(value = "得到我的诊疗计划",notes = "token是必须的，放在header中")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "openId",value = "就是token,但是字段是openId")
@@ -27,21 +27,21 @@ public class IndexController {
         String userId = request.getHeader("openId").toString();
         return RestfulJson.isOk(indexService.getMyPlan(userId));
     }
-    @GetMapping("ilustrate")
+    @GetMapping(value = "ilustrate",produces="application/json;charset=UTF-8")
     @ApiOperation("得到说明信息")
     public RestfulJson getIlustrate(){
         return RestfulJson.isOk(indexService.getIlustrate());
     }
 
     //搜索症状
-    @GetMapping("seachSymptom")
+    @GetMapping(value = "seachSymptom",produces="application/json;charset=UTF-8")
     @ApiOperation("根据搜索返回说明")
     public RestfulJson getIlustrateBySearch(@ApiParam(name = "text",value = "搜索的文本") String text){
 
         return RestfulJson.isOk(indexService.getIlustrateBySearch(text));
     }
     //得到详细的症状详情
-    @GetMapping("symptomInformation")
+    @GetMapping(value = "symptomInformation",produces="application/json;charset=UTF-8")
     @ApiOperation("得到详细的病症情况")
     @ApiImplicitParams({@ApiImplicitParam(name ="symptomId",value = "症状id",dataType = "String"),
             @ApiImplicitParam(name ="treatId",value = "治疗方案的id",dataType = "String"),
@@ -52,7 +52,7 @@ public class IndexController {
     }
 
     //加入诊疗方案
-    @PutMapping("appendPlan")
+    @PutMapping(value = "appendPlan",produces="application/json;charset=UTF-8")
     @ApiOperation(value = "加入诊疗方案",notes = "token放在header中,这个token字段先用openId来代替")
     @ApiImplicitParams({
             @ApiImplicitParam(name ="treatId",value = "治疗方案的id",dataType = "String"),

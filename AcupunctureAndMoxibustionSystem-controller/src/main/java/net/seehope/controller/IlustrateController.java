@@ -31,7 +31,7 @@ public class IlustrateController {
     @Autowired
     IlustrateService ilustrateService;
 
-    @PutMapping("ilustrate")
+    @PutMapping(value = "ilustrate",produces="application/json;charset=UTF-8")
     @ApiOperation(value = "上传说明",notes = "file字段是必要,代表图片的名字")
     public RestfulJson updateIlustrate(HttpServletRequest request, IlustrateBo ilustrateBo){
 
@@ -47,7 +47,7 @@ public class IlustrateController {
 
     }
     //添加穴位
-    @PutMapping("xuewei")
+    @PutMapping(value = "xuewei",produces="application/json;charset=UTF-8")
     @ApiOperation(value = "增加穴位",notes = "file字段是必要,代表图片的名字，增加的穴位的名字如果一样，但是穴位的其他参数" +
             "不一样的话会导致穴位的信息发生变化")
     @ApiParam(name = "file",value = "图片字段")
@@ -58,14 +58,14 @@ public class IlustrateController {
 
     }
     //得到所有说明
-    @GetMapping("ilustrate")
+    @GetMapping(value = "ilustrate",produces="application/json;charset=UTF-8")
     @ApiOperation("得到所有的说明")
     public RestfulJson getAllIlustrate(){
         return RestfulJson.isOk(ilustrateService.getAllIlustrate());
 
     }
     //删除说明
-    @DeleteMapping("ilustrate")
+    @DeleteMapping(value = "ilustrate",produces="application/json;charset=UTF-8")
     @ApiOperation("删除说明")
     @ApiImplicitParams({@ApiImplicitParam(name ="treatId",value = "诊疗方案的id",dataType = "String"),
             @ApiImplicitParam(name = "symptomId",value = "病症的id",dataType = "String")})
@@ -78,7 +78,7 @@ public class IlustrateController {
 
     }
 
-    @PutMapping("record")
+    @PutMapping(value = "record",produces="application/json;charset=UTF-8")
     @ApiOperation("记录诊疗数据")
     @ApiImplicitParams({@ApiImplicitParam(name ="openId",value = "用户的id放在header里面",dataType = "String"),
             @ApiImplicitParam(name = "treatId",value = "诊疗方案的id",dataType = "String")})
@@ -93,7 +93,7 @@ public class IlustrateController {
 
     }
 
-    @GetMapping("ilustrateInfomation")
+    @GetMapping(value = "ilustrateInfomation",produces="application/json;charset=UTF-8")
     @ApiOperation("得到这个诊疗方案的所有穴位信息")
 
     public RestfulJson getIlustrateInfomation(@ApiParam(name = "treatId",value = "诊疗方案的id") String treatId){

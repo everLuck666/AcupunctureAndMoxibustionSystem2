@@ -23,13 +23,13 @@ public class OrdersController {
     OrdersService ordersService;
 
     @ApiOperation("获取待处理订单数量")
-    @GetMapping("waiting")
+    @GetMapping(value = "waiting",produces="application/json;charset=UTF-8")
     public RestfulJson getWaitingOrders(){
         return RestfulJson.isOk(ordersService.getWaitingOrders());
     }
 
     @ApiOperation("获取已完成订单数量")
-    @GetMapping("finished")
+    @GetMapping(value = "finished",produces="application/json;charset=UTF-8")
     public RestfulJson getFinishedOrders(){
         return RestfulJson.isOk(ordersService.getFinishedOrders());
     }
@@ -41,14 +41,14 @@ public class OrdersController {
             @ApiImplicitParam(name = "status",value = "订单状态", dataType = "Double"),
             @ApiImplicitParam(name = "orderId", value = "订单号", dataType = "String")
     })
-    @GetMapping("orders")
+    @GetMapping(value = "orders",produces="application/json;charset=UTF-8")
     public RestfulJson getAllOrders(GetOrdersBo ordersBo){
         return RestfulJson.isOk(ordersService.getAllOrders(ordersBo));
     }
 
     @ApiOperation("修改订单状态")
     @ApiImplicitParam(name = "orderId",value = "订单号",dataType = "String")
-    @PostMapping("updateOrder")
+    @PostMapping(value = "updateOrder",produces="application/json;charset=UTF-8")
     public RestfulJson updateOrder(String orderId){
         ordersService.updateOrder(orderId);
         return RestfulJson.isOk("发货成功");
@@ -56,14 +56,14 @@ public class OrdersController {
 
     // 导出excel
     @ApiOperation("导出订单数据接口")
-    @GetMapping("/exportExcel")
+    @GetMapping(value = "/exportExcel",produces="application/json;charset=UTF-8")
     public ResponseEntity<byte[]> exportOrdersExcel(HttpServletRequest request, HttpServletResponse response) {
         String excelName = "订单记录表";
         return ordersService.exportExcel(request,response,excelName);
     }
 
     //得到今天收入
-    @ApiOperation("得到今天收入")
+    @ApiOperation(value = "得到今天收入",produces="application/json;charset=UTF-8")
     @GetMapping("income")
     public RestfulJson getTodayIncome(){
 
@@ -73,7 +73,7 @@ public class OrdersController {
 
     //得到本月收入
     @ApiOperation("得到本月收入")
-    @GetMapping("incomeMonth")
+    @GetMapping(value = "incomeMonth",produces="application/json;charset=UTF-8")
     public RestfulJson getMonthIncome(){
 
         return RestfulJson.isOk(ordersService.getMonthIncome());
@@ -81,13 +81,13 @@ public class OrdersController {
     }
     //累计收入
     @ApiOperation("得到累计收入")
-    @GetMapping("totalIncome")
+    @GetMapping(value = "totalIncome",produces="application/json;charset=UTF-8")
     public RestfulJson getTotalIncome(){
-        return RestfulJson.isOk(ordersService.getTodayIncome());
+        return RestfulJson.isOk(ordersService.totalIncome());
     }
     //得到多天的每天数据
     @ApiOperation("得到多天的每天数据")
-    @GetMapping("all")
+    @GetMapping(value = "all",produces="application/json;charset=UTF-8")
     public RestfulJson getAllOrderIncome(){
         return RestfulJson.isOk(ordersService.getAllIncome());
     }
