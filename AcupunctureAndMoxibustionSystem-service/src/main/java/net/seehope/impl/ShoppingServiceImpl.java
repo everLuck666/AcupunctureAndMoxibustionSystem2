@@ -11,6 +11,7 @@ import net.seehope.pojo.Orders;
 import net.seehope.pojo.UserInfo;
 import net.seehope.pojo.bo.ShoppingCarBo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort.Order;
 import org.springframework.data.redis.core.RedisTemplate;
 
 import org.springframework.data.redis.serializer.StringRedisSerializer;
@@ -138,5 +139,31 @@ public class ShoppingServiceImpl implements ShoppingService {
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
+    }
+
+    @Override
+    public boolean orderIsExits(String orderId, String productName) {
+        Orders orders = new Orders();
+        orders.setOrderId(orderId);
+        orders.setProductName(productName);
+        if (null == ordersMapper.selectOne(orders)){
+            return true;
+        }else {
+            return false;
+        }
+
+    }
+
+    @Override
+    public boolean goodsIsExits(String productName) {
+        Goods goods = new Goods();
+        goods.setProductName(productName);
+        goods.setStatus("1");
+        if (null == goodsMapper.selectOne(goods)){
+            return true;
+        }else {
+            return false;
+        }
+
     }
 }

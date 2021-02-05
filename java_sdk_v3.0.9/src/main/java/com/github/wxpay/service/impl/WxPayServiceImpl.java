@@ -9,6 +9,7 @@ import com.github.wxpay.service.OrderPriceService;
 import com.github.wxpay.service.WxPayService;
 import lombok.extern.slf4j.Slf4j;
 
+import net.seehope.ShoppingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,6 +24,9 @@ public class WxPayServiceImpl implements WxPayService {
 
     @Autowired
     OrderPriceService orderPriceService;
+
+    @Autowired
+    ShoppingService shoppingService;
 
     @Override
     @Transactional
@@ -45,9 +49,14 @@ public class WxPayServiceImpl implements WxPayService {
         for(int i =0;i<jsonArray.size();i++){
             JSONObject object = jsonArray.getJSONObject(i);
             String productName  = object.getString("productName");
+            System.out.println(productName);
+            if (shoppingService.goodsIsExits(productName)){
+                System.out.println("进来判断商品是否存在和是否为上架状态");
+                return paraMap;
+            }
             String productNumber = object.getString("productNumber");
             String remark = object.getString("remark");
-            attach = attach + productName + "#" + productNumber + "#" + remark + ".";
+            attach = attach + productName + "#" + productNumber + "#" + remark + "!";
             totalFee += orderPriceService.getOrderPrice(productName,Integer.valueOf(productNumber));
         }
 
@@ -58,7 +67,7 @@ public class WxPayServiceImpl implements WxPayService {
         paraMap.put("spbill_create_ip",ipAddress);
 
         // 2. 通过MyWXPayConfig创建WXPay对象，⽤于⽀付请求
-        final String SUCCESS_NOTIFY = "http://xundian5.hk1.utools.club/wxPay/success";
+        final String SUCCESS_NOTIFY = "http://xundian02.cn.utools.club/wxPay/success";
         boolean useSandbox = false; // 是否使⽤沙盒环境⽀付API，是的话不会真正扣钱 WXPayConfig config = new MyWXPayConfig();
         WXPayConfig config = new MyWXPayConfig();
         WXPay wxPay = new WXPay(config, SUCCESS_NOTIFY, false, useSandbox);
