@@ -55,7 +55,7 @@ public class MyInterceptor implements HandlerInterceptor {
 
             JWTUtils.verify(token);
             DecodedJWT verify = JWTUtils.getTokenInfo(token);
-            Users users = userService.getUserInfo(verify.getClaim("sno").asString());
+            Users users = userService.getUserInfo(verify.getClaim("openId").asString());
             logger.info("这个用户的信息是"+users.getIdentity());
             logger.info("这个用户的版本号是"+users.getVersion());
             if (users == null) {
@@ -80,8 +80,8 @@ public class MyInterceptor implements HandlerInterceptor {
                     logger.info("登录的人的身份是" + verify.getClaim("identity").asString());
                     logger.info("我是指" + value[i].equals(verify.getClaim("identity").asString()));
                     if (value[i].equals(verify.getClaim("identity").asString())) {
-                        logger.info("拦截器拦截是的是" + verify.getClaim("sno").asString());
-                        request.setAttribute("sno", verify.getClaim("sno").asString());
+                        logger.info("拦截器拦截是的是" + verify.getClaim("openId").asString());
+                        request.setAttribute("openId", verify.getClaim("openId").asString());
                         return true;
                     }
                 }

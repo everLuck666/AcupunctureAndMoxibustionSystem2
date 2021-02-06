@@ -6,18 +6,22 @@ import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
 import net.seehope.LoginService;
+import net.seehope.UserService;
 import net.seehope.common.RestfulJson;
 import net.seehope.common.UserType;
 import net.seehope.exception.PassPortException;
+import net.seehope.impl.UserServiceImpl;
 import net.seehope.jwt.JWTUtils;
 import net.seehope.pojo.Users;
 import net.seehope.pojo.bo.ManagerBo;
+import org.apache.commons.lang.StringUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.BufferedReader;
@@ -35,6 +39,8 @@ import java.util.*;
 public class LoginController  {
     @Autowired
     LoginService loginService;
+    @Autowired
+    UserService userService;
     private static final long  serialVersionUID=1L;
 
     private static final String APPID = "wxd5dc9647089cd5bf";
@@ -52,6 +58,7 @@ public class LoginController  {
     @RequestMapping(value = "/login",produces="application/json;charset=UTF-8")
     @ApiOperation("获取token接口")
     @ApiModelProperty("code是必须的")
+    @Transactional
     public RestfulJson login(@ApiParam(name="code",value="微信授权登录成功后返回的code",required=true)String code){
         log.info("code:"+code);
         System.out.println("------------------------------------");
@@ -66,6 +73,7 @@ public class LoginController  {
         StringBuilder result=new StringBuilder();
 
         Users user=new Users();
+
 
         Map<String,String> payload = new HashMap<>();
         Map map = new HashMap();
@@ -85,14 +93,6 @@ public class LoginController  {
                 user.setIdentity(UserType.USER.getType());
 
 
-                payload.put("openId",user.getUserId());
-                payload.put("identity",UserType.USER.getType()+"");
-
-                String token = JWTUtils.getToken(payload);
-                map.put("token",token);
-
-                log.info("用户的token:"+token);
-
                 Calendar calendar = new GregorianCalendar();
                 calendar.setTime(new Date());
                 calendar.add(Calendar.DAY_OF_MONTH,+7);
@@ -101,10 +101,29 @@ public class LoginController  {
                 String time = simpleDateFormat.format(cd);
                 log.info("用户的token过期时间是"+time);
                 map.put("expired",time);
-                map.put("openId",user.getUserId());
-                if(!loginService.isExist(user.getUserId())){
-                    loginService.insertUser(user);
+                if(!userService.isExist(user.getUserId())){
+                    user.setVersion("0");
+                    userService.insertUser(user,UserType.USER.getType());
+                }else{
+                    Users usrs = userService.getUserInfo(user.getUserId());
+                    int version = Integer.valueOf(usrs.getVersion());
+                    version++;
+                    if(version == 1000){
+                        version = 0;
+                    }
+                    userService.updateVersion(version+"",user.getUserId());
+                    log.info("用户在别的地方登陆现在版本号是"+version);
                 }
+                Users users = userService.getUserInfo(user.getUserId());
+
+                payload.put("openId",user.getUserId());
+                payload.put("identity",UserType.USER.getType()+"");
+                payload.put("version",users.getVersion());
+                log.info("下发的token中版本号是"+users.getVersion());
+
+                String token = JWTUtils.getToken(payload);
+                map.put("token",token);
+                log.info("用户的token:"+token);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -118,34 +137,49 @@ public class LoginController  {
             @ApiImplicitParam(name = "username", value = "用户名", dataType = "String"),
             @ApiImplicitParam(name = "password", value = "密码", dataType = "String")
     })
+    @Transactional
     @PostMapping(value = "manager",produces="application/json;charset=UTF-8")
     public RestfulJson loginManger(@RequestBody ManagerBo bo){
-        Map<String,String> map = new HashMap();
-        try {
-            Users users =  loginService.managerLogin(bo);
-            Map<String,String> payload = new HashMap<>();
-            payload.put("username",bo.getUsername());
+        Users usrs = userService.getUserInfo(bo.getUsername());
+        int version = Integer.valueOf(usrs.getVersion());
+        version++;
+        if(version == 1000){
+            version = 0;
+        }
+        usrs.setVersion(version+"");
+        userService.updateVersion(version+"",bo.getUsername());//版本号+1
 
-            payload.put("userId",users.getUserId());
-            log.info("下发管理员token"+users.getUserId());
-            payload.put("identity",users.getIdentity()+"");
+        Map<String,String> map = new HashMap();
+
+        try {
+            Users users =  userService.login(bo);
+            if(users.getIdentity()==-1){
+                return RestfulJson.errorMsg("管理员已经被删除");
+            }
+            Map<String, String> payload = new HashMap<>();
+            payload.put("username", bo.getUsername());
+
+            payload.put("openId", users.getUserId());
+            payload.put("version",users.getVersion());
+            log.info("管理员版本号"+users.getVersion());
+            log.info("下发管理员token" + users.getUserId());
+            payload.put("identity", users.getIdentity() + "");
             String token = JWTUtils.getToken(payload);
-            map.put("token",token);
+            map.put("token", token);
 
             Calendar calendar = new GregorianCalendar();
             calendar.setTime(new Date());
-            calendar.add(Calendar.DAY_OF_MONTH,+7);
+            calendar.add(Calendar.DAY_OF_MONTH, +7);
             Date cd = calendar.getTime();
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             String time = simpleDateFormat.format(cd);
-            log.info("管理员的token过期时间是"+time);
-            map.put("expired",time);
-            map.put("openId",users.getUserId());
+            log.info("管理员的token过期时间是" + time);
+            map.put("expired", time);
+            map.put("identity", users.getIdentity() + "");
         } catch (PassPortException e){
             return RestfulJson.errorMsg("密码错误");
-        } catch (Exception e){
-            return RestfulJson.errorMsg("管理员不存在");
-
+        }catch (Exception e){
+            return RestfulJson.errorMsg("管理员不存在或者找到了两个用户");
         }
         return RestfulJson.isOk(map);
     }

@@ -6,6 +6,7 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import net.seehope.UserService;
 import net.seehope.common.RestfulJson;
+import net.seehope.common.UserType;
 import net.seehope.pojo.Users;
 import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,7 @@ public class UserManagerController {
             @ApiImplicitParam(name ="password",value = "密码",dataType = "String")
     })
     public RestfulJson addManager(@RequestBody Users users){
-        userService.insertUser(users);
+        userService.insertUser(users, UserType.SUPERMANAGER.getType());
         return RestfulJson.isOk("添加管理员成功");
     }
 

@@ -3,5 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="net.seehope.mapper.XueTreatMapper">
-
+    <select id="countXueWei" resultType="int">
+        select count(distinct xue_id) from xue_treat where treat_id = #{treatId}
+    </select>
 </mapper>

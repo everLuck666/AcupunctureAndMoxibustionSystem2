@@ -24,6 +24,18 @@ public class MedicalRecord implements Serializable {
     @Column(name = "`create_time`")
     private Date createTime;
 
+
+    @Column(name = "`status`")
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     private static final long serialVersionUID = 1L;
 
     /**

@@ -3,8 +3,11 @@ package net.seehope.impl;
 import net.seehope.UserService;
 
 import net.seehope.common.UserType;
+import net.seehope.exception.PassPortException;
 import net.seehope.mapper.UsersMapper;
 import net.seehope.pojo.Users;
+import net.seehope.pojo.bo.ManagerBo;
+import net.sf.jsqlparser.expression.UserVariable;
 import org.apache.catalina.User;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +24,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Users getUserInfo(String sno) {
+        Users users = new Users();
+        users.setUserId(sno);
+        Users userValue = usersMapper.selectOne(users);
+        if(userValue != null){
+            return userValue;
+        }
         return null;
     }
 
@@ -43,11 +52,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void insertUser(Users user) {
+    public void insertUser(Users user,int identity) {
         if (isExist(user.getUserId())){
             throw new RuntimeException("账号存在");
         }else{
-            user.setIdentity(UserType.SUPERMANAGER.getType());
+            user.setIdentity(identity);
             usersMapper.insert(user);
         }
 
@@ -55,8 +64,26 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Users login(Users user) {
-        return null;
+    public Users login(ManagerBo bo) {
+        Users user = null;
+
+        if (!StringUtils.isEmpty(bo.getUsername())) {
+            Users temp = new Users();
+            temp.setUserId(bo.getUsername());
+            try{
+                user = usersMapper.selectOne(temp);
+            }catch (Exception e){
+                throw new RuntimeException("找到了两个用户");
+            }
+            if (user == null) {
+                throw new RuntimeException("用户不存在");
+            }
+            if (!StringUtils.equals(bo.getPassword(), user.getPassword())) {
+                throw new PassPortException("密码错误");
+            }
+        }
+
+        return user;
     }
 
     @Override
@@ -77,5 +104,11 @@ public class UserServiceImpl implements UserService {
         Users users = new Users();
         users.setIdentity(UserType.SUPERMANAGER.getType());
         return usersMapper.select(users);
+    }
+
+    @Override
+    public void updateVersion(String version,String userId) {
+        usersMapper.updateVersion(version,userId);
+
     }
 }

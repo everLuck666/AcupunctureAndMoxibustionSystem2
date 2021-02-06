@@ -3,6 +3,7 @@ package net.seehope.impl;
 
 import net.seehope.IndexService;
 import net.seehope.common.FilePath;
+import net.seehope.common.MedicalRecordType;
 import net.seehope.common.PlanStatus;
 import net.seehope.common.RecordStatus;
 import net.seehope.mapper.*;
@@ -11,6 +12,8 @@ import net.seehope.pojo.vo.IlustrateVo;
 import net.seehope.pojo.vo.MyPlanVo;
 import net.seehope.pojo.vo.SymptomInformationVo;
 
+import org.apache.commons.lang.StringUtils;
+import org.omg.SendingContext.RunTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,11 +56,14 @@ public class IndexServiceImpl implements IndexService {
 
 
     @Override
-    public List<MyPlanVo> getMyPlan(String userId) {
+    public List<MyPlanVo> getMyPlan(String userId,String status) {//status 1表示没有删除的，如果为-1就是表示删除的。
         List<MyPlanVo> myPlanVoList = new ArrayList<>();
 
         MedicalRecord medicalRecord = new MedicalRecord();
         medicalRecord.setUserId(userId);
+        if(!StringUtils.equals(status, MedicalRecordType.ALL.getStatus())){
+            medicalRecord.setStatus(status);
+        }
         List<MedicalRecord> medicalRecordList = medicalRecordMapper.select(medicalRecord);
         for(MedicalRecord medicalRecordTemp: medicalRecordList){
             //得到针灸的总时间
@@ -78,8 +84,18 @@ public class IndexServiceImpl implements IndexService {
 
 
            MyPlanVo myPlanVo = new MyPlanVo();
+            myPlanVo.setTreatId(medicalRecordTemp.getProjectId());
            myPlanVo.setDate(medicalRecordTemp.getTotalTime());
            myPlanVo.setName(medicalRecordTemp.getSymptomName());
+
+           Symptom symptom = new Symptom();
+           symptom.setSymptomName(medicalRecordTemp.getSymptomName());
+           Symptom symptomValue = symptomMapper.selectOne(symptom);
+           if(symptomValue != null){
+               System.out.println("放入图片的路径");
+               myPlanVo.setImage(symptomValue.getPath());
+           }
+
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
            myPlanVo.setCreateTime(simpleDateFormat.format(medicalRecordTemp.getCreateTime()));
@@ -126,6 +142,10 @@ public class IndexServiceImpl implements IndexService {
             ilustrateVo.setTreatId(treat.getTreatId());
             ilustrateVo.setSymptomId(treat.getSymptomId());
 
+
+            ilustrateVo.setTreatNum(treatProject1.getTotalTime());
+            ilustrateVo.setXueWeiNum(xueTreatMapper.countXueWei(treatProject1.getTreatId())+"");
+
             ilustrateVoList.add(ilustrateVo);
         }
 
@@ -156,12 +176,12 @@ public class IndexServiceImpl implements IndexService {
         TreatProject treatProject = new TreatProject();
         treatProject.setTreatId(treatId);
         TreatProject treatProject1 = treatProjectMapper.selectOne(treatProject);
+        if(treatProject1 != null){
+            symptomInformationVo.setTotalDay(treatProject1.getTotalTime());
 
-        symptomInformationVo.setTotalDay(treatProject1.getTotalTime());
-
-        symptomInformationVo.setEffect(treatProject1.getEffect());
-        symptomInformationVo.setDescribe(treatProject1.getTreatDescribe());
-
+            symptomInformationVo.setEffect(treatProject1.getEffect());
+            symptomInformationVo.setDescribe(treatProject1.getTreatDescribe());
+        }
 
         XueTreat xueTreat = new XueTreat();
         xueTreat.setDay(day);
@@ -210,17 +230,32 @@ public class IndexServiceImpl implements IndexService {
         medicalRecord.setProjectId(treatId);
         medicalRecord.setSymptomName(symptom1.getSymptomName());
         medicalRecord.setTotalTime(treatProject1.getTotalTime());
+        medicalRecord.setStatus(MedicalRecordType.UNDELETE.getStatus());
+        int medicalRecordStatus = Integer.parseInt(isCanAddPlan(treatId,userId,medicalRecord.getSymptomName()));
+        logger.info("我是添加方案的状态"+medicalRecordStatus);
 
-           if(isCanAddPlan(treatId,userId,medicalRecord.getSymptomName())){
+           if(medicalRecordStatus == Integer.parseInt(MedicalRecordType.SPACE.getStatus())){//如果是被删除的，这个方法会在内部把被删除的添加回来
                medicalRecordMapper.insert(medicalRecord);
-           }else {
-               throw new RuntimeException("已经添加过这个方案了");
+           }else if(medicalRecordStatus == Integer.parseInt(MedicalRecordType.DELETE.getStatus())){
+               MedicalRecord medicalRecordTemp = new MedicalRecord();
+               medicalRecordTemp.setUserId(userId);
+
+               medicalRecordTemp.setProjectId(treatId);
+               medicalRecordTemp.setSymptomName(medicalRecord.getSymptomName());
+
+               MedicalRecord medicalRecord1 = medicalRecordMapper.selectOne(medicalRecordTemp);
+               medicalRecordMapper.delete(medicalRecord1);
+               medicalRecord1.setStatus(MedicalRecordType.UNDELETE.getStatus());
+               medicalRecordMapper.insert(medicalRecord1);
+           }else{
+               throw new RuntimeException("这个方案已经添加过了");
            }
 
     }
 
     @Override
-    public boolean isCanAddPlan(String treatId, String userId, String symptomName) {
+    @Transactional
+    public String isCanAddPlan(String treatId, String userId, String symptomName) {
 
 
         MedicalRecord medicalRecord = new MedicalRecord();
@@ -232,11 +267,15 @@ public class IndexServiceImpl implements IndexService {
 
         MedicalRecord medicalRecord1 = medicalRecordMapper.selectOne(medicalRecord);
         if(medicalRecord1 == null){
-            return true;
+            return MedicalRecordType.SPACE.getStatus();
+        }else if(StringUtils.equals(medicalRecord1.getStatus(),MedicalRecordType.DELETE.getStatus())){
+            return MedicalRecordType.DELETE.getStatus();
+        }else{
+            return MedicalRecordType.UNDELETE.getStatus();
         }
 
 
-        return false;
+
     }
 
 
@@ -352,6 +391,28 @@ public class IndexServiceImpl implements IndexService {
             dest.delete();
         } else {
             logger.warn("请注意要删除的文件不存在");
+        }
+    }
+
+    @Override
+    @Transactional
+    public void deleteMyPlan(String userId, String treatId) {
+        MedicalRecord medicalRecord = new MedicalRecord();
+        medicalRecord.setProjectId(treatId);
+        logger.info("开始删除我的计划");
+        logger.info("userId:"+userId);
+        logger.info("treatId:"+treatId);
+
+
+        medicalRecord.setUserId(userId);
+
+        MedicalRecord medicalRecordValue = medicalRecordMapper.selectOne(medicalRecord);
+        if(medicalRecordValue != null){
+            medicalRecordMapper.delete(medicalRecordValue);
+            medicalRecordValue.setStatus(MedicalRecordType.DELETE.getStatus());
+            medicalRecordMapper.insert(medicalRecordValue);
+        }else{
+             throw new RuntimeException("没有这条记录，无法删除");
         }
     }
 

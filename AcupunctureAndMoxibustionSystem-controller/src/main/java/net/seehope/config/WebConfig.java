@@ -41,11 +41,19 @@ public class WebConfig extends WebMvcConfigurationSupport {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
 
-//        //拦截教师
-//        List includePathLists = new ArrayList();
-//        includePathLists.add("/students/student");
-//        registry.addInterceptor(new MyInterceptor(new String[]{UserType.TEACHER.getType()+""},"不是老师token",userService))
-//                .addPathPatterns(includePathLists);
+        //拦截用户
+        List includePathLists = new ArrayList();
+        includePathLists.add("/index/plan");
+        includePathLists.add("/index/planRecord");
+        includePathLists.add("/index/appendPlan");
+        includePathLists.add("/ilustrate/record");
+        includePathLists.add("/ilustrate/ilustrateAll");
+        includePathLists.add("/ilustrate/ilustrateInfomation");
+        List userExclude = new ArrayList();
+        userExclude.add("/user/login");
+
+        registry.addInterceptor(new MyInterceptor(new String[]{UserType.USER.getType()+""},"不是用户token",userService))
+                .addPathPatterns(includePathLists);
 //
 //
 //        //拦截学生
@@ -55,15 +63,25 @@ public class WebConfig extends WebMvcConfigurationSupport {
 //                .addPathPatterns(studentIncludePathLists);
 
 //管理员拦截器
-//        List managerIncludePathLists = new ArrayList();
-//        managerIncludePathLists.add("/staff/**");
-//        managerIncludePathLists.add("/orderStatistic/**");
-//        managerIncludePathLists.add("/webVerifi/**");
-//        managerIncludePathLists.add("/ticketsManager/**");
-//        List managerExclude = new ArrayList();
-//        managerExclude.add("/staff/getStaffs");
-//        registry.addInterceptor(new MyInterceptor(new String[]{UserType.MANAGER.getType()+"",UserType.SUPERMANAGER.getType()+""},"不是管理员token或者超级管理员",userService))
-//                .addPathPatterns(managerIncludePathLists);
+        List managerIncludePathLists = new ArrayList();
+        managerIncludePathLists.add("/article/**");
+        managerIncludePathLists.add("/ilustrate/**");
+        managerIncludePathLists.add("/user/**");
+        managerIncludePathLists.add("/file/**");
+        List managerExclude = new ArrayList();
+        managerExclude.add("/ilustrate/record");
+        managerExclude.add("/user/login");
+        managerExclude.add("/user/manager");
+        managerExclude.add("/ilustrate/ilustrateAll");
+        managerExclude.add("/ilustrate/record");
+        managerExclude.add("/ilustrate/ilustrateInfomation");
+
+
+
+
+        registry.addInterceptor(new MyInterceptor(new String[]{UserType.SUPERMANAGER.getType()+""},"不是管理员token",userService))
+                .addPathPatterns(managerIncludePathLists)
+                .excludePathPatterns(managerExclude);
 ////
 ////超级管理员拦截器
 //        List superManagerIncludePathLists = new ArrayList();

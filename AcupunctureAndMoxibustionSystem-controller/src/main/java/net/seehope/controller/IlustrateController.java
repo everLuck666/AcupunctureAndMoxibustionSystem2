@@ -58,7 +58,7 @@ public class IlustrateController {
 
     }
     //得到所有说明
-    @GetMapping(value = "ilustrate",produces="application/json;charset=UTF-8")
+    @GetMapping(value = "ilustrateAll",produces="application/json;charset=UTF-8")
     @ApiOperation("得到所有的说明")
     public RestfulJson getAllIlustrate(){
         return RestfulJson.isOk(ilustrateService.getAllIlustrate());
@@ -84,10 +84,10 @@ public class IlustrateController {
             @ApiImplicitParam(name = "treatId",value = "诊疗方案的id",dataType = "String")})
     public RestfulJson updateRecord(@RequestBody Map map,HttpServletRequest request){
 
-        String userId = request.getHeader("openId");
+        String userId = request.getAttribute("openId").toString();
         String treatId = map.get("treatId").toString();
         ilustrateService.updateRecord(userId,treatId);
-        return RestfulJson.isOk("");
+        return RestfulJson.isOk("记录诊疗数据完成");
 
 
 

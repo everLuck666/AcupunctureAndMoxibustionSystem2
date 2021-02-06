@@ -6,6 +6,25 @@ public class IlustrateVo {
      private String treatId;
     private String symptomId;
 
+    private String XueWeiNum;
+    private String treatNum;
+
+    public String getXueWeiNum() {
+        return XueWeiNum;
+    }
+
+    public void setXueWeiNum(String xueWeiNum) {
+        XueWeiNum = xueWeiNum;
+    }
+
+    public String getTreatNum() {
+        return treatNum;
+    }
+
+    public void setTreatNum(String treatNum) {
+        this.treatNum = treatNum;
+    }
+
     public String getSymptomId() {
         return symptomId;
     }

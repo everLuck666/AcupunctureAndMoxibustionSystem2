@@ -2,6 +2,7 @@ package net.seehope.controller;
 
 import io.swagger.annotations.*;
 import net.seehope.IndexService;
+import net.seehope.common.MedicalRecordType;
 import net.seehope.common.RestfulJson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,8 +25,19 @@ public class IndexController {
     })
 
     public RestfulJson getMyPlan(HttpServletRequest request){
-        String userId = request.getHeader("openId").toString();
-        return RestfulJson.isOk(indexService.getMyPlan(userId));
+        String userId = request.getAttribute("openId").toString();
+        return RestfulJson.isOk(indexService.getMyPlan(userId, MedicalRecordType.UNDELETE.getStatus()));
+    }
+
+    @GetMapping(value = "planRecord",produces="application/json;charset=UTF-8")
+    @ApiOperation(value = "得到我的诊疗记录",notes = "token是必须的，放在header中")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "openId",value = "就是token,但是字段是openId")
+    })
+
+    public RestfulJson getMyPlanRecord(HttpServletRequest request){
+        String userId = request.getAttribute("openId").toString();
+        return RestfulJson.isOk(indexService.getMyPlan(userId, MedicalRecordType.ALL.getStatus()));
     }
     @GetMapping(value = "ilustrate",produces="application/json;charset=UTF-8")
     @ApiOperation("得到说明信息")
@@ -61,12 +73,30 @@ public class IndexController {
 
     })
     public RestfulJson addMyPlay(HttpServletRequest request, @RequestBody  Map map) throws ParseException {
-        String userId = request.getHeader("openId").toString();
+        String userId = request.getAttribute("openId").toString();
         String treatId = map.get("treatId").toString();
         String symptomId = map.get("symptomId").toString();
         System.out.println("我执行到这里了");
         indexService.addMyPlay(treatId,userId,symptomId);
         return RestfulJson.isOk("成功");
+    }
+
+    @DeleteMapping(value = "plan",produces="application/json;charset=UTF-8")
+    @ApiOperation("删除我的计划")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "openId",value = "就是token,但是字段是openId"),
+            @ApiImplicitParam(name = "treatId",value = "要删除的记录的诊疗id")
+    })
+    public RestfulJson deleteMyPlan(HttpServletRequest request,@RequestBody Map map){
+        String userId = request.getAttribute("openId").toString();
+        String treatId = map.get("treatId").toString();
+        if(treatId != null&&userId != null){
+            indexService.deleteMyPlan(userId,treatId);
+            return RestfulJson.isOk("删除成功");
+        }else{
+            return RestfulJson.errorMsg("删除失败");
+        }
+
     }
 
 

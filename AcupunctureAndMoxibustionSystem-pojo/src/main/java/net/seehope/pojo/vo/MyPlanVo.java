@@ -10,6 +10,26 @@ public class MyPlanVo {
     //诊疗天数
     private String date;
 
+    private String image;
+
+    private String treatId;
+
+    public String getTreatId() {
+        return treatId;
+    }
+
+    public void setTreatId(String treatId) {
+        this.treatId = treatId;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public String getCreateTime() {
         return createTime;
     }
