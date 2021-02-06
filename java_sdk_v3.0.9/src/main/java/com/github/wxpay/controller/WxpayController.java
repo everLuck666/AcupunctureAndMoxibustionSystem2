@@ -73,26 +73,31 @@ public class WxpayController {
             Orders bo = new Orders();
             bo.setUserId(param.getOpenid());
             bo.setOrderId(param.getTransaction_id());
+            System.out.println("userId:" + param.getOpenid());
+            System.out.println("orderId:" + param.getTransaction_id());
             System.out.println("attach:"+param.getAttach());
             String[] attach = param.getAttach().split(":");
             String[] address = attach[0].split("#");
-            String[] orderInfos = attach[1].split(".");
+            String[] orderInfos = attach[1].split("!");
+//            System.out.println(attach[0]);
+//            System.out.println(address[0]);
+//            System.out.println(orderInfos[0]);
             for (String orderInfo:orderInfos) {
                 String[] info = orderInfo.split("#");
                 bo.setProductName(info[0]);
-                bo.setProductNumber(attach[1]);
-                bo.setRemark(attach[2]);
+                bo.setProductNumber(info[1]);
+                bo.setRemark(info[2]);
                 bo.setUserName(address[0]);
                 bo.setUserPhone(address[1]);
                 bo.setUserAddress(address[2]);
                 bo.setOrderTime(new Date());
                 bo.setStatus(OrderType.Waiting.getType()+"");
                 bo.setOrderAmout(Double.valueOf(param.getTotal_fee()));
-                shoppingService.addOrders(bo);
+                if (shoppingService.orderIsExits(param.getOpenid(),info[0])){
+                    System.out.println("生成订单中");
+                    shoppingService.addOrders(bo);
+                }
             }
-
-
-
         }
         return WXPayUtil.mapToXml(result);
     }

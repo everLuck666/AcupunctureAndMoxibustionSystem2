@@ -6,6 +6,7 @@ public class UserOrdersBo {
     private String productNumber;
     private Double orderAmout;
     private String status;
+    private String imageUrl;
 
     public String getProductName() {
         return productName;
@@ -45,5 +46,13 @@ public class UserOrdersBo {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

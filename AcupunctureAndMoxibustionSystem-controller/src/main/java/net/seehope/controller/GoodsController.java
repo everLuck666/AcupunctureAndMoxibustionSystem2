@@ -47,6 +47,7 @@ public class GoodsController {
         goods.setDescribe(goodsInfoVo.getDescribe());
         goods.setProductPrice(goodsInfoVo.getProductPrice());
         goods.setImageUrl(fileName);
+        System.out.println("商品状态----" + goodsInfoVo.getStatus());
         goods.setStatus(goodsInfoVo.getStatus());
         goodsService.addGoods(goods);
         return RestfulJson.isOk("添加商品成功！");
@@ -56,8 +57,12 @@ public class GoodsController {
     @ApiImplicitParam(name = "goodsName", value = "商品名称", dataType = "String")
     @DeleteMapping(value = "goods",produces="application/json;charset=UTF-8")
     public RestfulJson deleteGoods(String goodsName){
-        goodsService.deleteGoods(goodsName);
-        return RestfulJson.isOk("删除商品成功！");
+        if (null!=goodsName){
+            goodsService.deleteGoods(goodsName);
+            return RestfulJson.isOk("删除商品成功！");
+        }
+        return RestfulJson.errorMsg("商品名称为null，删除失败!");
+
     }
 
     @ApiOperation("获取所有商品")
@@ -70,6 +75,7 @@ public class GoodsController {
     @ApiImplicitParam(name = "goodsName", value = "商品名称", dataType = "String")
     @PostMapping(value = "goods",produces="application/json;charset=UTF-8")
     public RestfulJson updateGoods(String goodsName){
+        System.out.println("商品名称-------" + goodsName);
         goodsService.updateGoods(goodsName);
         return RestfulJson.isOk("修改成功！");
     }

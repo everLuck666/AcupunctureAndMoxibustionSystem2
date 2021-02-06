@@ -34,4 +34,10 @@ public interface ShoppingService {
 
     //下单
     void addOrders(Orders orders);
+
+    //判断订单是否存在
+    boolean orderIsExits(String orderId,String productName);
+
+    //判断商品是否存在和是否为上架状态
+    boolean goodsIsExits(String productName);
 }
