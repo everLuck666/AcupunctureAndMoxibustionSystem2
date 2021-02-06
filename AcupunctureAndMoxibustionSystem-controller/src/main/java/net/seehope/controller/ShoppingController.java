@@ -43,7 +43,7 @@ public class ShoppingController {
     })
     @PutMapping(value = "addAddress",produces="application/json;charset=UTF-8")
     public RestfulJson addAddress(@RequestBody UserInfoVo userInfoVo, HttpServletRequest request){
-        String userId = request.getHeader("openId").toString();
+        String userId = request.getAttribute("openId").toString();
         UserInfo userInfo = new UserInfo();
         userInfo.setUserId(userId);
         userInfo.setUserName(userInfoVo.getUserName());
@@ -65,7 +65,7 @@ public class ShoppingController {
     })
     @GetMapping(value = "getUserAddress",produces="application/json;charset=UTF-8")
     public RestfulJson getUserAddress(HttpServletRequest request){
-        String userId = request.getHeader("openId").toString();
+        String userId = request.getAttribute("openId").toString();
         return RestfulJson.isOk(shoppingService.getUserAddress(userId));
 
     }
@@ -81,7 +81,7 @@ public class ShoppingController {
             @ApiImplicitParam(name = "openId",value = "就是token,但是字段是userId放在header中")
     })
     public RestfulJson getUserOrders(HttpServletRequest request){
-        String userId = request.getHeader("openId").toString();
+        String userId = request.getAttribute("openId").toString();
         return RestfulJson.isOk(shoppingService.getMyorders(userId));
 
     }
@@ -103,7 +103,7 @@ public class ShoppingController {
     })
     @PutMapping(value = "addShopping",produces="application/json;charset=UTF-8")
     public RestfulJson addShoppingCar(@RequestBody ShoppingCarBo bo, HttpServletRequest request){
-        String userId = request.getHeader("openId").toString();
+        String userId = request.getAttribute("openId").toString();
 //        String userId = "123";
         try {
             shoppingService.addShoppingCar(bo,userId);
@@ -118,7 +118,7 @@ public class ShoppingController {
     @ApiImplicitParam(name = "productName", value = "商品名称",dataType = "String")
     @DeleteMapping(value = "deleteShopping",produces="application/json;charset=UTF-8")
     public RestfulJson deleteShoppingCar(String productName,HttpServletRequest request){
-        String userId = request.getHeader("openId").toString();
+        String userId = request.getAttribute("openId").toString();
         String key = userId + productName;
         try {
             shoppingService.deleteShoppingCar(key);
@@ -134,7 +134,7 @@ public class ShoppingController {
             @ApiImplicitParam(name = "openId",value = "就是token,但是字段是userId放在header中")
     })
     public RestfulJson getShoppingCar(HttpServletRequest request){
-        String userId = request.getHeader("openId").toString();
+        String userId = request.getAttribute("openId").toString();
         return RestfulJson.isOk(shoppingService.getShoppingCar(userId));
     }
 
