@@ -7,12 +7,10 @@ import net.seehope.exception.PassPortException;
 import net.seehope.mapper.UsersMapper;
 import net.seehope.pojo.Users;
 import net.seehope.pojo.bo.ManagerBo;
-import net.sf.jsqlparser.expression.UserVariable;
-import org.apache.catalina.User;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.usagetracker.UsageTrackerClient;
+
 
 import java.util.List;
 
