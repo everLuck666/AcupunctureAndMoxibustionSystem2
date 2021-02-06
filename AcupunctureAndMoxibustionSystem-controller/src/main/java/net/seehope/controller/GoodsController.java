@@ -57,8 +57,12 @@ public class GoodsController {
     @ApiImplicitParam(name = "goodsName", value = "商品名称", dataType = "String")
     @DeleteMapping(value = "goods",produces="application/json;charset=UTF-8")
     public RestfulJson deleteGoods(String goodsName){
-        goodsService.deleteGoods(goodsName);
-        return RestfulJson.isOk("删除商品成功！");
+        if (null!=goodsName){
+            goodsService.deleteGoods(goodsName);
+            return RestfulJson.isOk("删除商品成功！");
+        }
+        return RestfulJson.errorMsg("商品名称为null，删除失败!");
+
     }
 
     @ApiOperation("获取所有商品")

@@ -75,9 +75,8 @@ public class OrdersServiceImpl implements OrdersService {
         Orders orders = new Orders();
         orders.setOrderId(orderId);
         Orders orders1 = ordersMapper.selectOne(orders);
-        String status = Integer.valueOf(orders1.getStatus())== 1 ? "0" : "1";
-        ordersMapper.delete(orders1);
-        orders1.setStatus(status);
+        ordersMapper.delete(orders);
+        orders1.setStatus("1");
         ordersMapper.insert(orders1);
     }
 
