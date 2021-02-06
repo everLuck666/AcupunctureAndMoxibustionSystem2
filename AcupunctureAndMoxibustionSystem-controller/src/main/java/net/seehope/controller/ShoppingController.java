@@ -98,6 +98,7 @@ public class ShoppingController {
             @ApiImplicitParam(name = "productNumber", value = "商品数量", dataType = "String"),
             @ApiImplicitParam(name = "productPrice",value = "商品价格", dataType = "String"),
             @ApiImplicitParam(name = "order_amout", value = "订单总额", dataType = "String"),
+            @ApiImplicitParam(name = "imageUrl", value = "图片地址", dataType = "String"),
             @ApiImplicitParam(name = "openId",value = "就是token,但是字段是userId放在header中")
     })
     @PutMapping(value = "addShopping",produces="application/json;charset=UTF-8")

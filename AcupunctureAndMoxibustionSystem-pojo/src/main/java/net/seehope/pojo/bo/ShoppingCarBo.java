@@ -8,6 +8,7 @@ public class ShoppingCarBo implements Serializable {
     private String productNumber;
     private String productPrice;//商品金额
     private String order_amout;//订单总额
+    private String imageUrl;
 
     public String getProductName() {
         return productName;
@@ -39,5 +40,13 @@ public class ShoppingCarBo implements Serializable {
 
     public void setOrder_amout(String order_amout) {
         this.order_amout = order_amout;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

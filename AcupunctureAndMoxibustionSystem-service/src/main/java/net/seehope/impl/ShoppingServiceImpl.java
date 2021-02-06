@@ -102,7 +102,7 @@ public class ShoppingServiceImpl implements ShoppingService {
     public List getShoppingCar(String userId) {
         redisTemplate.setKeySerializer(new StringRedisSerializer());
         Set keys = redisTemplate.keys(userId + "*");
-        System.out.println(keys);
+        System.out.println("获取购物车"+keys);
         List result = redisTemplate.opsForValue().multiGet(keys);
         return result;
     }
