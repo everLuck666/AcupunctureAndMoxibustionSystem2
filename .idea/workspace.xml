@@ -12,6 +12,8 @@
       <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-15-13-51.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-15-14-08.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/ShoppingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/ShoppingController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
   </component>
   <component name="ProjectId" id="1nV6FhHU5R8pue0odzXOtrbRv65" />
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="添加" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
