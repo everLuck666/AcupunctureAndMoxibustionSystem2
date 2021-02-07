@@ -56,7 +56,7 @@ public class OrdersController {
 
     // 导出excel
     @ApiOperation("导出订单数据接口")
-    @GetMapping(value = "/exportExcel",produces="application/json;charset=UTF-8")
+    @GetMapping(value = "/exportExcel")
     public ResponseEntity<byte[]> exportOrdersExcel(HttpServletRequest request, HttpServletResponse response) {
         String excelName = "订单记录表";
         return ordersService.exportExcel(request,response,excelName);

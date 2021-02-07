@@ -31,10 +31,9 @@ public class ArticleController {
     @Autowired
     IndexService indexService;
 
-    @GetMapping(value = "article",produces="application/json;charset=UTF-8")
+    @GetMapping(value = "articleAll",produces="application/json;charset=UTF-8")
     @ApiOperation("得到所有的文章信息")
     public RestfulJson getAllArticle() throws IOException {
-
 
         return RestfulJson.isOk(articleService.getAllArticle());
 

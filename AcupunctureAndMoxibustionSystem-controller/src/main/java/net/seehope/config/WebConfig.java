@@ -53,7 +53,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
         List userExclude = new ArrayList();
         userExclude.add("/user/login");
 
-        registry.addInterceptor(new MyInterceptor(new String[]{UserType.USER.getType()+""},"不是用户token",userService))
+        registry.addInterceptor(new MyInterceptor(new String[]{UserType.USER.getType()+"",UserType.SUPERMANAGER.getType()+""},"不是用户token",userService))
                 .addPathPatterns(includePathLists);
 //
 //
@@ -78,6 +78,8 @@ public class WebConfig extends WebMvcConfigurationSupport {
         managerExclude.add("/ilustrate/ilustrateAll");
         managerExclude.add("/ilustrate/record");
         managerExclude.add("/ilustrate/ilustrateInfomation");
+        managerExclude.add("/article/articleAll");
+        managerExclude.add("/file/video2");
 
 
 

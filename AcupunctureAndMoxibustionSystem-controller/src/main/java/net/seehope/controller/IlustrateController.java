@@ -101,6 +101,22 @@ public class IlustrateController {
     }
 
 
+    @DeleteMapping(value = "xueWei",produces="application/json;charset=UTF-8")
+    @ApiOperation("删除诊疗方案的某一个穴位")
+    @ApiImplicitParams({@ApiImplicitParam(name ="treatId",value = "诊疗id",dataType = "String"),
+            @ApiImplicitParam(name = "xueWeiId",value = "穴位ID",dataType = "String")})
+    public RestfulJson deleteXueWei(@RequestBody Map map){
+        String treatId = map.get("treatId").toString();
+        String xueWeiId = map.get("xueWeiId").toString();
+        ilustrateService.deleteXueWei(treatId,xueWeiId);
+        return RestfulJson.isOk("删除穴位成功");
+
+
+
+
+    }
+
+
 
 
 

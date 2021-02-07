@@ -15,6 +15,8 @@ public interface XueTreatMapper extends tk.mybatis.mapper.common.Mapper<XueTreat
     //查看这个诊疗方案有多少个穴位
 
     int countXueWei(@Param("treatId") String treatId);
+    //查询除了本方案，其他方案的指定穴位个数
+    int countXueWei2(@Param("treatId") String treatId,@Param("xueWeiId")String xueWeiId);
 
 
 

@@ -108,65 +108,48 @@ public class IlustrateServiceImpl implements IlustrateService {
         boolean flag = true;
         boolean flag2 = false;//用来判断是否发生了穴位修改
 
+
+        boolean flag3 = false;//当出现相同的穴位就会变成true,接下来很可能出现重复
+        boolean flag4 = false;//当诊疗方案出现重复的时候，也很可能出问题
+
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
 
-
-        XueWei xueWei = new XueWei();
-        xueWei.setPointname(weiBo.getPointName());
-        XueWei xueWeiTemp = xueWeiMapper.selectOne(xueWei);
-        if(xueWeiTemp != null){
-            logger.warn("出现相同穴位名称，执行不插入");
-            id = xueWeiTemp.getId();
-            String fileName = null;
-            logger.info("开始检测这个穴位的信息和数据库的存储是否有区别");
-
-            for (int i = 0; i < files.size(); i++) {
-                MultipartFile file = files.get(i);
-                if (file.isEmpty()) {
-                    throw new RuntimeException("上传的文件是空的");
-                }
-                fileName = file.getOriginalFilename();
-
-            }
-            if(fileName != null){
-                xueWei.setPath(fileName);
-            }
-            xueWei.setTemperature(weiBo.getTemperature());
-            xueWei.setTreattime(Integer.parseInt(weiBo.getTreatTime()));
-
-            XueWei xueWei1 = xueWeiMapper.selectOne(xueWei);
-
-            if(xueWei1 == null){
-                logger.info("开始更改穴位信息");
-                xueWeiMapper.delete(xueWeiTemp);
-                flag2 = true;
-
-            }else{
-                flag = false;
-                logger.info("检测完毕，穴位没有变化");
-            }
-        }
 
         String fileName = "";
 
         if(flag) {
             //上传图片
 
+            XueWei xueWei = new XueWei();//用于检测是否发生穴位的事情
+            xueWei.setPointname(weiBo.getPointName());
+
+            xueWei.setTemperature(weiBo.getTemperature());
+            xueWei.setTreattime(Integer.parseInt(weiBo.getTreatTime()));
+
             File tempFile = new File(FilePath.path);
             String path = FilePath.images;
             fileName = indexService.update(files, path);
             weiBo.setPath(fileName);
+            //xueWei.setPath(fileName);
 
-            xueWei.setTemperature(weiBo.getTemperature());
-            xueWei.setTreattime(Integer.parseInt(weiBo.getTreatTime()));
+
+
             id = UUID.randomUUID().toString();
-            if(flag2){
-                xueWei.setId(xueWeiTemp.getId());
-            }else {
+
+            XueWei xueWeiValue = xueWeiMapper.selectOne(xueWei);
+            if(xueWeiValue != null){
+                flag3 = true;
+                id = xueWeiValue.getId();
+                logger.info("出现了一样的穴位");
+
+            }else{
                 xueWei.setId(id+"");
+                xueWei.setPath(weiBo.getPath());
+                xueWeiMapper.insert(xueWei);
             }
-            xueWei.setPath(weiBo.getPath());
-            xueWeiMapper.insert(xueWei);
+
+
+
         }
 
 
@@ -184,16 +167,12 @@ public class IlustrateServiceImpl implements IlustrateService {
             xueTreat.setDay(weiBo.getDay());
             xueTreat.setXueId(id+"");
             XueTreat xueTreat1 = xueTreatMapper.selectOne(xueTreat);
-            if(xueTreat1 != null && !flag2){
+            if(xueTreat1 != null){
                 indexService.deleteFile(fileName,FilePath.images);
                 throw new RuntimeException("请不要重复提交请求");
             }
-
-            if(!flag2){
                 xueTreatMapper.insert(xueTreat);
-            }else{
-                logger.info("改变了穴位信息，但是不改变穴位和治疗方案的映射");
-            }
+
 
 
 
@@ -264,7 +243,13 @@ public class IlustrateServiceImpl implements IlustrateService {
             xueTreat.setTreatId(treatId);
             List<XueTreat> xueTreatList = xueTreatMapper.select(xueTreat);
             for (XueTreat xueTreat1:xueTreatList){
-
+                //查询这个穴位除了本诊疗方案外是否还有其他使用
+                int countExcludeXueWei = xueTreatMapper.countXueWei2(xueTreat1.getTreatId(),xueTreat1.getXueId());
+                if(countExcludeXueWei ==0){
+                    XueWei xueWei = new XueWei();
+                    xueWei.setId(xueTreat1.getXueId());
+                    xueWeiMapper.delete(xueWei);
+                }
                 xueTreatMapper.delete(xueTreat1);
             }
 
@@ -358,6 +343,22 @@ public class IlustrateServiceImpl implements IlustrateService {
         Symptom symptom = new Symptom();
         symptom.setSymptomId(symptomId);
         return symptomMapper.selectOne(symptom);
+    }
+
+    @Override
+    @Transactional
+    public void deleteXueWei(String treatId, String xueWeiId) {
+        XueTreat xueTreat2 = new XueTreat();
+        xueTreat2.setXueId(xueWeiId);
+        xueTreat2.setTreatId(treatId);
+        xueTreatMapper.delete(xueTreat2);
+        //查询这个穴位除了本诊疗方案外是否还有其他使用
+        int countExcludeXueWei = xueTreatMapper.countXueWei2(treatId,xueWeiId);
+        if(countExcludeXueWei ==0){
+            XueWei xueWei = new XueWei();
+            xueWei.setId(xueWeiId);
+            xueWeiMapper.delete(xueWei);
+        }
     }
 
 

@@ -27,4 +27,7 @@ public interface IlustrateService {
     //得到病症的详细信息
     Symptom getSymptomInfomation(String symptomId);
 
+    //删除指定项目的某个穴位
+    void deleteXueWei(String treatId,String xueWeiId);
+
 }

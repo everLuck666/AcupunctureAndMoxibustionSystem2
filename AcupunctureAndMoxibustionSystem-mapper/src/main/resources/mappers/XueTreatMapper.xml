@@ -4,6 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="net.seehope.mapper.XueTreatMapper">
     <select id="countXueWei" resultType="int">
-        select count(distinct xue_id) from xue_treat where treat_id = #{treatId}
+        select count(distinct pointName) from xue_treat,xue_wei where treat_id = #{treatId} and xue_treat.xue_id
+        = xue_wei.id
+    </select>
+    <select id="countXueWei2" resultType="int">
+         select count(*) from xue_treat where treat_id != #{treatId} and xue_id=#{xueWeiId}
     </select>
 </mapper>

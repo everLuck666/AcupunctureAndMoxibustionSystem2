@@ -106,7 +106,11 @@ public class LoginController  {
                     userService.insertUser(user,UserType.USER.getType());
                 }else{
                     Users usrs = userService.getUserInfo(user.getUserId());
-                    int version = Integer.valueOf(usrs.getVersion());
+                    int version = 0;
+                    if(usrs.getVersion() != null){
+                         version = Integer.valueOf(usrs.getVersion());
+                    }
+
                     version++;
                     if(version == 1000){
                         version = 0;

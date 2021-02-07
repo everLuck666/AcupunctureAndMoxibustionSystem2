@@ -37,7 +37,9 @@ public class UserServiceImpl implements UserService {
         user.setUserId(userId);
 
         if (isExist(user.getUserId())){
-            List list = usersMapper.selectAll();
+            Users userTemp = new Users();
+            userTemp.setIdentity(UserType.SUPERMANAGER.getType());
+            List list = usersMapper.select(userTemp);
             if(list.size() == 1){
                 throw new RuntimeException("还剩一个管理员，禁止删除");
             }
