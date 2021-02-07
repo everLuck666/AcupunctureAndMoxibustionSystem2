@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b3d9e"],{"29ab":function(n,e,t){"use strict";t.r(e);var u=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v(" 资源管理 ")])},a=[],c={data:function(){return{}}},r=c,i=t("2877"),o=Object(i["a"])(r,u,a,!1,null,"23ef4563",null);e["default"]=o.exports}}]);

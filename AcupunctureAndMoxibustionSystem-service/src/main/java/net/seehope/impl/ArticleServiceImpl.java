@@ -31,8 +31,6 @@ public class ArticleServiceImpl implements ArticleService {
     public List<Article> getAllArticle() throws IOException {
         List<ArticleVo> articleVos = new ArrayList<>();
         List<Article> articles = articleMapper.selectAll();
-
-        List<Article> articles2 = articleMapper.selectAll();
         return articles;
     }
 

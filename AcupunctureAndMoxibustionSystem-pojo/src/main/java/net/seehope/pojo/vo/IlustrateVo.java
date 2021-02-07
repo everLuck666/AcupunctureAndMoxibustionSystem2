@@ -9,6 +9,16 @@ public class IlustrateVo {
     private String XueWeiNum;
     private String treatNum;
 
+    private String path;
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
     public String getXueWeiNum() {
         return XueWeiNum;
     }

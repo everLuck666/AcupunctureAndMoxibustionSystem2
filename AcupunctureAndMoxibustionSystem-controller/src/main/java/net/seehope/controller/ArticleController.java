@@ -52,8 +52,8 @@ public class ArticleController {
         String fileName = indexService.update(files, path);
 
 
-        String text = articleService.readRDF(fileName);
-        logger.warn("这篇文章的内容是"+text);
+       // String text = articleService.readRDF(fileName);
+       // logger.warn("这篇文章的内容是"+text);
 
         List<MultipartFile> photosFiles = ((MultipartHttpServletRequest) request).getFiles("photos");
         String photoPath = "/src/main/resources/static/images/";
@@ -64,14 +64,15 @@ public class ArticleController {
         article.setImage(fileName);
         article.setTitle(title);
         article.setImage(photoFileName);
-        article.setText(text);
+       // article.setText(text);
+        article.setPath(fileName);
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String createTime = simpleDateFormat.format(new Date());
         article.setCreateTime(createTime);
         articleService.addArticle(article);
 
-        articleService.deleteArticleDoc(fileName);
+       // articleService.deleteArticleDoc(fileName);
 
         return RestfulJson.isOk("上传成功");
 

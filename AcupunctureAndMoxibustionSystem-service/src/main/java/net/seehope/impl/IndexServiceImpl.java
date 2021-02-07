@@ -157,7 +157,18 @@ public class IndexServiceImpl implements IndexService {
     @Override
     public List<IlustrateVo> getIlustrateBySearch(String text) {
 
-        return symptomMapper.getIlustrateBySearch(text);
+        List<IlustrateVo> ilustrateVoList = symptomMapper.getIlustrateBySearch(text);
+        for(IlustrateVo ilustrateVo:ilustrateVoList){
+            TreatProject treatProject = new TreatProject();
+            treatProject.setTreatId(ilustrateVo.getTreatId());
+            TreatProject treatProjectValue = treatProjectMapper.selectOne(treatProject);
+            ilustrateVo.setTreatNum(treatProjectValue.getTotalTime());
+            ilustrateVo.setXueWeiNum(xueTreatMapper.countXueWei(treatProject.getTreatId())+"");
+        }
+
+        return ilustrateVoList;
+
+
     }
 
     @Override

@@ -50,6 +50,9 @@ public class WebConfig extends WebMvcConfigurationSupport {
         includePathLists.add("/ilustrate/ilustrateAll");
         includePathLists.add("/ilustrate/ilustrateInfomation");
         includePathLists.add("/shopping/**");
+        includePathLists.add("/file/video2");
+        includePathLists.add("/article/articleAll");
+        includePathLists.add("/index/seachSymptom");
         List userExclude = new ArrayList();
         userExclude.add("/user/login");
 
@@ -78,9 +81,8 @@ public class WebConfig extends WebMvcConfigurationSupport {
         managerExclude.add("/ilustrate/ilustrateAll");
         managerExclude.add("/ilustrate/record");
         managerExclude.add("/ilustrate/ilustrateInfomation");
-        managerExclude.add("/article/articleAll");
         managerExclude.add("/file/video2");
-
+        managerExclude.add("/article/articleAll");
 
 
 
