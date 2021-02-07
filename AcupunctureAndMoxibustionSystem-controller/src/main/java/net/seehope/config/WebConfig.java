@@ -46,6 +46,8 @@ public class WebConfig extends WebMvcConfigurationSupport {
         includePathLists.add("/index/plan");
         includePathLists.add("/index/planRecord");
         includePathLists.add("/index/appendPlan");
+        includePathLists.add("/index/ilustrate");
+        includePathLists.add("index/symptomInformation");
         includePathLists.add("/ilustrate/record");
         includePathLists.add("/ilustrate/ilustrateAll");
         includePathLists.add("/ilustrate/ilustrateInfomation");

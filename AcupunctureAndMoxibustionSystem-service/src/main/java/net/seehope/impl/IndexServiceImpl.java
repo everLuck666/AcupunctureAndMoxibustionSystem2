@@ -141,6 +141,7 @@ public class IndexServiceImpl implements IndexService {
             ilustrateVo.setSymptomName(symptom1.getSymptomName());
             ilustrateVo.setTreatId(treat.getTreatId());
             ilustrateVo.setSymptomId(treat.getSymptomId());
+            ilustrateVo.setPath(symptom1.getPath());
 
 
             ilustrateVo.setTreatNum(treatProject1.getTotalTime());

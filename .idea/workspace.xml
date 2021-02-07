@@ -2,169 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/app.ff787b25.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-0787c93c.38d69d19.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-113661fc.29aaae94.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-14871946.20e44740.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-1868a432.6ecaeb8d.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-2488e3ee.4019e754.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-35be67a2.c914615f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-53a31366.889ede66.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-71b41866.737db9d6.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-7431b4df.074c786d.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-79f75e7f.ffbbbe16.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-8057d2c6.77fa9fbf.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-cc74f2a2.7798d2e9.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-d682dffe.bb76425a.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/css/chunk-vendors.3893269c.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/fonts/element-icons.535877f5.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/fonts/element-icons.732389de.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/img/logo.82b9c7a5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/app.eee14a74.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-0787c93c.0914dda7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-113661fc.e93e3a0f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-14871946.30bcc649.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-1868a432.be53a831.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-2488e3ee.f2c89f7c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-2d0b3d9e.e53f0998.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-35be67a2.6a1ed3c7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-53a31366.a762bb85.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-71b41866.a97db560.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-7431b4df.3ad8427e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-79f75e7f.1c81f64f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-8057d2c6.1f52d610.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-cc74f2a2.dd21f3a8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-d682dffe.17818dad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/前段文件/dist/js/chunk-vendors.d6b33a86.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/article/数字逻辑与EDA设计(2018).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/article/数字逻辑与EDA设计(2018)2021-02-04-11-30-11.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/article/数字逻辑与EDA设计(2018)2021-02-04-11-33-08.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/carousel/2020-11-30-15-43-39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/carousel/2020-11-30-15-43-44.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/carousel/2020-12-01-17-54-56.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/carousel/2020-12-01-17-54-58.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/carousel/261de910cc240dc20d9afb048e8e4d84112bd1be.jpg@1320w_1846h.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/1.png2021-02-01-16-12-50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/1.png2021-02-01-16-21-18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-11-40-28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-11-45-49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-12-15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-14-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-17-08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-25-52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-26-58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-27-09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-35-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-39-09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-39-43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-40-11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-40-36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-41-13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-49-55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-15-50-39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-20-07-35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-20-43-00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-04-20-44-11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-02-57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-03-18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-03-51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-04-31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-04-47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-06-55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-07-41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-08-20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-09-12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-09-49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-10-35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-10-13-44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-14-50-54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-14-52-37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-14-57-47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-14-58-41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-14-59-05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-15-12-08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-15-12-35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-15-13-51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-15-14-08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-21-03-19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-21-06-57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-21-08-20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-21-08-56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-21-09-46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-21-27-00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-21-31-14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-22-28-45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-05-22-38-43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-10-17-58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-10-59-02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-10-59-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-11-04-08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-11-04-26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-11-05-54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-11-06-07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-11-09-37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-11-09-46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-11-14-41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-13-53-33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-14-03-39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-15-35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-16-07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-16-40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-17-12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-17-56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-22-47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-24-45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-32-34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-41-41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-43-00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-43-21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-43-44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-43-58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/12021-02-06-23-44-52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/261de910cc240dc20d9afb048e8e4d84112bd1be@1320w_1846h2021-02-04-11-37-35.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/51.png2021-02-01-16-23-46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-00-31-43.png" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-22-31-59.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-00-31-46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-00-31-47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-00-50-38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-00-50-42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-00-55-15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-00-57-13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-00-57-16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-00-59-07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-00-59-17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-11-59-08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-12-03-41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-12-05-25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/695bf5429472049b52c1e0de586f8a2511195a23@100w_100h2021-02-07-12-11-40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.2021-02-03-20-52-15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.2021-02-03-20-52-26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian2021-02-03-20-53-22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian2021-02-04-15-20-07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian2021-02-04-18-50-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian2021-02-07-12-04-28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/images/tian2021-02-07-12-11-18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/123456.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/undefined.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/军训.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/新视频.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/时.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/resources/static/video/时永华-中国著名油画大师作品.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/SymptomMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/SymptomMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/vo/IlustrateVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-pojo/src/main/java/net/seehope/pojo/vo/IlustrateVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/ArticleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IndexServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/IndexServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -361,7 +200,7 @@
       <workItem from="1612701555708" duration="553000" />
       <workItem from="1612704877258" duration="326000" />
       <workItem from="1612705445664" duration="1512000" />
-      <workItem from="1612708997151" duration="2552000" />
+      <workItem from="1612708997151" duration="3731000" />
     </task>
     <task id="LOCAL-00001" summary="取关紧要的东西">
       <created>1611494142006</created>
@@ -447,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612671759931</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="修复力几个简单的问题">
+      <created>1612713380725</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1612713380726</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +312,8 @@
     <MESSAGE value="把原来返回的xml变成返回类型为json" />
     <MESSAGE value="整合了过滤器" />
     <MESSAGE value="修改了添加穴位，支持添加重名的穴位，但是温度和时间要不一样" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了添加穴位，支持添加重名的穴位，但是温度和时间要不一样" />
+    <MESSAGE value="修复力几个简单的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复力几个简单的问题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612354061456">
@@ -492,23 +339,24 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="165" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1280.777@0.23.1280.777" timestamp="1611648840782" />
-    <state x="28" y="52" key="CommitChangelistDialog2" timestamp="1612671758950">
+    <state x="0" y="44" key="CommitChangelistDialog2" timestamp="1612713378611">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="28" y="52" key="CommitChangelistDialog2/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484302083" />
+    <state x="0" y="44" key="CommitChangelistDialog2/0.0.1440.839@0.0.1440.900" timestamp="1612713378611" />
     <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1612671758950" />
     <state x="25" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1611666935097" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1612102900314">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog/0.23.1280.777@0.23.1280.777" timestamp="1612102900314" />
-    <state width="1396" height="194" key="GridCell.Tab.0.bottom" timestamp="1612713223283">
+    <state width="1396" height="194" key="GridCell.Tab.0.bottom" timestamp="1612714330553">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539742" />
     <state width="1396" height="172" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819782" />
     <state width="1396" height="368" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
-    <state width="1396" height="194" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612713223283" />
+    <state width="1396" height="194" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612714330553" />
     <state width="1238" height="371" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
     <state width="1396" height="203" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1612532761464" />
     <state width="1396" height="205" key="GridCell.Tab.0.bottom/0.23.1440.809@0.23.1440.809" timestamp="1612444903626" />
@@ -518,13 +366,13 @@
     <state width="1396" height="200" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1612598206135" />
     <state width="1396" height="198" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1612627150983" />
     <state width="1396" height="212" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1612102663869" />
-    <state width="1396" height="194" key="GridCell.Tab.0.center" timestamp="1612713223282">
+    <state width="1396" height="194" key="GridCell.Tab.0.center" timestamp="1612714330552">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539741" />
     <state width="1396" height="172" key="GridCell.Tab.0.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819780" />
     <state width="1396" height="368" key="GridCell.Tab.0.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416476" />
-    <state width="1396" height="194" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1612713223282" />
+    <state width="1396" height="194" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1612714330552" />
     <state width="1238" height="371" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1612185153388" />
     <state width="1396" height="203" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1612532761462" />
     <state width="1396" height="205" key="GridCell.Tab.0.center/0.23.1440.809@0.23.1440.809" timestamp="1612444903626" />
@@ -534,13 +382,13 @@
     <state width="1396" height="200" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1612598206133" />
     <state width="1396" height="198" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1612627150982" />
     <state width="1396" height="212" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1612102663868" />
-    <state width="1396" height="194" key="GridCell.Tab.0.left" timestamp="1612713223281">
+    <state width="1396" height="194" key="GridCell.Tab.0.left" timestamp="1612714330550">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539740" />
     <state width="1396" height="172" key="GridCell.Tab.0.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819779" />
     <state width="1396" height="368" key="GridCell.Tab.0.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416475" />
-    <state width="1396" height="194" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1612713223281" />
+    <state width="1396" height="194" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1612714330550" />
     <state width="1238" height="371" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1612185153388" />
     <state width="1396" height="203" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1612532761461" />
     <state width="1396" height="205" key="GridCell.Tab.0.left/0.23.1440.809@0.23.1440.809" timestamp="1612444903625" />
@@ -550,13 +398,13 @@
     <state width="1396" height="200" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1612598206131" />
     <state width="1396" height="198" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1612627150981" />
     <state width="1396" height="212" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1612102663867" />
-    <state width="1396" height="194" key="GridCell.Tab.0.right" timestamp="1612713223283">
+    <state width="1396" height="194" key="GridCell.Tab.0.right" timestamp="1612714330552">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539741" />
     <state width="1396" height="172" key="GridCell.Tab.0.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819781" />
     <state width="1396" height="368" key="GridCell.Tab.0.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
-    <state width="1396" height="194" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1612713223283" />
+    <state width="1396" height="194" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1612714330552" />
     <state width="1238" height="371" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1612185153388" />
     <state width="1396" height="203" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1612532761463" />
     <state width="1396" height="205" key="GridCell.Tab.0.right/0.23.1440.809@0.23.1440.809" timestamp="1612444903626" />
@@ -566,13 +414,13 @@
     <state width="1396" height="200" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1612598206133" />
     <state width="1396" height="198" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1612627150983" />
     <state width="1396" height="212" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1612102663868" />
-    <state width="1396" height="194" key="GridCell.Tab.1.bottom" timestamp="1612713223286">
+    <state width="1396" height="194" key="GridCell.Tab.1.bottom" timestamp="1612713810588">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539747" />
     <state width="1396" height="172" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819786" />
     <state width="1396" height="368" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416481" />
-    <state width="1396" height="194" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612713223286" />
+    <state width="1396" height="194" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612713810588" />
     <state width="1238" height="371" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1612185153390" />
     <state width="1396" height="203" key="GridCell.Tab.1.bottom/0.23.1440.808@0.23.1440.808" timestamp="1612532761466" />
     <state width="1396" height="205" key="GridCell.Tab.1.bottom/0.23.1440.809@0.23.1440.809" timestamp="1612444903628" />
@@ -582,13 +430,13 @@
     <state width="1396" height="200" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1612598206154" />
     <state width="1396" height="198" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1612627150995" />
     <state width="1396" height="212" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1612102663871" />
-    <state width="1396" height="194" key="GridCell.Tab.1.center" timestamp="1612713223284">
+    <state width="1396" height="194" key="GridCell.Tab.1.center" timestamp="1612713810587">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539745" />
     <state width="1396" height="172" key="GridCell.Tab.1.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819784" />
     <state width="1396" height="368" key="GridCell.Tab.1.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416479" />
-    <state width="1396" height="194" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1612713223284" />
+    <state width="1396" height="194" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1612713810587" />
     <state width="1238" height="371" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
     <state width="1396" height="203" key="GridCell.Tab.1.center/0.23.1440.808@0.23.1440.808" timestamp="1612532761465" />
     <state width="1396" height="205" key="GridCell.Tab.1.center/0.23.1440.809@0.23.1440.809" timestamp="1612444903627" />
@@ -598,13 +446,13 @@
     <state width="1396" height="200" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1612598206145" />
     <state width="1396" height="198" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1612627150985" />
     <state width="1396" height="212" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1612102663870" />
-    <state width="1396" height="194" key="GridCell.Tab.1.left" timestamp="1612713223284">
+    <state width="1396" height="194" key="GridCell.Tab.1.left" timestamp="1612713810586">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539743" />
     <state width="1396" height="172" key="GridCell.Tab.1.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819783" />
     <state width="1396" height="368" key="GridCell.Tab.1.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416478" />
-    <state width="1396" height="194" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1612713223284" />
+    <state width="1396" height="194" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1612713810586" />
     <state width="1238" height="371" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
     <state width="1396" height="203" key="GridCell.Tab.1.left/0.23.1440.808@0.23.1440.808" timestamp="1612532761465" />
     <state width="1396" height="205" key="GridCell.Tab.1.left/0.23.1440.809@0.23.1440.809" timestamp="1612444903627" />
@@ -614,13 +462,13 @@
     <state width="1396" height="200" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1612598206136" />
     <state width="1396" height="198" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1612627150984" />
     <state width="1396" height="212" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1612102663870" />
-    <state width="1396" height="194" key="GridCell.Tab.1.right" timestamp="1612713223285">
+    <state width="1396" height="194" key="GridCell.Tab.1.right" timestamp="1612713810588">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539746" />
     <state width="1396" height="172" key="GridCell.Tab.1.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819785" />
     <state width="1396" height="368" key="GridCell.Tab.1.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416480" />
-    <state width="1396" height="194" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1612713223285" />
+    <state width="1396" height="194" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1612713810588" />
     <state width="1238" height="371" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
     <state width="1396" height="203" key="GridCell.Tab.1.right/0.23.1440.808@0.23.1440.808" timestamp="1612532761466" />
     <state width="1396" height="205" key="GridCell.Tab.1.right/0.23.1440.809@0.23.1440.809" timestamp="1612444903627" />
