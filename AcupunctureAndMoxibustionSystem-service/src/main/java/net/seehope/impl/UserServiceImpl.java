@@ -57,6 +57,7 @@ public class UserServiceImpl implements UserService {
             throw new RuntimeException("账号存在");
         }else{
             user.setIdentity(identity);
+            user.setVersion("0");
             usersMapper.insert(user);
         }
 
