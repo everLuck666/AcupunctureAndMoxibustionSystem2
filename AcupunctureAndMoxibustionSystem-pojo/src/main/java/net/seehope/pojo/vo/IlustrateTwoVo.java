@@ -13,7 +13,7 @@ public class IlustrateTwoVo {
 
     private String create_Time;
     private String symptomId;
-    private String treateId;
+    private String treatId;
 
     private String describe;
 
@@ -81,11 +81,11 @@ public class IlustrateTwoVo {
         this.symptomId = symptomId;
     }
 
-    public String getTreateId() {
-        return treateId;
+    public String getTreatId() {
+        return treatId;
     }
 
-    public void setTreateId(String treateId) {
-        this.treateId = treateId;
+    public void setTreatId(String treatId) {
+        this.treatId = treatId;
     }
 }

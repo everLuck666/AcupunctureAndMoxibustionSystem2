@@ -213,7 +213,7 @@ public class IlustrateServiceImpl implements IlustrateService {
             ilustrateTwoVo.setReason(symptom1.getReason());
             ilustrateTwoVo.setSymptomId(symptom1.getSymptomId());
             ilustrateTwoVo.setTreatName(treatProject1.getTreatName());
-            ilustrateTwoVo.setTreateId(treatProject1.getTreatId());
+            ilustrateTwoVo.setTreatId(treatProject1.getTreatId());
             ilustrateTwoVo.setDescribe(treatProject1.getTreatDescribe());
             ilustrateTwoVo.setSymptomName(symptom1.getSymptomName());
             ilustrateVos.add(ilustrateTwoVo);
