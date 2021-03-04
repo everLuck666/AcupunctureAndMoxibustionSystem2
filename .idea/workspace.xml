@@ -35,7 +35,7 @@
   </component>
   <component name="ProjectId" id="1nV6FhHU5R8pue0odzXOtrbRv65" />
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="添加" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -512,10 +512,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="500" height="467" key="SwitcherDM/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611915176712" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1612844923916">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="320" y="208" key="Vcs.Push.Dialog.v2" timestamp="1614861795021">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1612844923916" />
+    <state x="320" y="208" key="Vcs.Push.Dialog.v2/0.23.1440.877/-1920.-157.1920.1057@0.23.1440.877" timestamp="1614861795021" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611494504043">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
