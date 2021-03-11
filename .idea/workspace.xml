@@ -2,8 +2,85 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/css/app.ff787b25.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-115cb520.812f34b7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-17f2330c.03de248e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-1bf62388.5114d465.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-20f8d160.63a104a3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-401ffc6a.5742ba86.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-46d1ff76.d7c6b7d4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-48a73891.5343c3b3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-49e59923.c751ed19.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-6a62a035.4318938e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-7d17664a.0bb4cc04.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-8057d2c6.77fa9fbf.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-8890cc74.e0ac948a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-c9e1d9ec.ebb831c9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/chunk-vendors.3893269c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/element-icons.535877f5.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/fonts/element-icons.732389de.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/logo.cc9993ec.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/app.775a54d2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-115cb520.c4f50f88.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-17f2330c.b03781f0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-1bf62388.7ac3b3bf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-20f8d160.e4fa8f6e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-2d0b3d9e.e53f0998.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-401ffc6a.92911e1c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-46d1ff76.5ea7a306.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-48a73891.531483fe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-49e59923.92227ad0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-6a62a035.4d282cf3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-7d17664a.8abee164.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-8057d2c6.1f52d610.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-8890cc74.c6ec64c1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-c9e1d9ec.853ed730.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/chunk-vendors.d6b33a86.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/VideoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/VideoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/app.ff787b25.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-0787c93c.38d69d19.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-113661fc.29aaae94.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-14871946.20e44740.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-1868a432.6ecaeb8d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-2488e3ee.4019e754.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-35be67a2.c914615f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-53a31366.889ede66.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-71b41866.737db9d6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-7431b4df.074c786d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-79f75e7f.ffbbbe16.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-8057d2c6.77fa9fbf.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-cc74f2a2.7798d2e9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-d682dffe.bb76425a.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-vendors.3893269c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/fonts/element-icons.535877f5.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/fonts/element-icons.732389de.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/img/logo.82b9c7a5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/app.eee14a74.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-0787c93c.0914dda7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-113661fc.e93e3a0f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-14871946.30bcc649.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-1868a432.be53a831.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-2488e3ee.f2c89f7c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-2d0b3d9e.e53f0998.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-35be67a2.6a1ed3c7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-53a31366.a762bb85.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-71b41866.a97db560.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-7431b4df.3ad8427e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-79f75e7f.1c81f64f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-8057d2c6.1f52d610.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-cc74f2a2.dd21f3a8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-d682dffe.17818dad.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-vendors.d6b33a86.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,53 +172,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="AcupunctureAndMoxibustionSystem-generator" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="AcupunctureAndMoxibustionSystem-generator" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="AcupunctureAndMoxibustionSystem-controller" />
       <extension name="coverage">
@@ -202,6 +232,29 @@
       <workItem from="1612708997151" duration="3912000" />
       <workItem from="1612786608577" duration="1566000" />
       <workItem from="1612843392760" duration="516000" />
+      <workItem from="1612862695772" duration="597000" />
+      <workItem from="1612951687768" duration="2757000" />
+      <workItem from="1612967098272" duration="51000" />
+      <workItem from="1613012353674" duration="1981000" />
+      <workItem from="1613015779271" duration="78000" />
+      <workItem from="1613033589045" duration="137000" />
+      <workItem from="1613465039333" duration="34000" />
+      <workItem from="1613564938230" duration="102000" />
+      <workItem from="1613658500705" duration="681000" />
+      <workItem from="1613741214858" duration="541000" />
+      <workItem from="1613793169763" duration="73000" />
+      <workItem from="1613802053747" duration="16000" />
+      <workItem from="1613802531274" duration="596000" />
+      <workItem from="1613809580718" duration="536000" />
+      <workItem from="1614061125466" duration="578000" />
+      <workItem from="1614142356276" duration="1209000" />
+      <workItem from="1614353753578" duration="1073000" />
+      <workItem from="1614567013861" duration="691000" />
+      <workItem from="1614570539529" duration="663000" />
+      <workItem from="1614764225202" duration="1622000" />
+      <workItem from="1614863587478" duration="1059000" />
+      <workItem from="1614872710260" duration="15000" />
+      <workItem from="1615126860825" duration="266000" />
     </task>
     <task id="LOCAL-00001" summary="取关紧要的东西">
       <created>1611494142006</created>
@@ -308,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612844897822</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="最终版1">
+      <created>1612862767510</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1612862767510</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +390,8 @@
     <MESSAGE value="修复力几个简单的问题" />
     <MESSAGE value="完善啦拦截的路径" />
     <MESSAGE value="最终版" />
-    <option name="LAST_COMMIT_MESSAGE" value="最终版" />
+    <MESSAGE value="最终版1" />
+    <option name="LAST_COMMIT_MESSAGE" value="最终版1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612354061456">
@@ -356,25 +417,26 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="165" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1280.777@0.23.1280.777" timestamp="1611648840782" />
-    <state x="28" y="49" key="CommitChangelistDialog2" timestamp="1612844896695">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="28" y="52" key="CommitChangelistDialog2" timestamp="1612862766919">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="28" y="52" key="CommitChangelistDialog2/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484302083" />
     <state x="0" y="44" key="CommitChangelistDialog2/0.0.1440.839@0.0.1440.900" timestamp="1612713378611" />
-    <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1612714914991" />
+    <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1612862766919" />
     <state x="25" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1611666935097" />
     <state x="28" y="49" key="CommitChangelistDialog2/0.23.1440.821@0.23.1440.821" timestamp="1612844896695" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1612102900314">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog/0.23.1280.777@0.23.1280.777" timestamp="1612102900314" />
-    <state width="1396" height="194" key="GridCell.Tab.0.bottom" timestamp="1612845054045">
+    <state width="1396" height="193" key="GridCell.Tab.0.bottom" timestamp="1614571406612">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539742" />
     <state width="1396" height="172" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819782" />
     <state width="1396" height="368" key="GridCell.Tab.0.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
-    <state width="1396" height="194" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612845054045" />
+    <state width="1396" height="193" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1614571406612" />
+    <state width="1396" height="194" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612864280642" />
     <state width="1238" height="371" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
     <state width="1396" height="194" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1612796455852" />
     <state width="1396" height="205" key="GridCell.Tab.0.bottom/0.23.1440.809@0.23.1440.809" timestamp="1612444903626" />
@@ -384,13 +446,14 @@
     <state width="1396" height="200" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1612598206135" />
     <state width="1396" height="198" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1612627150983" />
     <state width="1396" height="212" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1612102663869" />
-    <state width="1396" height="194" key="GridCell.Tab.0.center" timestamp="1612845054044">
+    <state width="1396" height="193" key="GridCell.Tab.0.center" timestamp="1614571406611">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539741" />
     <state width="1396" height="172" key="GridCell.Tab.0.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819780" />
     <state width="1396" height="368" key="GridCell.Tab.0.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416476" />
-    <state width="1396" height="194" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1612845054044" />
+    <state width="1396" height="193" key="GridCell.Tab.0.center/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1614571406611" />
+    <state width="1396" height="194" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1612864280641" />
     <state width="1238" height="371" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1612185153388" />
     <state width="1396" height="194" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1612796455850" />
     <state width="1396" height="205" key="GridCell.Tab.0.center/0.23.1440.809@0.23.1440.809" timestamp="1612444903626" />
@@ -400,13 +463,14 @@
     <state width="1396" height="200" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1612598206133" />
     <state width="1396" height="198" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1612627150982" />
     <state width="1396" height="212" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1612102663868" />
-    <state width="1396" height="194" key="GridCell.Tab.0.left" timestamp="1612845054043">
+    <state width="1396" height="193" key="GridCell.Tab.0.left" timestamp="1614571406610">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539740" />
     <state width="1396" height="172" key="GridCell.Tab.0.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819779" />
     <state width="1396" height="368" key="GridCell.Tab.0.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416475" />
-    <state width="1396" height="194" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1612845054043" />
+    <state width="1396" height="193" key="GridCell.Tab.0.left/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1614571406610" />
+    <state width="1396" height="194" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1612864280640" />
     <state width="1238" height="371" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1612185153388" />
     <state width="1396" height="194" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1612796455849" />
     <state width="1396" height="205" key="GridCell.Tab.0.left/0.23.1440.809@0.23.1440.809" timestamp="1612444903625" />
@@ -416,13 +480,14 @@
     <state width="1396" height="200" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1612598206131" />
     <state width="1396" height="198" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1612627150981" />
     <state width="1396" height="212" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1612102663867" />
-    <state width="1396" height="194" key="GridCell.Tab.0.right" timestamp="1612845054045">
+    <state width="1396" height="193" key="GridCell.Tab.0.right" timestamp="1614571406612">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.0.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539741" />
     <state width="1396" height="172" key="GridCell.Tab.0.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819781" />
     <state width="1396" height="368" key="GridCell.Tab.0.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416477" />
-    <state width="1396" height="194" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1612845054045" />
+    <state width="1396" height="193" key="GridCell.Tab.0.right/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1614571406612" />
+    <state width="1396" height="194" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1612864280641" />
     <state width="1238" height="371" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1612185153388" />
     <state width="1396" height="194" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1612796455851" />
     <state width="1396" height="205" key="GridCell.Tab.0.right/0.23.1440.809@0.23.1440.809" timestamp="1612444903626" />
@@ -432,13 +497,14 @@
     <state width="1396" height="200" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1612598206133" />
     <state width="1396" height="198" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1612627150983" />
     <state width="1396" height="212" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1612102663868" />
-    <state width="1396" height="194" key="GridCell.Tab.1.bottom" timestamp="1612845054047">
+    <state width="1396" height="193" key="GridCell.Tab.1.bottom" timestamp="1614571406615">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.bottom/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539747" />
     <state width="1396" height="172" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819786" />
     <state width="1396" height="368" key="GridCell.Tab.1.bottom/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416481" />
-    <state width="1396" height="194" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612845054047" />
+    <state width="1396" height="193" key="GridCell.Tab.1.bottom/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1614571406615" />
+    <state width="1396" height="194" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612864280643" />
     <state width="1238" height="371" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1612185153390" />
     <state width="1396" height="203" key="GridCell.Tab.1.bottom/0.23.1440.808@0.23.1440.808" timestamp="1612532761466" />
     <state width="1396" height="205" key="GridCell.Tab.1.bottom/0.23.1440.809@0.23.1440.809" timestamp="1612444903628" />
@@ -448,13 +514,14 @@
     <state width="1396" height="200" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1612598206154" />
     <state width="1396" height="198" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1612627150995" />
     <state width="1396" height="212" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1612102663871" />
-    <state width="1396" height="194" key="GridCell.Tab.1.center" timestamp="1612845054046">
+    <state width="1396" height="193" key="GridCell.Tab.1.center" timestamp="1614571406614">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.center/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539745" />
     <state width="1396" height="172" key="GridCell.Tab.1.center/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819784" />
     <state width="1396" height="368" key="GridCell.Tab.1.center/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416479" />
-    <state width="1396" height="194" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1612845054046" />
+    <state width="1396" height="193" key="GridCell.Tab.1.center/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1614571406614" />
+    <state width="1396" height="194" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1612864280642" />
     <state width="1238" height="371" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
     <state width="1396" height="203" key="GridCell.Tab.1.center/0.23.1440.808@0.23.1440.808" timestamp="1612532761465" />
     <state width="1396" height="205" key="GridCell.Tab.1.center/0.23.1440.809@0.23.1440.809" timestamp="1612444903627" />
@@ -464,13 +531,14 @@
     <state width="1396" height="200" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1612598206145" />
     <state width="1396" height="198" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1612627150985" />
     <state width="1396" height="212" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1612102663870" />
-    <state width="1396" height="194" key="GridCell.Tab.1.left" timestamp="1612845054046">
+    <state width="1396" height="193" key="GridCell.Tab.1.left" timestamp="1614571406613">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.left/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539743" />
     <state width="1396" height="172" key="GridCell.Tab.1.left/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819783" />
     <state width="1396" height="368" key="GridCell.Tab.1.left/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416478" />
-    <state width="1396" height="194" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1612845054046" />
+    <state width="1396" height="193" key="GridCell.Tab.1.left/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1614571406613" />
+    <state width="1396" height="194" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1612864280642" />
     <state width="1238" height="371" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
     <state width="1396" height="203" key="GridCell.Tab.1.left/0.23.1440.808@0.23.1440.808" timestamp="1612532761465" />
     <state width="1396" height="205" key="GridCell.Tab.1.left/0.23.1440.809@0.23.1440.809" timestamp="1612444903627" />
@@ -480,13 +548,14 @@
     <state width="1396" height="200" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1612598206136" />
     <state width="1396" height="198" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1612627150984" />
     <state width="1396" height="212" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1612102663870" />
-    <state width="1396" height="194" key="GridCell.Tab.1.right" timestamp="1612845054047">
+    <state width="1396" height="193" key="GridCell.Tab.1.right" timestamp="1614571406615">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1396" height="215" key="GridCell.Tab.1.right/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611922539746" />
     <state width="1396" height="172" key="GridCell.Tab.1.right/-1194.23.1194.811/0.0.1440.900@0.0.1440.900" timestamp="1611913819785" />
     <state width="1396" height="368" key="GridCell.Tab.1.right/-1194.23.1194.811/0.23.1440.877@0.23.1440.877" timestamp="1611480416480" />
-    <state width="1396" height="194" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1612845054047" />
+    <state width="1396" height="193" key="GridCell.Tab.1.right/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1614571406615" />
+    <state width="1396" height="194" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1612864280643" />
     <state width="1238" height="371" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1612185153389" />
     <state width="1396" height="203" key="GridCell.Tab.1.right/0.23.1440.808@0.23.1440.808" timestamp="1612532761466" />
     <state width="1396" height="205" key="GridCell.Tab.1.right/0.23.1440.809@0.23.1440.809" timestamp="1612444903627" />
@@ -512,10 +581,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="500" height="467" key="SwitcherDM/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611915176712" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1612844923916">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1612862783659">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1612844923916" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1612862783659" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611494504043">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

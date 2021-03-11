@@ -24,7 +24,10 @@ public class GoodsServiceImpl implements GoodsService {
     public void deleteGoods(String goodsName) {
         Goods goods = new Goods();
         goods.setProductName(goodsName);
-        goodsMapper.delete(goods);
+        Goods goods1 = goodsMapper.selectOne(goods);
+        goodsMapper.delete(goods1);
+        goods1.setStatus("-1");
+        goodsMapper.insert(goods1);
     }
 
     @Override
