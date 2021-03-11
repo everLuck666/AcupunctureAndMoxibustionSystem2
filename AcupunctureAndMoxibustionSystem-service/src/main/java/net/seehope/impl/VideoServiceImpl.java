@@ -1,6 +1,7 @@
 package net.seehope.impl;
 
 import net.seehope.VideoService;
+import net.seehope.common.FilePath;
 import net.seehope.mapper.VideoMapper;
 import net.seehope.pojo.Video;
 import net.seehope.pojo.vo.VideoVo;
@@ -59,8 +60,8 @@ public class VideoServiceImpl implements VideoService {
         Video tempItem = videoMapper.selectOne(items);
         if (tempItem != null) {
             videoMapper.delete(items);
-            File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
-            File dest = new File(tempFile.getAbsolutePath() + "/src/main/resources/static/video/" + videoName);
+            File tempFile = new File(FilePath.path);
+            File dest = new File(tempFile.getAbsolutePath() + FilePath.video + videoName);
             if (dest != null) {
                 dest.delete();
             } else {

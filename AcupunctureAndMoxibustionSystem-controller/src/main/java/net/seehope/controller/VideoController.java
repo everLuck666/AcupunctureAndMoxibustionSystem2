@@ -3,6 +3,7 @@ package net.seehope.controller;
 import io.swagger.annotations.*;
 import net.seehope.IndexService;
 import net.seehope.VideoService;
+import net.seehope.common.FilePath;
 import net.seehope.common.NonStaticResourceHttpRequestHandler;
 import net.seehope.common.RestfulJson;
 import net.seehope.pojo.Video;
@@ -85,8 +86,8 @@ public class VideoController {
             throw new RuntimeException("请填写视频的名字");
         }
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
-        File tempFile = new File("AcupunctureAndMoxibustionSystem-controller");
-        String path = "/src/main/resources/static/video/";
+        File tempFile = new File(FilePath.path);
+        String path = FilePath.video;
         String fileName = indexService.update(files, path);
         String[] suffix = fileName.split("\\.");
 
