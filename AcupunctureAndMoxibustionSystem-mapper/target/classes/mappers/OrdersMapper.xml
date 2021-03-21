@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.seehope.mapper.OrdersMapper">
+
+    <select id="queryUserOrders" parameterType="String" resultMap="userOrders">
+        select orders.product_name,order_id,product_number,order_amout,orders.status,image_url from orders,goods
+        where user_id=#{userId} AND orders.product_name=goods.product_name;
+    </select>
+
+    <select id="queryWaitingOrders" resultType="Integer">
+        select * from waiting_orders
+    </select>
+
+    <select id="queryFinishedOrders" resultType="Integer">
+        select * from finished_orders
+    </select>
+
+    <resultMap id="userOrders" type="net.seehope.pojo.bo.UserOrdersBo">
+        <result column="product_name" property="productName"></result>
+        <result column="order_id" property="orderId"></result>
+        <result column="product_number" property="productNumber"></result>
+        <result column="order_amout" property="orderAmout"></result>
+        <result column="status" property="status"></result>
+        <result column="image_url" property="imageUrl"></result>
+    </resultMap>
+    <select id="getIncome" resultMap="orders">
+     select order_amout from orders where order_time between #{todays} and #{todaye}
+    </select>
+    <resultMap id="orders" type="net.seehope.pojo.Orders">
+        <result column="order_amout" property="orderAmout"></result>
+    </resultMap>
+
+    <select id="orderMinDate" resultType="date">
+        select min(order_time) from orders
+    </select>
+
+    <select id="orderMaxDate" resultType="date">
+        select max(order_time) from orders
+    </select>
+</mapper>

@@ -2,85 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="feca86cd-4a2a-4efc-bb5f-7d5404acb618" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/css/app.ff787b25.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-115cb520.812f34b7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-17f2330c.03de248e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-1bf62388.5114d465.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-20f8d160.63a104a3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-401ffc6a.5742ba86.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-46d1ff76.d7c6b7d4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-48a73891.5343c3b3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-49e59923.c751ed19.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-6a62a035.4318938e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-7d17664a.0bb4cc04.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-8057d2c6.77fa9fbf.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-8890cc74.e0ac948a.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-c9e1d9ec.ebb831c9.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/css/chunk-vendors.3893269c.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/fonts/element-icons.535877f5.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/fonts/element-icons.732389de.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/img/logo.cc9993ec.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/app.775a54d2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-115cb520.c4f50f88.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-17f2330c.b03781f0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-1bf62388.7ac3b3bf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-20f8d160.e4fa8f6e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-2d0b3d9e.e53f0998.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-401ffc6a.92911e1c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-46d1ff76.5ea7a306.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-48a73891.531483fe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-49e59923.92227ad0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-6a62a035.4d282cf3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-7d17664a.8abee164.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-8057d2c6.1f52d610.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-8890cc74.c6ec64c1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-c9e1d9ec.853ed730.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/js/chunk-vendors.d6b33a86.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/src/main/java/net/seehope/controller/VideoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-controller/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-mapper/src/main/resources/mappers/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcupunctureAndMoxibustionSystem-service/src/main/java/net/seehope/impl/VideoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/app.ff787b25.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-0787c93c.38d69d19.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-113661fc.29aaae94.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-14871946.20e44740.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-1868a432.6ecaeb8d.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-2488e3ee.4019e754.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-35be67a2.c914615f.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-53a31366.889ede66.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-71b41866.737db9d6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-7431b4df.074c786d.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-79f75e7f.ffbbbe16.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-8057d2c6.77fa9fbf.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-cc74f2a2.7798d2e9.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-d682dffe.bb76425a.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/css/chunk-vendors.3893269c.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/fonts/element-icons.535877f5.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/fonts/element-icons.732389de.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/img/logo.82b9c7a5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/app.eee14a74.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-0787c93c.0914dda7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-113661fc.e93e3a0f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-14871946.30bcc649.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-1868a432.be53a831.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-2488e3ee.f2c89f7c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-2d0b3d9e.e53f0998.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-35be67a2.6a1ed3c7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-53a31366.a762bb85.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-71b41866.a97db560.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-7431b4df.3ad8427e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-79f75e7f.1c81f64f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-8057d2c6.1f52d610.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-cc74f2a2.dd21f3a8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-d682dffe.17818dad.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/前段文件/dist/js/chunk-vendors.d6b33a86.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,6 +177,8 @@
       <workItem from="1614863587478" duration="1059000" />
       <workItem from="1614872710260" duration="15000" />
       <workItem from="1615126860825" duration="266000" />
+      <workItem from="1615471842113" duration="746000" />
+      <workItem from="1616313616559" duration="473000" />
     </task>
     <task id="LOCAL-00001" summary="取关紧要的东西">
       <created>1611494142006</created>
@@ -368,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612862767510</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="最新版本">
+      <created>1615471924088</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1615471924088</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +322,8 @@
     <MESSAGE value="完善啦拦截的路径" />
     <MESSAGE value="最终版" />
     <MESSAGE value="最终版1" />
-    <option name="LAST_COMMIT_MESSAGE" value="最终版1" />
+    <MESSAGE value="最新版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="最新版本" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612354061456">
@@ -417,11 +349,12 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="165" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1280.777@0.23.1280.777" timestamp="1611648840782" />
-    <state x="28" y="52" key="CommitChangelistDialog2" timestamp="1612862766919">
+    <state x="28" y="52" key="CommitChangelistDialog2" timestamp="1615471922832">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="28" y="52" key="CommitChangelistDialog2/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611484302083" />
     <state x="0" y="44" key="CommitChangelistDialog2/0.0.1440.839@0.0.1440.900" timestamp="1612713378611" />
+    <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1615471922831" />
     <state x="28" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1612862766919" />
     <state x="25" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1611666935097" />
     <state x="28" y="49" key="CommitChangelistDialog2/0.23.1440.821@0.23.1440.821" timestamp="1612844896695" />
@@ -581,9 +514,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="500" height="467" key="SwitcherDM/-1194.0.1194.834/0.0.1440.900@0.0.1440.900" timestamp="1611915176712" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1612862783659">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1615472064673">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1615472064673" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1612862783659" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611494504043">
       <screen x="0" y="23" width="1440" height="877" />

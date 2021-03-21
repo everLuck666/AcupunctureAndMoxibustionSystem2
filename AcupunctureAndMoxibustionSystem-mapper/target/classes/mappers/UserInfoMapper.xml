@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.seehope.mapper.UserInfoMapper">
+
+    <select id="queryUserAddress" parameterType="String" resultMap="userAddress">
+        select user_name,phone,address from user_info where user_id=#{userId};
+    </select>
+    
+    <resultMap id="userAddress" type="net.seehope.pojo.bo.UserAddressBo">
+            <result column="user_name" property="userName"></result>
+            <result column="phone" property="userPhone"></result>
+            <result column="address" property="address"></result>
+    </resultMap>
+</mapper>
