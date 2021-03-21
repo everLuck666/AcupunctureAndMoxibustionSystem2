@@ -1,0 +1,12 @@
+net/seehope/mapper/GoodsMapper.class
+net/seehope/mapper/XueWeiMapper.class
+net/seehope/mapper/SymptomMapper.class
+net/seehope/mapper/MedicalRecordMapper.class
+net/seehope/mapper/ArticleMapper.class
+net/seehope/mapper/UsersMapper.class
+net/seehope/mapper/XueTreatMapper.class
+net/seehope/mapper/UserInfoMapper.class
+net/seehope/mapper/TreatProjectMapper.class
+net/seehope/mapper/OrdersMapper.class
+net/seehope/mapper/TreatMapper.class
+net/seehope/mapper/VideoMapper.class
