@@ -8,6 +8,7 @@ import net.seehope.ShoppingService;
 import net.seehope.common.RestfulJson;
 import net.seehope.mapper.UserInfoMapper;
 import net.seehope.pojo.UserInfo;
+import net.seehope.pojo.bo.DeleteAddressBo;
 import net.seehope.pojo.bo.ShoppingCarBo;
 import net.seehope.pojo.vo.UserInfoVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,10 +60,10 @@ public class ShoppingController {
     }
 
     @DeleteMapping(value = "deleteAddress",produces="application/json;charset=UTF-8")
-    public RestfulJson deleteAddress(HttpServletRequest request,String address,String userName,String phone){
+    public RestfulJson deleteAddress(HttpServletRequest request,@RequestBody DeleteAddressBo bo){
         String userId = request.getAttribute("openId").toString();
         try {
-            shoppingService.deleteAddress(userId,address,userName,phone);
+            shoppingService.deleteAddress(userId,bo);
             return RestfulJson.isOk("删除地址成功！");
         }catch (Exception e){
             return RestfulJson.errorMsg(e.getMessage());

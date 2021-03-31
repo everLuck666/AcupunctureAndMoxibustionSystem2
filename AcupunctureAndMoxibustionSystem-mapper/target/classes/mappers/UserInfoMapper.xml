@@ -13,4 +13,8 @@
             <result column="phone" property="userPhone"></result>
             <result column="address" property="address"></result>
     </resultMap>
+
+    <delete id="deleteAddress" parameterType="String">
+        delete from user_info where user_id = #{userId} and address = #{address}
+    </delete>
 </mapper>

@@ -3,6 +3,7 @@ package net.seehope;
 import net.seehope.pojo.Goods;
 import net.seehope.pojo.Orders;
 import net.seehope.pojo.UserInfo;
+import net.seehope.pojo.bo.DeleteAddressBo;
 import net.seehope.pojo.bo.ShoppingCarBo;
 
 import java.util.List;
@@ -26,7 +27,7 @@ public interface ShoppingService {
     //添加地址
     void addAddress(UserInfo userInfo);
 
-    void deleteAddress(String userId,String address,String userName,String phone);
+    void deleteAddress(String userId, DeleteAddressBo bo);
 
     //获取用户收货地址
     List getUserAddress(String userId);

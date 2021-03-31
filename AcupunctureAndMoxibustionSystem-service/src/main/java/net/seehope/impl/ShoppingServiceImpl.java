@@ -9,6 +9,7 @@ import net.seehope.pojo.Goods;
 
 import net.seehope.pojo.Orders;
 import net.seehope.pojo.UserInfo;
+import net.seehope.pojo.bo.DeleteAddressBo;
 import net.seehope.pojo.bo.ShoppingCarBo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort.Order;
@@ -119,16 +120,18 @@ public class ShoppingServiceImpl implements ShoppingService {
     /**
      * 删除用户收货地址
      * @param userId
-     * @param address
+     * @param bo
      */
     @Override
-    public void deleteAddress(String userId, String address,String userName,String phone) {
+    public void deleteAddress(String userId, DeleteAddressBo bo) {
         UserInfo userInfo = new UserInfo();
         userInfo.setUserId(userId);
-        userInfo.setAddress(address);
+        userInfo.setUserName(bo.getUserName());
+        userInfo.setPhone(bo.getPhone());
+        userInfo.setAddress(bo.getAddress());
         List<UserInfo> res = userInfoMapper.select(userInfo);
         if(res != null){
-            userInfoMapper.deleteAddress(userId,address,userName,phone);
+            userInfoMapper.deleteAddress(userId,bo.getAddress(),bo.getUserName(),bo.getPhone());
         }
     }
 
