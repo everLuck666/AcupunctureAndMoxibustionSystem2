@@ -117,6 +117,22 @@ public class ShoppingServiceImpl implements ShoppingService {
     }
 
     /**
+     * 删除用户收货地址
+     * @param userId
+     * @param address
+     */
+    @Override
+    public void deleteAddress(String userId, String address,String userName,String phone) {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setUserId(userId);
+        userInfo.setAddress(address);
+        List<UserInfo> res = userInfoMapper.select(userInfo);
+        if(res != null){
+            userInfoMapper.deleteAddress(userId,address,userName,phone);
+        }
+    }
+
+    /**
      * 获取用户收货地址
      * @param userId
      * @return

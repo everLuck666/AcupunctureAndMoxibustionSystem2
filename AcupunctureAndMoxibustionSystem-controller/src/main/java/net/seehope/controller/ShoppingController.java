@@ -58,6 +58,17 @@ public class ShoppingController {
 
     }
 
+    @DeleteMapping(value = "deleteAddress",produces="application/json;charset=UTF-8")
+    public RestfulJson deleteAddress(HttpServletRequest request,String address,String userName,String phone){
+        String userId = request.getAttribute("openId").toString();
+        try {
+            shoppingService.deleteAddress(userId,address,userName,phone);
+            return RestfulJson.isOk("删除地址成功！");
+        }catch (Exception e){
+            return RestfulJson.errorMsg(e.getMessage());
+        }
+    }
+
 
     @ApiOperation("获取用户收货地址")
     @ApiImplicitParams({

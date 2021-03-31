@@ -8,7 +8,7 @@
 <!--        select * from goods where product_name like #{keyword}-->
 <!--    </select>-->
     <select id="queryAllGoodsInfo" resultMap="goods">
-        select * from goods_allinfo
+        select * from goods_allinfo where status != '-1'
     </select>
     
     <resultMap id="goods" type="net.seehope.pojo.bo.GoodsBo">

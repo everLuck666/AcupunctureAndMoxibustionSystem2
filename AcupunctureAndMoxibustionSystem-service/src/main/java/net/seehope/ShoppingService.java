@@ -26,6 +26,8 @@ public interface ShoppingService {
     //添加地址
     void addAddress(UserInfo userInfo);
 
+    void deleteAddress(String userId,String address,String userName,String phone);
+
     //获取用户收货地址
     List getUserAddress(String userId);
 

@@ -14,6 +14,8 @@ import java.util.List;
 public interface UserInfoMapper extends tk.mybatis.mapper.common.Mapper<UserInfo> {
     List queryUserAddress(String userId);
 
+    void deleteAddress(String userId,String address,String userName,String phone);
+
 }
 
 
