@@ -54,6 +54,7 @@ public class WebConfig extends WebMvcConfigurationSupport {
         includePathLists.add("/shopping/**");
         includePathLists.add("/file/video2");
         includePathLists.add("/article/articleAll");
+        includePathLists.add("/index/information");
         includePathLists.add("/index/seachSymptom");
         List userExclude = new ArrayList();
         userExclude.add("/user/login");

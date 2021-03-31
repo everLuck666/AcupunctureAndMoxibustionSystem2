@@ -89,6 +89,8 @@ public class LoginController  {
                 JSONObject jsonObject= JSON.parseObject(line);
 
                 user.setUserId(jsonObject.getString("openid"));
+
+                String sessionKey  = jsonObject.getString("session_key");
                 log.info("用户的openId是"+user.getUserId());
                 user.setIdentity(UserType.USER.getType());
 
@@ -123,6 +125,7 @@ public class LoginController  {
                 payload.put("openId",user.getUserId());
                 payload.put("identity",UserType.USER.getType()+"");
                 payload.put("version",users.getVersion());
+                payload.put("sessionKey",sessionKey);
                 log.info("下发的token中版本号是"+users.getVersion());
 
                 String token = JWTUtils.getToken(payload);

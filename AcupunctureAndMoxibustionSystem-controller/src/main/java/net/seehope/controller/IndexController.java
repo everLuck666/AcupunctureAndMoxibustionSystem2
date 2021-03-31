@@ -2,6 +2,7 @@ package net.seehope.controller;
 
 import io.swagger.annotations.*;
 import net.seehope.IndexService;
+import net.seehope.PasswordDecryptService;
 import net.seehope.common.MedicalRecordType;
 import net.seehope.common.RestfulJson;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,9 @@ import java.util.Map;
 public class IndexController {
     @Autowired
     IndexService indexService;
+
+    @Autowired
+    PasswordDecryptService passwordDecryptService;
 
     @GetMapping(value = "plan",produces="application/json;charset=UTF-8")
     @ApiOperation(value = "得到我的诊疗计划",notes = "token是必须的，放在header中")
@@ -97,6 +101,12 @@ public class IndexController {
             return RestfulJson.errorMsg("删除失败");
         }
 
+    }
+
+    @GetMapping(value = "information",produces="application/json;charset=UTF-8")
+    public RestfulJson getUserInfo(String encryptedData, String iv,HttpServletRequest request){
+       String sessionKey =  request.getAttribute("sessionKey").toString();
+        return RestfulJson.isOk(passwordDecryptService.getUserInfo(encryptedData,sessionKey,iv));
     }
 
 

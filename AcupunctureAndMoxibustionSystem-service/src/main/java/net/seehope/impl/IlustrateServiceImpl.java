@@ -114,17 +114,16 @@ public class IlustrateServiceImpl implements IlustrateService {
 
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
 
-
         String fileName = "";
 
         if(flag) {
             //上传图片
 
             XueWei xueWei = new XueWei();//用于检测是否发生穴位的事情
-            xueWei.setPointname(weiBo.getPointName());
+         //   xueWei.setPointname(weiBo.getPointName());
 
-            xueWei.setTemperature(weiBo.getTemperature());
-            xueWei.setTreattime(Integer.parseInt(weiBo.getTreatTime()));
+         //   xueWei.setTemperature(weiBo.getTemperature());
+           // xueWei.setTreattime(Integer.parseInt(weiBo.getTreatTime()));
 
             File tempFile = new File(FilePath.path);
             String path = FilePath.images;
@@ -136,17 +135,11 @@ public class IlustrateServiceImpl implements IlustrateService {
 
             id = UUID.randomUUID().toString();
 
-            XueWei xueWeiValue = xueWeiMapper.selectOne(xueWei);
-            if(xueWeiValue != null){
-                flag3 = true;
-                id = xueWeiValue.getId();
-                logger.info("出现了一样的穴位");
 
-            }else{
                 xueWei.setId(id+"");
                 xueWei.setPath(weiBo.getPath());
                 xueWeiMapper.insert(xueWei);
-            }
+
 
 
 

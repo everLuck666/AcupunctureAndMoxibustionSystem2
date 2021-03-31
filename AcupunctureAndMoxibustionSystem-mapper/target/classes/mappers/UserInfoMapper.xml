@@ -15,6 +15,7 @@
     </resultMap>
 
     <delete id="deleteAddress" parameterType="String">
-        delete from user_info where user_id = #{userId} and address = #{address}
+        delete from user_info where user_id = #{userId} and address = #{address} and
+        user_name = #{userName} and phone = #{phone}
     </delete>
 </mapper>

@@ -71,6 +71,12 @@ public class MyInterceptor implements HandlerInterceptor {
                 logger.info("token身份是"+verify.getClaim("identity").asString());
 
             } else if(!StringUtils.equals(users.getVersion() + "", verify.getClaim("version").asString())){
+                System.out.println("=================================");
+                System.out.println(users.getVersion());
+                System.out.println("=================================");
+
+                System.out.println(verify.getClaim("version").asString());
+                System.out.println("==============================]");
                 jsonObject.put("state", false);
                 jsonObject.put("msg", "这个账号在别的地方登陆，请重新登录");
                 logger.info("这个账号在别的地方登陆，请重新登录");
@@ -82,6 +88,7 @@ public class MyInterceptor implements HandlerInterceptor {
                     if (value[i].equals(verify.getClaim("identity").asString())) {
                         logger.info("拦截器拦截是的是" + verify.getClaim("openId").asString());
                         request.setAttribute("openId", verify.getClaim("openId").asString());
+                        request.setAttribute("sessionKey",verify.getClaim("sessionKey").asString());
                         return true;
                     }
                 }

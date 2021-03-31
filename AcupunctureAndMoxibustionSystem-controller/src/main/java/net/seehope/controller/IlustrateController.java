@@ -108,6 +108,10 @@ public class IlustrateController {
     public RestfulJson deleteXueWei(@RequestBody Map map){
         String treatId = map.get("treatId").toString();
         String xueWeiId = map.get("xueWeiId").toString();
+        System.out.println("---------------------------");
+        System.out.println(treatId);
+        System.out.println(xueWeiId);
+        System.out.println("---------------------------");
         ilustrateService.deleteXueWei(treatId,xueWeiId);
         return RestfulJson.isOk("删除穴位成功");
 
